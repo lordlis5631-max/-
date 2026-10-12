@@ -182,11 +182,12 @@ $('submit-proposal').addEventListener('click',async()=>{
  const body='Предложение по региону: '+byId.get(current).name+'\n\n### REGION_DATA_JSON\n'+String.fromCharCode(96,96,96)+'json\n'+JSON.stringify(payload,null,2)+'\n'+String.fromCharCode(96,96,96)+'\n\nДля публикации требуется проверка владельца репозитория и метка publish-approved.';
  const title='Публикация данных: '+byId.get(current).name;
  const url=BASE+'/issues/new?template=region-data.md&title='+encodeURIComponent(title);
+ const direct=BASE+'/issues/new?title='+encodeURIComponent(title)+'&body='+encodeURIComponent(body);
+ if(direct.length<7500){window.location.assign(direct);return}
  const copied=await copyText(body);
  if(!copied){showToast('Не удалось скопировать данные. Разрешите доступ к буферу обмена и попробуйте снова.');return}
- showToast('Данные скопированы! В открывшейся форме GitHub вставьте их в описание и отправьте заявку.');
- const popup=window.open(url,'_blank','noopener,noreferrer');
- if(!popup){const a=el('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.click()}
+ alert('Данные скопированы. На следующей странице GitHub вставьте их в описание заявки и нажмите Submit new issue.');
+ window.location.assign(url);
 });
 function resizeLabels(){const mobile=stage.getBoundingClientRect().width<570;const font=mobile?20:12;labelEls.forEach((pair,id)=>{const [rect,text]=pair,info=LABELS[id],lines=info.lines,[x,y]=info.p;const lineHeight=mobile?22:14;const width=Math.max(...lines.map(t=>t.length))*(mobile?11.4:7.5)+16;const height=lines.length===2?(mobile?55:37):(mobile?34:25);rect.setAttribute('x',x-width/2);rect.setAttribute('y',y-height/2);rect.setAttribute('width',width);rect.setAttribute('height',height);text.style.fontSize=font+'px';text.setAttribute('y',y-(lines.length-1)*lineHeight/2+font*.36);text.querySelectorAll('tspan').forEach((span,i)=>span.setAttribute('dy',i===0?'0':lineHeight))})}
 window.addEventListener('resize',resizeLabels);resizeLabels();
