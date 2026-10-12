@@ -7,7 +7,7 @@ window.PFO_REGIONS = [
     "short": "Башкортостан",
     "capital": "Уфа",
     "type": "Республика",
-    "color": "#adcbea",
+    "color": "#a5bfb0",
     "abbr": "Бш",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -18,7 +18,7 @@ window.PFO_REGIONS = [
     "short": "Марий Эл",
     "capital": "Йошкар-Ола",
     "type": "Республика",
-    "color": "#bce1d6",
+    "color": "#afc8b5",
     "abbr": "МЭ",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -29,7 +29,7 @@ window.PFO_REGIONS = [
     "short": "Мордовия",
     "capital": "Саранск",
     "type": "Республика",
-    "color": "#e9cba9",
+    "color": "#b6cbb7",
     "abbr": "Мр",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -40,7 +40,7 @@ window.PFO_REGIONS = [
     "short": "Татарстан",
     "capital": "Казань",
     "type": "Республика",
-    "color": "#b7d7bc",
+    "color": "#99b8a6",
     "abbr": "Тт",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -51,7 +51,7 @@ window.PFO_REGIONS = [
     "short": "Удмуртия",
     "capital": "Ижевск",
     "type": "Республика",
-    "color": "#c8c2e7",
+    "color": "#bad0bd",
     "abbr": "Уд",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -62,7 +62,7 @@ window.PFO_REGIONS = [
     "short": "Чувашия",
     "capital": "Чебоксары",
     "type": "Республика",
-    "color": "#efc8ca",
+    "color": "#b2c9a9",
     "abbr": "Чв",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -73,7 +73,7 @@ window.PFO_REGIONS = [
     "short": "Пермский край",
     "capital": "Пермь",
     "type": "Край",
-    "color": "#c6dff1",
+    "color": "#8faa9c",
     "abbr": "Пк",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -84,7 +84,7 @@ window.PFO_REGIONS = [
     "short": "Кировская",
     "capital": "Киров",
     "type": "Область",
-    "color": "#cadbd8",
+    "color": "#aac2b4",
     "abbr": "Кр",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -95,7 +95,7 @@ window.PFO_REGIONS = [
     "short": "Нижегородская",
     "capital": "Нижний Новгород",
     "type": "Область",
-    "color": "#e4dcaf",
+    "color": "#afc3b1",
     "abbr": "Нж",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -106,7 +106,7 @@ window.PFO_REGIONS = [
     "short": "Оренбургская",
     "capital": "Оренбург",
     "type": "Область",
-    "color": "#c3d3ed",
+    "color": "#93b49f",
     "abbr": "Ор",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -117,7 +117,7 @@ window.PFO_REGIONS = [
     "short": "Пензенская",
     "capital": "Пенза",
     "type": "Область",
-    "color": "#dbd1e7",
+    "color": "#a0beab",
     "abbr": "Пз",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -128,7 +128,7 @@ window.PFO_REGIONS = [
     "short": "Самарская",
     "capital": "Самара",
     "type": "Область",
-    "color": "#bce2da",
+    "color": "#a5c2a7",
     "abbr": "См",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -139,7 +139,7 @@ window.PFO_REGIONS = [
     "short": "Саратовская",
     "capital": "Саратов",
     "type": "Область",
-    "color": "#f0d3b7",
+    "color": "#b7cbb3",
     "abbr": "Ср",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
@@ -150,7 +150,7 @@ window.PFO_REGIONS = [
     "short": "Ульяновская",
     "capital": "Ульяновск",
     "type": "Область",
-    "color": "#d3def3",
+    "color": "#8fb09c",
     "abbr": "Ул",
     "description": "Информация о регионе будет добавлена позднее.",
     "url": ""
