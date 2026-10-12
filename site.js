@@ -19,7 +19,7 @@ const ALL_KEYS=FIELDS.map(f=>f.id).concat(['practiceDescription','presentationUr
 const LABELS={
 'bashkortostan':{p:[546,448],lines:['Башкортостан']},
 'mari-el':{p:[274,366],lines:['Марий Эл']},
-'mordovia':{p:[171,547],lines:['Мордовия']},
+'mordovia':{p:[141,550],lines:['Мордовия']},
 'tatarstan':{p:[360,458],lines:['Татарстан']},
 'udmurtia':{p:[476,380],lines:['Удмуртия']},
 'chuvashia':{p:[243,431],lines:['Чувашия']},
