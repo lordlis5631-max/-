@@ -25,7 +25,7 @@ const LABELS={
 'chuvashia':{p:[243,431],lines:['Чувашия']},
 'perm':{p:[593,293],lines:['Пермский','край']},
 'kirov':{p:[343,257],lines:['Кировская','область']},
-'nizhny':{p:[121,408],lines:['Нижегородская','область']},
+'nizhny':{p:[117,368],lines:['Нижегородская','область']},
 'orenburg':{p:[559,738],lines:['Оренбургская','область']},
 'penza':{p:[166,643],lines:['Пензенская','область']},
 'samara':{p:[370,630],lines:['Самарская','область']},
@@ -189,7 +189,7 @@ $('submit-proposal').addEventListener('click',async()=>{
  alert('Данные скопированы. На следующей странице GitHub вставьте их в описание заявки и нажмите Submit new issue.');
  window.location.assign(url);
 });
-function resizeLabels(){const mobile=stage.getBoundingClientRect().width<570;const font=mobile?20:12;labelEls.forEach((pair,id)=>{const [rect,text]=pair,info=LABELS[id],lines=info.lines,[x,y]=info.p;const lineHeight=mobile?22:14;const width=Math.max(...lines.map(t=>t.length))*(mobile?11.4:7.5)+16;const height=lines.length===2?(mobile?55:37):(mobile?34:25);rect.setAttribute('x',x-width/2);rect.setAttribute('y',y-height/2);rect.setAttribute('width',width);rect.setAttribute('height',height);text.style.fontSize=font+'px';text.setAttribute('y',y-(lines.length-1)*lineHeight/2+font*.36);text.querySelectorAll('tspan').forEach((span,i)=>span.setAttribute('dy',i===0?'0':lineHeight))})}
+function resizeLabels(){const mobile=stage.getBoundingClientRect().width<570;const font=mobile?22:16;labelEls.forEach((pair,id)=>{const [rect,text]=pair,info=LABELS[id],lines=info.lines,[x,y]=info.p;const lineHeight=mobile?24:17;const width=Math.max(...lines.map(t=>t.length))*(mobile?12.2:9)+16;const height=lines.length===2?(mobile?59:42):(mobile?37:29);rect.setAttribute('x',x-width/2);rect.setAttribute('y',y-height/2);rect.setAttribute('width',width);rect.setAttribute('height',height);text.style.fontSize=font+'px';text.setAttribute('y',y-(lines.length-1)*lineHeight/2+font*.36);text.querySelectorAll('tspan').forEach((span,i)=>span.setAttribute('dy',i===0?'0':lineHeight))})}
 window.addEventListener('resize',resizeLabels);resizeLabels();
 renderChips();redraw();const initial=decodeURIComponent(location.hash.slice(1));selectRegion(byId.has(initial)?initial:'bashkortostan'); 
 })();
