@@ -1,0 +1,29 @@
+name: Publish approved regional data
+on:
+  issues:
+    types: [labeled]
+permissions:
+  contents: write
+  issues: read
+jobs:
+  review-publish:
+    if: github.event.label.name == 'publish-approved' && github.event.issue.state == 'open'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+      - name: Validate reviewed issue and update regional content
+        run: python3 scripts/publish_issue.py
+      - name: Publish approved change
+        run: |
+          if git diff --quiet -- content-data.js; then
+            echo "Nothing to change"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content-data.js
+          git commit -m "Publish approved regional profile"
+          git push
