@@ -3,73 +3,108 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#101e33">
-<meta name="description" content="Форум «Конструктив.Действуй»: интерактивная карта профилактических решений для 14 регионов Приволжского федерального округа.">
-<title>Форум «Конструктив.Действуй» — карта региональных решений</title>
+<meta name="theme-color" content="#162d2b">
+<meta name="description" content="Форум «Конструктив.Действуй». Интерактивная карта профилактических практик и вызовов 14 регионов ПФО.">
+<title>Конструктив.Действуй — карта региональных решений</title>
 <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<body id="top">
 <header class="site-head">
+  <div class="head-line"><div class="wrap head-line-inner"><span>ФОРУМ · ПРИВОЛЖСКИЙ ФЕДЕРАЛЬНЫЙ ОКРУГ</span><span>14 РЕГИОНОВ / ОБМЕН ОПЫТОМ</span></div></div>
   <div class="wrap head-row">
-    <a class="brand" href="#top" aria-label="Форум Конструктив.Действуй — на главную">
-      <span class="brand-mark" aria-hidden="true">↗</span>
-      <span class="brand-text"><span class="brand-kicker">Форум</span><span class="brand-name">«Конструктив.Действуй»</span></span>
+    <a class="brand" href="#top" aria-label="Конструктив.Действуй — в начало страницы">
+      <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+      <span class="brand-text"><span class="brand-kicker">Форум</span><span class="brand-name">Конструктив<span class="brand-dot">.</span>Действуй</span></span>
     </a>
-    <nav class="head-nav" aria-label="Разделы сайта">
-      <a href="#atlas">Карта ПФО</a><a href="#questions">Шесть вопросов</a><a href="#practices">Практики и контакты</a><a href="#questions" class="nav-cta">Заполнить профиль →</a>
+    <nav class="head-nav" aria-label="Навигация">
+      <a href="#atlas">Карта регионов</a><a href="#questions">Вопросы</a><a href="#practices">Практики</a>
+      <a class="nav-cta" href="#atlas">Открыть карту <span aria-hidden="true">↗</span></a>
     </nav>
   </div>
 </header>
-<section class="hero" id="top">
-  <div class="wrap hero-inner">
-    <div class="hero-kicker"><span class="pulse" aria-hidden="true"></span> Диалог регионов · Профилактика</div>
-    <h1>Видеть вызовы.<br>Находить решения.</h1>
-    <p class="hero-description">Общая карта идей, наблюдений и работающих практик профилактики в Приволжском федеральном округе. Выберите свой регион, ответьте на шесть вопросов и поделитесь опытом.</p>
-    <div class="stats"><span class="stat"><b>14</b> регионов ПФО</span><span class="stat"><b>6</b> ключевых вопросов</span><span class="stat"><b>1</b> пространство сотрудничества</span></div>
-  </div>
+<section class="hero">
+ <div class="wrap hero-content">
+   <div class="hero-main">
+     <p class="eyebrow"><span class="signal" aria-hidden="true"></span> Пространство регионального диалога</p>
+     <h1>От общей проблемы<br>к <em>общим решениям.</em></h1>
+     <p class="hero-description">Интерактивная карта профилактических вызовов и лучших практик Приволжского федерального округа. Один регион — свой взгляд. Вместе — опыт, которым можно делиться.</p>
+     <a class="hero-link" href="#atlas">Исследовать карту <span aria-hidden="true">↗</span></a>
+   </div>
+   <div class="hero-aside" aria-label="О проекте">
+     <span class="hero-aside-overline">ПФО / 2026</span>
+     <div class="hero-aside-graphic" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="orbit orbit-three"></span><span class="orbit-center">14</span></div>
+     <p>14 регионов.<br>6 вопросов.<br>Один открытый диалог.</p>
+     <span class="hero-aside-under">ФОРУМ «КОНСТРУКТИВ.ДЕЙСТВУЙ»</span>
+   </div>
+ </div>
 </section>
 <main class="wrap content">
-<section id="atlas" aria-labelledby="map-section-title">
-  <div class="section-top"><div><div class="section-kicker">01 / Атлас</div><h2 class="section-title" id="map-section-title">Выберите регион на карте</h2></div><p class="section-subtitle">Нажимайте на регионы и их названия. На телефоне карту можно увеличивать двумя пальцами и перемещать.</p></div>
-  <div class="atlas">
-    <div class="surface map-card">
-      <div class="toolbar"><span class="toolbar-label">Приволжский федеральный округ</span><label class="searchbox"><span class="search-icon" aria-hidden="true">⌕</span><input type="search" id="region-search" placeholder="Найти регион" autocomplete="off" aria-label="Найти регион"></label></div>
-      <div class="pill-list" id="region-chips" aria-label="Список регионов ПФО"></div>
-      <div class="map-frame" id="map-frame">
-        <div class="map-watermark">Карта территорий<strong>14 субъектов ПФО</strong></div>
-        <div class="map-stage" id="map-stage"><svg id="map" viewBox="0 0 850 895" role="group" aria-label="Интерактивная карта ПФО, выбор субъекта Российской Федерации"><g id="map-geo"></g></svg></div>
-        <div class="map-tooltip" id="map-tooltip" aria-hidden="true"></div>
-        <div class="map-ctrl"><button id="zoom-in" title="Приблизить" aria-label="Приблизить карту">+</button><button id="zoom-out" title="Отдалить" aria-label="Отдалить карту">−</button><button id="zoom-reset" title="Сбросить масштаб" aria-label="Сбросить масштаб">⌖</button></div>
-        <span class="map-help">Выбирайте регион · Перемещайте карту · Масштабируйте</span>
-      </div>
-      <div class="map-note"><span>Контуры регионов упрощены для удобства просмотра.</span><span>Географические данные: CC0</span></div>
-    </div>
-    <aside class="surface intro-card" aria-label="Выбранный регион">
-      <div class="card-kicker">Профиль субъекта</div>
+<section id="atlas" class="atlas-section" aria-labelledby="map-section-title">
+ <div class="section-top">
+   <div class="section-heading"><div class="section-kicker"><span class="section-index">01</span> / КАРТА РЕГИОНОВ</div><h2 class="section-title" id="map-section-title">Каждый регион важен.</h2></div>
+   <p class="section-subtitle">Выберите субъект на карте или найдите его по названию. Нажмите, чтобы открыть региональные ответы.</p>
+ </div>
+ <div class="atlas">
+  <section class="surface map-card" aria-label="Интерактивная карта регионов ПФО">
+   <div class="toolbar"><span class="toolbar-label"><span class="tiny-square" aria-hidden="true"></span> Территории ПФО</span><label class="searchbox"><span class="search-icon" aria-hidden="true">⌕</span><input id="region-search" type="search" placeholder="Найти регион или город" autocomplete="off" aria-label="Найти регион"></label></div>
+   <div class="pill-list" id="region-chips" aria-label="Выбор региона"></div>
+   <div class="map-frame" id="map-frame">
+     <div class="map-watermark"><span>ИНТЕРАКТИВНЫЙ АТЛАС</span><strong>Приволжский<br>федеральный округ</strong></div>
+     <div class="map-stage" id="map-stage"><svg id="map" viewBox="0 0 850 895" role="group" aria-label="Карта 14 регионов Приволжского федерального округа"><g id="map-geo"></g></svg></div>
+     <div class="map-tooltip" id="map-tooltip" aria-hidden="true"></div>
+     <div class="map-ctrl" aria-label="Масштаб карты">
+       <button id="zoom-in" aria-label="Приблизить карту" title="Приблизить">+</button>
+       <button id="zoom-out" aria-label="Отдалить карту" title="Отдалить">−</button>
+       <button id="zoom-reset" aria-label="Сбросить масштаб" title="Сбросить масштаб">↺</button>
+     </div>
+     <div class="map-help"><span class="map-help-dot" aria-hidden="true"></span> Нажмите на регион · Увеличивайте и перемещайте карту</div>
+   </div>
+   <div class="map-note"><span><span class="key-circle"></span> Выбранный регион выделяется цветом</span><span>Границы показаны схематично</span></div>
+  </section>
+  <aside class="surface intro-card" aria-label="Выбранный регион">
+    <div class="intro-top"><div class="card-kicker">ПРОФИЛЬ РЕГИОНА</div><span class="region-number">ПФО / 14</span></div>
+    <div class="intro-body">
+      <div class="intro-symbol" aria-hidden="true">↗</div>
       <h3 id="chosen-name">Выберите регион</h3>
-      <p class="intro-paragraph" id="chosen-description">После выбора можно изучить ответы региона, дополнить профилактические практики и оставить контакты для взаимодействия.</p>
-      <div class="hairline"></div>
-      <div class="meta-label">Административный центр</div>
-      <p class="meta-value" id="chosen-capital">—</p>
-      <div class="completion"><div class="completion-head"><span>Заполнение профиля</span><b id="completion-text">0 из 8 блоков</b></div><div class="progress"><span id="completion-bar"></span></div></div>
-      <a class="action-strong" href="#questions" id="go-to-form">Перейти к вопросам ↗</a>
-      <div class="tip-card" id="intro-tip">Шесть вопросов помогут сформулировать проблему без оценочных суждений и выделить возможные ресурсы решения.</div>
-    </aside>
-  </div>
+      <p class="intro-paragraph" id="chosen-description">Нажмите на область карты, чтобы открыть информацию о регионе и дополнить её.</p>
+      <div class="meta-group"><div class="meta-label">Административный центр</div><p class="meta-value" id="chosen-capital">—</p></div>
+      <div class="completion"><div class="completion-head"><span>Заполненность профиля</span><b id="completion-text">0 из 8 блоков</b></div><div class="progress"><span id="completion-bar"></span></div></div>
+    </div>
+    <a class="action-strong" href="#questions" id="go-to-form">Перейти к вопросам <span aria-hidden="true">↗</span></a>
+    <div class="tip-card" id="intro-tip">Ответы на вопросы помогут собрать общую картину профилактической работы в ПФО.</div>
+  </aside>
+ </div>
 </section>
 <section class="form-section" id="questions" aria-labelledby="questions-title">
-  <div class="section-top"><div><div class="section-kicker">02 / Обсуждение</div><h2 class="section-title" id="questions-title">Шесть вопросов о профилактике</h2></div><p class="section-subtitle" id="editing-region-label">Сначала выберите субъект на карте.</p></div>
-  <div class="section-notice"><span aria-hidden="true">✳</span><span>Чтобы внести ответ, нажмите на значок карандаша в карточке. Изменения требуют подтверждения, а несохранённый текст можно отменить. Черновики сохраняются на этом устройстве.</span></div>
-  <div id="answer-cards" class="answers-grid"></div>
-  <div class="extra-grid" id="practices"></div>
-  <div class="publish-box">
-    <div><h3>Поделиться региональными данными</h3><p>Все правки сначала сохраняются на вашем устройстве. Для общей публикации отправьте заявку через GitHub: сама заявка будет публичной, а данные на сайте появятся только после проверки владельцем проекта.</p><div class="local-state" id="draft-status" role="status">Выберите регион, чтобы начать.</div></div>
-    <button class="action-strong" id="submit-proposal" type="button">Отправить на публикацию ↗</button>
-  </div>
+ <div class="section-top questions-top">
+   <div class="section-heading"><div class="section-kicker"><span class="section-index">02</span> / РЕГИОНАЛЬНЫЙ ДИАЛОГ</div><h2 class="section-title" id="questions-title">Шесть вопросов.<br><em>Общее понимание.</em></h2></div>
+   <p class="section-subtitle" id="editing-region-label">Выберите субъект на карте, чтобы заполнить его профиль.</p>
+ </div>
+ <div class="section-notice" role="note">
+   <span class="notice-icon" aria-hidden="true">✳</span>
+   <span>Чтобы дополнить ответ, нажмите на <b>карандаш</b>. Перед сохранением появится подтверждение. Если потребуется, последнее изменение можно отменить.</span>
+ </div>
+ <div id="answer-cards" class="answers-grid" aria-label="Шесть ключевых вопросов"></div>
 </section>
-<footer class="footer"><span>Форум «Конструктив.Действуй» · Интерактивная карта профилактических решений ПФО</span><span>Геоданные: <a href="https://github.com/antibioticbook/russian-geo-data" target="_blank" rel="noopener noreferrer">russian-geo-data (CC0)</a></span></footer>
+<section class="practices-section" aria-labelledby="practices-title">
+ <div class="section-top">
+   <div class="section-heading"><div class="section-kicker"><span class="section-index">03</span> / ОБМЕН ОПЫТОМ</div><h2 class="section-title" id="practices-title">Решения и люди.</h2></div>
+   <p class="section-subtitle">Поделитесь работающими практиками, ссылками на материалы и контактами для сотрудничества.</p>
+ </div>
+ <div class="extra-grid" id="practices" aria-label="Практики и контакты"></div>
+ <div class="publish-box">
+   <div class="publish-mark" aria-hidden="true">↗</div>
+   <div class="publish-main">
+     <h3>Готовы поделиться результатами?</h3>
+     <p>Черновики сохраняются только в вашем браузере. Для публикации на общей карте отправьте заявку через GitHub: предложение будет публичным, а сам профиль обновится после проверки владельцем.</p>
+     <div class="local-state" id="draft-status" role="status">Выберите регион, чтобы начать.</div>
+   </div>
+   <button class="action-strong" id="submit-proposal" type="button">Отправить на публикацию <span aria-hidden="true">↗</span></button>
+ </div>
+</section>
 </main>
+<footer class="footer"><div class="wrap footer-inner"><span class="footer-brand">Конструктив<span>.</span>Действуй</span><span>Форум · Приволжский федеральный округ</span><span>Геоданные: <a href="https://github.com/antibioticbook/russian-geo-data" rel="noopener noreferrer" target="_blank">russian-geo-data (CC0)</a></span></div></footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
-<noscript><p style="padding:30px">Для просмотра интерактивной карты включите JavaScript в браузере.</p></noscript>
+<noscript><p class="wrap">Для работы интерактивной карты требуется JavaScript.</p></noscript>
 <script src="./map-data.js"></script><script src="./regions.js"></script><script src="./content-data.js"></script><script src="./site.js"></script>
 </body></html>
