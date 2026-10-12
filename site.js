@@ -51,7 +51,7 @@ function showToast(message){const t=$('toast');t.textContent=message;t.classList
 function confirmSwitch(){if(!editing)return true;if(confirm('Есть несохранённые изменения. Точно выйти без сохранения?')){editing=null;return true}return false}
 function paintSelected(){pathEls.forEach((path,id)=>{const is=id===current;path.classList.toggle('selected',is);path.setAttribute('aria-pressed',String(is))});labelEls.forEach((nodes,id)=>{nodes.forEach(node=>node.classList.toggle('selected',id===current))})}
 function selectRegion(id,opts={}){if(!byId.has(id))return;if(id!==current&&!confirmSwitch())return;current=id;editing=null;paintSelected();renderChips();renderSummary();renderForms();if(location.hash.slice(1)!==id&&window.history.replaceState)window.history.replaceState(null,'','#'+id);
-if(opts.scroll&&window.innerWidth<=770)$('questions').scrollIntoView({behavior:'smooth',block:'start'});
+if(opts.scroll&&window.innerWidth<=770)document.querySelector('.intro-card').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function renderChips(){const list=$('region-chips'),q=$('region-search').value.trim().toLocaleLowerCase('ru');list.replaceChildren();let found=0;byId.forEach(r=>{if(q&&!(r.name+' '+r.capital).toLocaleLowerCase('ru').includes(q))return;found++;const b=el('button','region-chip'+(r.id===current?' active':''),r.short);b.type='button';b.setAttribute('aria-pressed',r.id===current?'true':'false');b.title=r.name+' · '+r.capital;b.addEventListener('click',()=>selectRegion(r.id,{scroll:window.innerWidth<=770}));list.appendChild(b)});if(!found)list.appendChild(el('span','region-chip','Ничего не найдено'))}
 function renderSummary(){const r=byId.get(current);const d=viewData(current);$('chosen-name').textContent=r.name;$('chosen-capital').textContent=r.capital;$('chosen-description').textContent='Выбранный субъект Приволжского федерального округа. Здесь собираются наблюдения, профилактические практики и контакты для обмена опытом.';$('editing-region-label').textContent='Регион: '+r.name+'. Нажмите на карандаш, чтобы изменить нужный ответ.';
@@ -135,7 +135,7 @@ map.shapes.forEach(shape=>{
  const region=byId.get(shape.id);if(!region)return;
  const path=svg('path',{d:shape.d,fill:region.color,tabindex:'0',role:'button','aria-label':region.name,'aria-pressed':'false'});
  path.classList.add('region-path');path.dataset.id=shape.id;
- path.addEventListener('click',()=>{if(!dragged)selectRegion(shape.id)});
+ path.addEventListener('click',()=>{if(!dragged)selectRegion(shape.id,{scroll:window.innerWidth<=770})});
  path.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectRegion(shape.id)}});
  path.addEventListener('pointerenter',e=>showTip(e,region));
  path.addEventListener('pointermove',e=>moveTip(e));
@@ -149,7 +149,7 @@ map.shapes.forEach(shape=>{
  const rect=svg('rect',{x:x-width/2,y:y-height/2,width,height,rx:8});rect.classList.add('map-label-box');
  const text=svg('text',{x,y:y-(lines.length-1)*7+4});text.classList.add('map-label-text');
  lines.forEach((line,index)=>{const t=svg('tspan',{x,dy:index===0?0:14});t.textContent=line;text.appendChild(t)});
- label.append(rect,text);label.addEventListener('click',e=>{e.stopPropagation();if(!dragged)selectRegion(shape.id)});
+ label.append(rect,text);label.addEventListener('click',e=>{e.stopPropagation();if(!dragged)selectRegion(shape.id,{scroll:window.innerWidth<=770})});
  label.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();selectRegion(shape.id)}});
  label.addEventListener('pointerenter',e=>showTip(e,region));label.addEventListener('pointerleave',()=>tip.style.display='none');
  labelsGroup.appendChild(label);labelEls.set(shape.id,[rect,text]);
@@ -188,5 +188,7 @@ $('submit-proposal').addEventListener('click',async()=>{
  const popup=window.open(url,'_blank','noopener,noreferrer');
  if(!popup){const a=el('a');a.href=url;a.target='_blank';a.rel='noopener noreferrer';a.click()}
 });
+function resizeLabels(){const mobile=stage.getBoundingClientRect().width<570;const font=mobile?20:12;labelEls.forEach((pair,id)=>{const [rect,text]=pair,info=LABELS[id],lines=info.lines,[x,y]=info.p;const lineHeight=mobile?22:14;const width=Math.max(...lines.map(t=>t.length))*(mobile?11.4:7.5)+16;const height=lines.length===2?(mobile?55:37):(mobile?34:25);rect.setAttribute('x',x-width/2);rect.setAttribute('y',y-height/2);rect.setAttribute('width',width);rect.setAttribute('height',height);text.style.fontSize=font+'px';text.setAttribute('y',y-(lines.length-1)*lineHeight/2+font*.36);text.querySelectorAll('tspan').forEach((span,i)=>span.setAttribute('dy',i===0?'0':lineHeight))})}
+window.addEventListener('resize',resizeLabels);resizeLabels();
 renderChips();redraw();const initial=decodeURIComponent(location.hash.slice(1));selectRegion(byId.has(initial)?initial:'bashkortostan'); 
 })();
