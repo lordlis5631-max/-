@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>try{if(localStorage.getItem("noun-number-theme-v1")==="dark")document.documentElement.dataset.theme="dark"}catch(e){}</script>
 <meta name="theme-color" content="#142f4a">
 <meta name="description" content="Интерактивный офлайн-тренажёр по числу имён существительных: 36 заданий, 8 разминок, пять дней, подсказки, объяснения и отчёт.">
 <title>Число имён существительных — неделя практики</title>
@@ -18,10 +19,11 @@
 .hero h1{max-width:820px}.quote mark{font-weight:700}.chain{overflow-wrap:anywhere}
 @media(max-width:390px){.hero h1{font-size:31px}.daynav{gap:3px}}
 </style>
+<link rel="stylesheet" href="theme.css">
 </head>
 <body>
 <div class="wrap">
-<header class="top"><div class="brand"><div class="logo" aria-hidden="true">Аа</div><div><div class="bname">РУССКИЙ ЯЗЫК · ПРАКТИКА</div><div class="bsub">Понимать, а не угадывать</div></div></div><div class="header-tools"><button class="ghost" id="home-button" type="button">Все дни</button><button class="ghost" id="report-button" type="button">Мой результат</button><button class="ghost" id="help-button" type="button">Памятка</button><button class="ghost" id="full-button" type="button" aria-pressed="false">На экран</button></div></header>
+<header class="top"><div class="brand"><div class="logo" aria-hidden="true">Аа</div><div><div class="bname">РУССКИЙ ЯЗЫК · ПРАКТИКА</div><div class="bsub">Понимать, а не угадывать</div></div></div><div class="header-tools"><label class="theme-switcher" for="theme-switch"><span id="theme-name" class="theme-name">Светлая</span><input id="theme-switch" type="checkbox" role="switch" aria-checked="false" aria-label="Светлая тема включена"><span class="theme-track" aria-hidden="true"><span>☀</span><span>☾</span><span class="theme-thumb"></span></span></label><button class="ghost" id="home-button" type="button">Все дни</button><button class="ghost" id="report-button" type="button">Мой результат</button><button class="ghost" id="help-button" type="button">Памятка</button><button class="ghost" id="full-button" type="button" aria-pressed="false">На экран</button></div></header>
 <section class="hero"><div><div class="eyebrow">Домашняя работа · пять дней</div><h1>Число имён существительных</h1><p>36 основных упражнений и 8 разминок. Учимся отличать число от падежа, образовывать формы, узнавать слова одного числа и доказывать ответ по контексту.</p></div><div class="hero-tally"><span class="big">36</span><span class="big">8</span><span class="small">основных</span><span class="small">разминок</span></div></section>
 <main class="layout"><aside class="sidebar"><div class="sideblock"><p class="side-title">План на неделю</p><nav class="daynav" id="daynav" aria-label="Дни домашней работы"></nav></div><div class="sideblock"><p class="side-title">Правило тренажёра</p><p class="small-note">У каждого задания две попытки. После первой ошибки появится подсказка; после завершения — объяснение.</p><p class="small-note">Прогресс сохраняется в браузере на этом устройстве, если браузер это разрешает.</p></div></aside><section id="app" class="content" aria-live="off"></section></main>
 <footer class="footer"><span>Русский язык · Число существительных · Офлайн-тренажёр</span><span><button class="linkbtn" id="reset-button" type="button">Сбросить результаты</button> · Не требует интернета или аккаунта</span></footer></div>
@@ -81,4 +83,5 @@ document.addEventListener('input',ev=>{if(ev.target.id==='student-name'){state.s
 document.addEventListener('keydown',ev=>{if(ev.altKey||ev.metaKey||ev.ctrlKey||document.querySelector('dialog[open]')||/INPUT|TEXTAREA|SELECT/.test(ev.target.tagName))return;if(view!=='question')return;if(['1','2','3','4'].includes(ev.key)){ev.preventDefault();choose(Number(ev.key)-1);}else if(ev.key==='ArrowRight'){ev.preventDefault();move(1);}else if(ev.key==='ArrowLeft'){ev.preventDefault();move(-1);}});
 render();
 </script>
+<script src="theme.js"></script>
 </body></html>
