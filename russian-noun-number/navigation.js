@@ -64,7 +64,7 @@ renderQuestion=function(){
  if(!top)return;
  const day=DAYS.find(d=>d.id===q.day);
  const route=document.createElement('div');route.className='question-route';
- route.innerHTML=`<button type="button" class="question-day-link" data-go-day="${q.day}">${retryMode?'← К результатам':'← К заданиям дня'}</button><span>${retryMode?'Повторение':day.name} · ${i+1} из ${items.length}</span>`;
+ route.innerHTML=`<button type="button" class="question-day-link" data-go-day="${q.day}">${retryMode?'← К результатам':'← К заданиям дня'}</button>`;
  top.insertAdjacentElement('beforebegin',route);
  const bar=document.createElement('div');bar.className='question-progress';
  bar.setAttribute('role','progressbar');bar.setAttribute('aria-label','Выполнено заданий в разделе');
