@@ -30,3 +30,9 @@ html[data-theme="dark"] .task.completed-second .task-symbol{color:#ffe2a5}
 }
 @media(max-width:390px){.qfoot{margin-left:-13px;margin-right:-13px;margin-bottom:-19px;padding-left:13px;padding-right:13px}.qfoot .btn{font-size:12px;padding:9px 4px}}
 @media(prefers-reduced-motion:reduce){.question-progress span{transition:none}}
+
+/* Hide keyboard-only instructions on touch-sized screens and keep breathing room below sticky controls. */
+@media(max-width:750px){
+  .qfoot + .small-note{display:none!important}
+  .qfoot{margin-bottom:-10px;padding-bottom:calc(16px + env(safe-area-inset-bottom))}
+}
