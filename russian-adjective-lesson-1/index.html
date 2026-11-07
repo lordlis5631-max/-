@@ -1,6 +1,4 @@
-<!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142f4a"><meta name="description" content="Интерактивный тренажёр по прилагательному с повторением существительного в каждом блоке. Две попытки, объяснения, отчёт."><title>Имя прилагательное — тренажёр · Урок 1</title>
-<style>
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#14324d"><meta name="description" content="80 заданий по прилагательному: связь слов, род, число, падеж, согласование. Повторение существительного в каждом блоке, проверка каждого признака, работа над ошибками и подробный отчёт."><title>Имя прилагательное — практика и понимание · Урок 1</title><script>try{document.documentElement.dataset.theme=localStorage.getItem('russian-adjective-theme-v1')||'light'}catch(e){}</script><style>
 :root{--bg:#f3f7fa;--paper:#fff;--ink:#18344a;--muted:#61798b;--border:#d9e5ec;--navy:#14324d;--accent:#137b91;--a-light:#eaf6f9;--good:#13734b;--g-bg:#e8f8ef;--bad:#b13e45;--b-bg:#fff0f1;--warn:#936622;--w-bg:#fff5e1;--shadow:0 10px 34px #16344a0b}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:15px/1.55 system-ui,-apple-system,"Segoe UI",Arial,sans-serif;background:linear-gradient(155deg,#eef8fb,var(--bg) 35%,#f5f7f9);color:var(--ink)}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #d6a044;outline-offset:2px}button:disabled{opacity:.65;cursor:default}.wrap{max-width:1320px;padding:0 24px;margin:auto}.header{display:flex;justify-content:space-between;align-items:center;gap:12px;min-height:78px;border-bottom:1px solid var(--border)}.brand{display:flex;align-items:center;gap:12px}.logo{width:44px;height:44px;border-radius:13px;background:var(--navy);color:white;display:grid;place-items:center;font:bold 23px Georgia}.brand strong{display:block;letter-spacing:.06em;font-size:13px}.brand small{color:var(--muted);font-size:12px}.tools{display:flex;flex-wrap:wrap;gap:8px}.ghost{background:var(--paper);border:1px solid var(--border);border-radius:11px;padding:10px 13px;color:var(--ink);font-size:13px;font-weight:700;min-height:42px}.ghost:hover{border-color:#70b1bd}.hero{padding:34px 0 24px;display:flex;align-items:end;justify-content:space-between;gap:22px}.eyebrow{font-weight:850;font-size:12px;color:var(--accent);letter-spacing:.13em;text-transform:uppercase}.hero h1{font:normal clamp(35px,5vw,54px)/1.1 Georgia,serif;margin:10px 0}.hero p{color:var(--muted);margin:0;max-width:750px}.counter{display:flex;gap:17px;border:1px solid var(--border);border-radius:16px;padding:14px 19px;background:var(--paper);flex-shrink:0}.counter b{display:block;font:30px Georgia,serif}.counter small{color:var(--muted);font-size:12px}.layout{display:grid;grid-template-columns:245px minmax(0,1fr);gap:22px;align-items:start}.sidebar,.panel{background:var(--paper);border:1px solid var(--border);border-radius:20px;box-shadow:var(--shadow)}.sidebar{padding:16px;position:sticky;top:15px}.sidetitle{font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--muted);font-weight:850;margin:0 0 10px}.blocknav{display:grid;gap:7px}.navbtn{border:1px solid transparent;background:var(--bg);color:var(--ink);padding:12px;border-radius:12px;text-align:left;display:flex;gap:10px;align-items:center}.navbtn.active{background:var(--navy);color:#fff}.navbtn .nr{width:27px;height:27px;display:grid;place-items:center;border-radius:8px;background:#dcedf2;color:#23687d;font-size:12px;font-weight:800;flex-shrink:0}.navbtn.active .nr{background:#3d6079;color:white}.navbtn strong{display:block;font-size:13px}.navbtn small{display:block;font-size:11px;opacity:.7}.guide{margin-top:18px;border-top:1px solid var(--border);padding-top:14px;color:var(--muted);font-size:12px}.guide b{color:var(--ink)}.panel{padding:28px 32px;margin-bottom:19px}.panel h2{font:normal 31px Georgia,serif;margin:0 0 10px}.panel p{color:var(--muted)}.lead{font-size:16px;color:var(--ink)!important}.tag{border-radius:99px;background:var(--a-light);color:var(--accent);font-weight:800;font-size:11px;padding:6px 11px;display:inline-flex;align-items:center}.tag.repeat{color:#805f21;background:#fff1d5}.tag.difficult{color:#7b4f80;background:#f5e9f8}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px;margin-top:20px}.blockcard{border:1px solid var(--border);border-radius:16px;padding:19px;background:var(--bg);display:flex;flex-direction:column;gap:10px}.blockcard h3{margin:0;font-size:18px}.blockcard p{font-size:13px;margin:0;flex:1}.chips{display:flex;gap:7px;flex-wrap:wrap}.btn{border:0;background:#eaf1f5;color:var(--ink);font-weight:800;font-size:14px;padding:11px 16px;border-radius:11px;min-height:44px}.btn.primary{background:var(--navy);color:#fff}.btn.light{background:var(--a-light);color:var(--accent)}.btn:hover:not(:disabled){filter:brightness(.96)}.btnbar{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.progress{height:9px;background:#e3ebf0;overflow:hidden;border-radius:99px;margin:16px 0 8px}.progress>div{height:100%;background:var(--accent);transition:width .2s}.muted{color:var(--muted);font-size:13px}.toprow{display:flex;align-items:center;justify-content:space-between;gap:9px;flex-wrap:wrap}.path{font-size:12px;color:var(--muted);font-weight:750}.qgrid{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px;margin:18px 0}.qjump{min-height:42px;border:1px solid var(--border);border-radius:9px;background:var(--bg);color:var(--ink);font-size:13px;font-weight:800}.qjump.current{outline:2px solid var(--accent);outline-offset:1px}.qjump.ok{background:var(--g-bg);border-color:#a3d8ba;color:var(--good)}.qjump.later{background:var(--w-bg);border-color:#e7d0a6;color:var(--warn)}.qjump.reveal{background:#f9e7e5;border-color:#e5b6b2;color:var(--bad)}.qtitle{font-size:23px;font-weight:850;line-height:1.35;margin:18px 0 15px}.quote{border-radius:15px;background:var(--bg);padding:19px 21px;text-align:center;font:clamp(20px,2.7vw,31px)/1.4 Georgia,serif;margin:0 0 18px;overflow-wrap:anywhere}.quote em{font-style:normal;background:#d9eef2;border-radius:5px;padding:0 3px;font-weight:700}.answergrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.option{border:1px solid var(--border);min-height:69px;text-align:left;background:var(--paper);color:var(--ink);border-radius:13px;padding:13px 14px;display:flex;gap:10px;align-items:center;font-weight:650}.option:hover:not(:disabled){border-color:#80b7c1;background:var(--bg)}.option.chosen{background:var(--a-light);border-color:var(--accent)}.option.wrong{background:var(--b-bg);border-color:var(--bad)}.option.correct{background:var(--g-bg);border-color:var(--good)}.letter{display:grid;place-items:center;width:29px;height:29px;border:1px solid var(--border);border-radius:8px;flex-shrink:0;color:var(--muted);font-size:12px}.answertext{flex:1;overflow-wrap:anywhere}.entry{width:min(100%,530px);font-size:18px;padding:13px;border:1px solid var(--border);border-radius:11px;background:var(--paper);color:var(--ink)}.inputhelp{color:var(--muted);font-size:12px;margin-top:7px}.feedback{margin:19px 0 0;padding:16px 18px;border-radius:14px}.feedback.good{background:var(--g-bg);border:1px solid #a9d4b9}.feedback.try{background:var(--w-bg);border:1px solid #e8d1a6}.feedback.reveal{background:var(--b-bg);border:1px solid #e6b8b8}.feedback strong{display:block;font-size:16px}.feedback p{color:var(--ink);font-size:14px;line-height:1.6;margin:8px 0}.footnav{border-top:1px solid var(--border);margin-top:22px;padding-top:17px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.theory{background:var(--bg);border:1px solid var(--border);padding:15px 17px;border-radius:14px;margin:20px 0}.theory summary{cursor:pointer;font-weight:800;color:var(--accent)}.theory p{color:var(--ink);font-size:14px}.analysis{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.field{border:1px solid var(--border);border-radius:12px;padding:12px;background:var(--bg)}.field label{font-size:13px;font-weight:750;display:block;margin-bottom:7px}.field select{width:100%;padding:12px;border:1px solid var(--border);border-radius:10px;background:var(--paper);color:var(--ink)}.resultcards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:20px 0}.stat{padding:17px;background:var(--bg);border-radius:13px;border:1px solid var(--border)}.stat b{font:32px Georgia,serif;display:block}.stat small{color:var(--muted)}.line{display:grid;grid-template-columns:200px 1fr 100px;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--border)}.bar{height:8px;border-radius:99px;background:#e3eef2;overflow:hidden}.bar>span{height:100%;display:block;background:var(--accent)}.report{width:100%;height:265px;border:1px solid var(--border);padding:13px;border-radius:12px;background:var(--bg);color:var(--ink);font:13px/1.55 ui-monospace,monospace;resize:vertical}.footer{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:var(--muted);font-size:12px;padding:24px 0;border-top:1px solid var(--border)}.footer a{color:var(--accent)}dialog{border:1px solid var(--border);border-radius:18px;background:var(--paper);color:var(--ink);width:min(680px,95vw);padding:26px;box-shadow:0 30px 60px #11263a55}dialog::backdrop{background:#122d43aa}.hide{display:none!important}
 html[data-theme=dark]{color-scheme:dark;--bg:#172b3b;--paper:#1a3043;--ink:#edf7ff;--muted:#b7c9d7;--border:#3b5a70;--navy:#306780;--accent:#88dfe9;--a-light:#244b59;--good:#acebc9;--g-bg:#254938;--bad:#ffb7be;--b-bg:#4a2d39;--warn:#ffdaa0;--w-bg:#4c402f;--shadow:0 10px 34px #07131f55}html[data-theme=dark] body{background:linear-gradient(150deg,#0d1b29,#102436 65%,#122131)}html[data-theme=dark] .quote em{background:#2e6074;color:#fff}html[data-theme=dark] .tag.repeat{background:#53442e;color:#ffe0a5}html[data-theme=dark] .tag.difficult{background:#463450;color:#efd5f1}html[data-theme=dark] .navbtn .nr{background:#396078;color:#e3f6ff}html[data-theme=dark] .btn.primary{background:#427f99}html[data-theme=dark] .progress,html[data-theme=dark] .bar{background:#345065}
@@ -31,116 +29,1288 @@ html[data-theme=dark] .option.wrong:hover:not(:disabled){background:#57313a}
 html[data-theme=dark] .option.chosen:hover:not(:disabled){background:#2f5e70}
 html[data-theme=dark] .ghost:hover:not(:disabled){background:#254459;border-color:#89b6c7}
 @media(max-width:720px){.footnav .btn{min-height:46px;white-space:normal}.btnbar .btn{min-height:46px}}
-</style></head><body><div class="wrap"><header class="header"><div class="brand"><div class="logo">Аа</div><div><strong>РУССКИЙ ЯЗЫК · ПРАКТИКА</strong><small>Понимать, а не угадывать</small></div></div><div class="tools"><button class="ghost" id="themeBtn">☾ Тёмная</button><button class="ghost" id="homeBtn">Все блоки</button><button class="ghost" id="resultBtn">Мой результат</button><button class="ghost" id="helpBtn">Памятка</button><button class="ghost" id="fullBtn">На экран</button></div></header><section class="hero"><div><div class="eyebrow">Урок 1 · 7 класс · домашний тренажёр</div><h1>Имя прилагательное</h1><p>От признака предмета к согласованию в роде, числе и падеже. В каждом блоке — задания на повторение существительных.</p></div><div class="counter"><div><b>6</b><small>блоков</small></div><div><b id="totalTop">—</b><small>заданий</small></div></div></section><main class="layout"><aside class="sidebar"><p class="sidetitle">Маршрут по темам</p><nav id="nav" class="blocknav"></nav><div class="guide"><b>Как заниматься</b><p>Один блок — один подход. Задания с пометкой «Повторение» проверяют существительное.</p><p>На каждый ответ — две попытки. После первой ошибки появляется подсказка, после второй — объяснение.</p><p>Прогресс сохраняется в браузере. Для учителя можно скачать текстовый отчёт.</p></div></aside><section id="app" aria-live="polite"></section></main><footer class="footer"><span>Русский язык · Прилагательное · Урок 1</span><span><a href="../russian-noun-summary/">Исходный тренажёр по существительным</a></span><span><button class="ghost" id="offlineBtn">Скачать для работы без интернета</button> · <button class="ghost" id="resetBtn">Сбросить прогресс</button></span></footer></div><dialog id="modal"><div id="modalBody"></div><div class="btnbar"><button class="btn" id="closeModal">Закрыть</button></div></dialog>
-<script>
+
+/* Revised lesson workspace: clearer hierarchy, visible steps and field feedback. */
+:root{--accent:#087f8c;--a-light:#e7f5f5;--bg:#f4f7f9;--shadow:0 8px 28px #19344c08}
+body{background:#f4f7f9}.wrap{max-width:1360px}.header{min-height:88px}.brand small{display:block;margin-top:3px}.logo{background:#13364d;font:700 24px Georgia;border-radius:14px}.hero{padding:36px 0 28px}.hero h1{font-size:clamp(38px,4.5vw,57px);letter-spacing:-.025em;margin:11px 0 13px}.hero p{font-size:16px;max-width:690px;line-height:1.65}.counter{gap:24px;padding:19px 24px;border-radius:18px}.counter b{font-size:32px}.counter small{display:block;margin-top:4px}.layout{grid-template-columns:250px minmax(0,1fr);gap:26px}.sidebar{padding:18px 13px;border-radius:18px}.sidetitle{padding:0 9px}.navbtn{padding:13px 10px;border:1px solid transparent;min-height:69px}.navbtn:hover{border-color:var(--border)}.navbtn .nr{height:31px;width:31px;background:var(--a-light);color:var(--accent)}.navbtn.active{background:#173d55}.navbtn small{margin-top:3px;opacity:1;color:var(--muted)}.navbtn.active small{color:#cce1ea}.navcheck{margin-left:auto;font-weight:800}.side-progress{margin:20px 9px 0;font-size:12px;color:var(--muted)}.guide{margin:20px 9px 0;line-height:1.6}.panel{border-radius:20px;padding:30px 34px}.panel h2{font:500 30px/1.25 Georgia,serif}.welcome h2{font-size:35px;margin-top:10px}.lead{line-height:1.7;max-width:740px}.example-flow{display:flex;gap:18px;align-items:center;background:var(--bg);padding:20px 22px;border:1px solid var(--border);border-radius:14px;margin:24px 0}.example-flow>span:not(.flow-arrow){flex:1}.example-flow small{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:5px}.example-flow b{font:500 23px Georgia,serif;white-space:nowrap}.flow-arrow{color:var(--accent);font-size:23px}.overview{display:flex;gap:24px;flex-wrap:wrap;font-size:12px;color:var(--muted)}.overview b{font-size:21px;color:var(--ink);margin-right:5px}.section-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:28px 0 14px}.section-heading h2{font:500 25px Georgia,serif;margin:0}.section-heading span{font-size:12px;color:var(--muted);max-width:200px;text-align:right}.block-grid{margin-top:0;margin-bottom:22px;gap:16px}.blockcard{background:var(--paper);padding:23px;gap:12px;box-shadow:var(--shadow);border-radius:18px}.blockcard h3{font-size:20px}.blockcard p{font-size:14px}.block-number{font:28px Georgia,serif;color:var(--accent)}.blockcard .progress{height:5px;margin:3px 0}.blockcard .btn{font-size:13px;padding:9px 13px}.method{font-size:14px}.method p{line-height:1.7}.task-head{padding-bottom:20px}.task-head h2{margin:9px 0 8px;font-size:34px}.qgrid{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}.qjump{width:46px;min-height:42px;font-size:12px;position:relative}.qjump.first{background:var(--g-bg);color:var(--good);border-color:#8ac3a5}.qjump.second{background:var(--w-bg);color:var(--warn);border-color:#dfc68d}.qjump.revealed{background:var(--b-bg);color:var(--bad);border-color:#dfabae}.qjump.pending{border-color:#d6b47a;border-style:dashed}.legend{display:flex;flex-wrap:wrap;gap:16px;color:var(--muted);font-size:11px}.legend span:first-child{color:var(--good)}.legend span:nth-child(2){color:var(--warn)}.legend span:nth-child(3){color:var(--bad)}.exercise-panel{padding-top:25px}.qtitle{font-size:25px;line-height:1.42;margin-top:17px}.quote{padding:26px 23px;font-size:30px;background:#f0f6f8;line-height:1.55;border:1px solid var(--border)}.quote mark{background:#d5edef;color:#155866;border-radius:5px;font-weight:700;padding:1px 4px;box-decoration-break:clone}.option{min-height:80px;padding:17px 16px;border-width:1.5px;font-size:15px;line-height:1.5}.option:disabled{opacity:1}.option.correct .letter{color:var(--good);border-color:var(--good)}.option.wrong .letter{color:var(--bad);border-color:var(--bad)}.entry{font-size:17px;min-height:49px;max-width:100%}.input-label{display:block;margin:12px 0 8px;font-size:13px;font-weight:750}.check-btn{display:block;margin-top:16px}.analysis{gap:15px}.field{padding:18px;background:var(--paper);border-width:1.5px;min-width:0}.field label{min-height:30px;display:flex;gap:9px;align-items:center;font-size:14px}.step-num{display:inline-grid;place-items:center;background:var(--a-light);color:var(--accent);border-radius:7px;width:25px;height:25px;flex-shrink:0}.field input,.field select{width:100%;font-size:16px;min-height:49px}.field input:disabled,.field select:disabled{opacity:1;color:var(--ink);background:var(--bg)}.field.first,.field.second{border-color:#7bb899;background:var(--g-bg)}.field.pending{border-color:#d8b574}.field.revealed{border-color:#d89d9f;background:var(--b-bg)}.field-note{font-size:12px!important;margin:9px 0 0;line-height:1.5}.field-result{font-size:13px!important;font-weight:700;line-height:1.55;margin-bottom:0}.field-result.good{color:var(--good)}.field-result.bad{color:var(--bad)}.field-result.warn{color:var(--warn)}.feedback{padding:20px 22px}.feedback p{line-height:1.7}.reason-chain{padding:11px 13px;margin-top:14px;border-radius:10px;background:var(--paper);color:var(--accent);font-size:13px;font-weight:700}.theory{margin-top:23px;padding:14px 17px}.footnav{position:static;margin:22px 0 0;padding:18px 0 0;box-shadow:none}.split-stats{display:grid;grid-template-columns:1fr 1fr;gap:13px}.split-stats p{font-size:14px}.line{grid-template-columns:190px 1fr 55px}.line .progress{height:7px;margin:0}.text-link{color:var(--accent);border:0;padding:0;background:transparent;text-align:left;font-size:13px;font-weight:700;line-height:1.5;cursor:pointer;text-decoration:underline;text-underline-offset:3px}.weak-list{display:grid;gap:8px;max-height:320px;overflow:auto;margin:18px 0 26px}.weak-list button{border:1px solid var(--border);background:var(--bg);color:var(--ink);text-align:left;border-radius:10px;padding:13px 16px}.weak-list b{display:block;font-size:12px;color:var(--accent)}.weak-list span{font-size:14px}.filter-row{display:flex;gap:8px;margin:16px 0 10px}.filter-row .btn{font-size:12px}.report{height:340px;line-height:1.7}.help-step{border-bottom:1px solid var(--border);padding:16px 0}.help-step p{line-height:1.7;margin-bottom:0}dialog h2{font:30px Georgia,serif;margin:10px 0}dialog table{width:100%;border-collapse:collapse;margin-top:20px;font-size:14px}dialog caption{text-align:left;font-weight:800;margin-bottom:8px}dialog td,dialog th{text-align:left;border-bottom:1px solid var(--border);padding:8px}.help-warning,.storage-warning{border-radius:12px;background:var(--w-bg);color:var(--warn);padding:14px;font-size:13px}.danger{background:var(--b-bg);color:var(--bad)}.footer{margin-top:24px}.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}.print-only{display:none}.presentation .sidebar,.presentation .hero,.presentation .footer,.presentation .brand{display:none}.presentation .layout{display:block;max-width:1050px;margin:auto}.presentation .header{justify-content:flex-end;min-height:68px}.presentation .qtitle{font-size:30px}.presentation .quote{font-size:38px}.presentation .option{font-size:20px}
+html[data-theme=dark] .quote{background:#203e50}html[data-theme=dark] .quote mark{background:#356d79;color:#eeffff}html[data-theme=dark] .navbtn.active{background:#306b81}html[data-theme=dark] .navbtn.active small{color:#e0f4fa}html[data-theme=dark] .navbtn .nr{background:#294b5d;color:#c1f4fa}html[data-theme=dark] .qjump.first{background:#254c3d;color:#b9f1d5;border-color:#588e75}html[data-theme=dark] .qjump.second{background:#534730;color:#ffdfab;border-color:#9b8155}html[data-theme=dark] .qjump.revealed{background:#57323c;color:#ffd0d5;border-color:#a77680}html[data-theme=dark] .field.first,html[data-theme=dark] .field.second{border-color:#598e75}html[data-theme=dark] .field.revealed{border-color:#a77680}html[data-theme=dark] .logo{background:#34718a}
+@media(max-width:1100px){.layout{grid-template-columns:220px minmax(0,1fr);gap:18px}.panel{padding:25px}.example-flow{gap:10px;padding:17px}.example-flow b{font-size:20px}.blockcard{padding:19px}.section-heading{display:block}.section-heading span{display:block;max-width:none;text-align:left;margin-top:7px}}
+@media(max-width:720px){.wrap{padding:0 14px}.header{min-height:80px}.brand strong{font-size:12px}.hero{padding-top:24px}.hero p{font-size:14px}.counter{gap:24px;padding:12px 20px}.counter b{font-size:27px}.counter small{font-size:11px}.layout{display:block}.sidebar{padding:10px;margin-bottom:17px}.sidetitle{display:none}.blocknav{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.navbtn{min-height:65px;padding:8px 4px}.navbtn .nr{display:none}.navbtn strong{font-size:12px;line-height:1.35}.navbtn small{display:block;font-size:10px;margin-top:5px}.navcheck{display:none}.side-progress{margin:9px 6px 3px}.side-progress .progress{margin:4px 0;height:5px}.side-progress>span{font-size:11px}.panel{padding:23px 18px}.welcome h2{font-size:29px}.example-flow{flex-wrap:wrap;gap:9px;padding:15px}.example-flow b{font-size:17px;white-space:normal}.example-flow small{font-size:9px}.example-flow>span:not(.flow-arrow){min-width:0}.flow-arrow{font-size:17px}.overview{gap:12px;font-size:11px}.overview b{font-size:18px}.block-grid{grid-template-columns:1fr;gap:12px}.blockcard{padding:20px}.blockcard .toprow{flex-wrap:nowrap}.section-heading h2{font-size:24px}.task-head h2{font-size:29px}.qjump{width:41px;min-height:40px}.qgrid{gap:7px}.qtitle{font-size:22px}.quote{font-size:25px;padding:21px 14px}.option{min-height:72px}.analysis,.split-stats{grid-template-columns:1fr}.field{padding:16px}.footnav{position:static;margin:20px 0 0;padding:17px 0 0;gap:8px;flex-wrap:wrap}.footnav .btn{font-size:12px;padding:10px 12px;flex:1;min-width:85px}.line{grid-template-columns:130px 1fr 40px;gap:8px}.line .text-link{font-size:12px}.resultcards{gap:7px}.stat small{font-size:11px}.stat b{font-size:28px}.presentation .qtitle{font-size:25px}.presentation .quote{font-size:28px}.presentation .option{font-size:17px}.reason-chain{font-size:12px}.legend{gap:10px}.footer{font-size:11px}.tools{gap:5px}.ghost{font-size:11px;padding:9px 10px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+@media print{#app>*{display:none!important}#app .panel:has(#printReport){display:block!important}#app .panel:has(#printReport)>*{display:none!important}#app #printReport{display:block!important;white-space:pre-wrap;font:11px/1.5 monospace;color:#000}dialog{display:none!important}.header,.footer,.sidebar,.hero,.storage-warning{display:none!important}}
+</style></head><body><div class="wrap"><header class="header"><div class="brand"><div class="logo">Аа</div><div><strong>РУССКИЙ ЯЗЫК · ПРАКТИКА</strong><small>Имя прилагательное · первый урок</small></div></div><div class="tools"><button class="ghost" id="themeBtn" aria-pressed="false">☾ Тёмная</button><button class="ghost" id="homeBtn">Все блоки</button><button class="ghost" id="resultBtn">Мой результат</button><button class="ghost" id="helpBtn">Памятка</button><button class="ghost" id="fullBtn" aria-pressed="false">На экран</button></div></header><section class="hero"><div><div class="eyebrow">Род · число · падеж · согласование</div><h1>Имя прилагательное</h1><p>Учимся видеть связь слов и объяснять свой ответ.<br>В каждом блоке возвращаемся к существительному.</p></div><div class="counter"><div><b>6</b><small>блоков</small></div><div><b id="totalTop">80</b><small>заданий</small></div><div><b id="totalAnswers">—</b><small>ответов</small></div></div></section><p class="storage-warning" id="storageWarning" hidden>Браузер не позволяет сохранить прогресс. Скачай отчёт перед закрытием страницы.</p><main class="layout"><aside class="sidebar"><p class="sidetitle">Маршрут занятия</p><nav id="nav" class="blocknav" aria-label="Блоки тренажёра"></nav><div id="sideProgress" class="side-progress"></div><div class="guide"><b>Занимайся по шагам</b><p>Один блок — один подход.<br>↺ — повторение существительного.</p><p>Две попытки на ответ.<br>После ошибки — подсказка.<br>После проверки — объяснение.</p><p>У разбора четыре поля: верные ответы фиксируются отдельно.</p></div></aside><section id="app" aria-label="Практика"></section></main><footer class="footer"><span>Прилагательное · Урок 1 · обновлённый тренажёр</span><a href="../russian-noun-summary/">Повторить существительное</a><span><button class="ghost" id="offlineBtn">Скачать без интернета</button> <button class="ghost" id="resetBtn">Сбросить прогресс</button></span></footer></div><div id="announcement" class="sr" aria-live="polite" role="status"></div><dialog id="modal" aria-label="Справка и действия"><div id="modalBody"></div><div class="btnbar"><button class="btn" id="closeModal">Закрыть</button></div></dialog><script>
+const GROUPS=[
+  {
+    "id": "b1",
+    "title": "Признак и связь",
+    "subtitle": "От существительного к прилагательному",
+    "rule": "Имя прилагательное обозначает признак предмета. От существительного к прилагательному задаём вопросы какой? какая? какое? какие? (в косвенных падежах — какого? какому? и др.). Главное слово обычно существительное.",
+    "qs": [
+      [
+        "c",
+        0,
+        "Какое слово является прилагательным?",
+        "Ранним утром проснулся город.",
+        [
+          "ранним",
+          "утром",
+          "проснулся",
+          "город"
+        ],
+        0,
+        "«Ранним» обозначает признак утра, отвечает на вопрос «каким?».",
+        "Найди слово, которое описывает существительное."
+      ],
+      [
+        "c",
+        0,
+        "К какому существительному относится слово «узкая»?",
+        "Узкая дорожка вела к старому мосту.",
+        [
+          "мосту",
+          "дорожка",
+          "вела",
+          "старому"
+        ],
+        1,
+        "Дорожка (какая?) узкая; слово «узкая» описывает дорожку.",
+        "От какого предмета можно задать вопрос «какая?»?"
+      ],
+      [
+        "t",
+        0,
+        "Впиши главное слово в начальной форме.",
+        "Мальчик любовался далёкими горами.",
+        "гора",
+        "Главное слово — «горами»; начальная форма этого существительного — «гора».",
+        "Верни слово из творительного падежа во множественном числе в И. п. ед. ч."
+      ],
+      [
+        "c",
+        1,
+        "Какова начальная форма существительного «зданиями»?",
+        "Мы любовались высокими зданиями.",
+        [
+          "зданий",
+          "зданием",
+          "здание",
+          "здания"
+        ],
+        2,
+        "Зданиями → здание (И. п., ед. ч.).",
+        "Не путай форму множественного числа с начальной формой."
+      ],
+      [
+        "c",
+        1,
+        "Укажи постоянные признаки существительного «тетрадь».",
+        "В тетради появились новые записи.",
+        [
+          "ж. р., 3-е склонение, неодуш.",
+          "ж. р., 1-е склонение, неодуш.",
+          "м. р., 2-е склонение, неодуш.",
+          "ж. р., 3-е склонение, одуш."
+        ],
+        0,
+        "Тетрадь — ж. р., 3-е склонение, неодушевлённое.",
+        "У существительного на мягкий знак определи род: моя тетрадь."
+      ],
+      [
+        "c",
+        0,
+        "Какая связь слов установлена верно?",
+        "В густом лесу раздался громкий крик.",
+        [
+          "лесу → какой? громкий",
+          "крик → какой? густом",
+          "лесу → каком? густом",
+          "крик → каком? густом"
+        ],
+        2,
+        "В лесу (каком?) густом; крик (какой?) громкий.",
+        "Соотнеси признак с предметом, который он описывает."
+      ],
+      [
+        "m",
+        0,
+        "Выбери только прилагательные.",
+        "Лист, осенний, сияет, прохладная, деревья, солнечное, быстро.",
+        [
+          "осенний",
+          "сияет",
+          "прохладная",
+          "деревья",
+          "солнечное",
+          "быстро"
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        "«Осенний», «прохладная», «солнечное» называют признаки предметов.",
+        "Нужны слова, к которым можно задать вопрос о признаке предмета."
+      ],
+      [
+        "c",
+        1,
+        "Каково склонение слова «площадь»?",
+        "Мы шли по большой площади.",
+        [
+          "1-е",
+          "2-е",
+          "3-е",
+          "разносклоняемое"
+        ],
+        2,
+        "Площадь — ж. р., нулевое окончание в И. п., 3-е склонение.",
+        "Моя площадь, как и моя ночь."
+      ],
+      [
+        "c",
+        0,
+        "Какое рассуждение верно?",
+        "На высокой берёзе сидела птица.",
+        [
+          "«Высокой» — существительное, потому что стоит перед «берёзе».",
+          "«Высокой» — прилагательное: берёзе (какой?) высокой.",
+          "«Высокой» — глагол, потому что обозначает состояние.",
+          "«Берёзе» — прилагательное: отвечает на вопрос «где?»."
+        ],
+        1,
+        "Вопрос от существительного к его признаку позволяет установить связь.",
+        "Найди название предмета, а затем слово, которое его описывает."
+      ],
+      [
+        "t",
+        0,
+        "Выпиши прилагательное, которое относится к слову «стол», в форме из предложения.",
+        "В просторной комнате стоял деревянный стол.",
+        "деревянный",
+        "Стол (какой?) деревянный. «Просторной» описывает комнату.",
+        "Задай вопрос отдельно от каждого существительного."
+      ],
+      [
+        "t",
+        0,
+        "Выпиши прилагательное в форме из предложения.",
+        "Мы остановились возле тихого озера.",
+        "тихого",
+        "Возле озера (какого?) тихого. Выписываем форму из предложения, не начальную.",
+        "Найди слово, которое обозначает признак озера."
+      ],
+      [
+        "c",
+        1,
+        "Какое существительное одушевлённое?",
+        "Кукла лежала рядом с мячом, книгой и пеналом.",
+        [
+          "кукла",
+          "мяч",
+          "книга",
+          "пенал"
+        ],
+        0,
+        "Кукла — грамматически одушевлённое существительное: вижу кукол, нет кукол. Остальные слова неодушевлённые.",
+        "Грамматическая одушевлённость не всегда равна «живой / неживой». Вспомни слово «кукла»."
+      ],
+      [
+        "m",
+        0,
+        "Выбери все верно построенные вопросы.",
+        "В маленьком саду созрели сладкие яблоки.",
+        [
+          "саду (каком?) маленьком",
+          "яблоки (какие?) сладкие",
+          "саду (какие?) сладкие",
+          "яблоки (каком?) маленьком"
+        ],
+        [
+          0,
+          1
+        ],
+        "Маленьком — признак сада, сладкие — признак яблок. Вопрос задаём от названия предмета.",
+        "Не соединяй слова только потому, что они стоят в одном предложении."
+      ]
+    ]
+  },
+  {
+    "id": "b2",
+    "title": "Род прилагательного",
+    "subtitle": "Форма зависит от существительного",
+    "rule": "В единственном числе прилагательное изменяется по родам: тёмный лес — тёмная ночь — тёмное небо. Род существительного обычно постоянный, а род прилагательного — непостоянный.",
+    "qs": [
+      [
+        "c",
+        0,
+        "Определи род прилагательного «светлая».",
+        "Светлая комната была просторной.",
+        [
+          "мужской",
+          "женский",
+          "средний",
+          "не определяется"
+        ],
+        1,
+        "Комната — ж. р., поэтому прилагательное «светлая» — ж. р.",
+        "Сначала определи род слова «комната»."
+      ],
+      [
+        "c",
+        0,
+        "Какая пара согласована правильно?",
+        "Выбери словосочетание.",
+        [
+          "тёплая море",
+          "тёплое пальто",
+          "тёплый осень",
+          "тёплое шарф"
+        ],
+        1,
+        "Пальто — существительное среднего рода; тёплое пальто.",
+        "Определи род каждого существительного."
+      ],
+      [
+        "c",
+        1,
+        "Какого рода существительное «дядя»?",
+        "Добрый дядя улыбнулся.",
+        [
+          "женского",
+          "среднего",
+          "мужского",
+          "род не определяется"
+        ],
+        2,
+        "«Мой дядя» — мужской род, несмотря на окончание -я.",
+        "Помогает местоимение «мой»."
+      ],
+      [
+        "t",
+        0,
+        "Впиши форму прилагательного «глубокий» для существительного «река».",
+        "По долине текла (глубокий) река.",
+        "глубокая",
+        "Река — ж. р., ед. ч.; правильная форма — глубокая.",
+        "Река — моя; значит нужна форма женского рода."
+      ],
+      [
+        "c",
+        0,
+        "В чём главная причина разных форм прилагательного?",
+        "Высокий дуб — высокая сосна — высокое дерево.",
+        [
+          "Изменилось значение слова «высокий».",
+          "Прилагательное согласуется с существительными разного рода.",
+          "Все слова употреблены во множественном числе.",
+          "Изменился только падеж существительных."
+        ],
+        1,
+        "Существительные относятся к трём родам; формы прилагательного меняются вместе с ними.",
+        "Посмотри на род слов дуб, сосна, дерево."
+      ],
+      [
+        "c",
+        1,
+        "Какого рода существительное «имя»?",
+        "На листе написано старое имя.",
+        [
+          "мужского",
+          "женского",
+          "среднего",
+          "не определяется"
+        ],
+        2,
+        "Имя — разносклоняемое существительное среднего рода.",
+        "Вспомни десятку существительных на -мя."
+      ],
+      [
+        "c",
+        0,
+        "Какое утверждение верно?",
+        "Смелый поступок — смелая девочка.",
+        [
+          "Род у прилагательных — постоянный признак.",
+          "У существительных меняется род из-за прилагательного.",
+          "Прилагательное принимает род существительного.",
+          "Род слова «девочка» не определяется."
+        ],
+        2,
+        "У прилагательного род непостоянный и зависит от существительного.",
+        "Сравни «смелый» и «смелая»."
+      ],
+      [
+        "c",
+        1,
+        "Укажи род и склонение существительного «рояль».",
+        "В углу стоял старый рояль.",
+        [
+          "м. р., 2-е склонение",
+          "ж. р., 3-е склонение",
+          "м. р., 3-е склонение",
+          "ср. р., 2-е склонение"
+        ],
+        0,
+        "Рояль — мужской род, 2-е склонение.",
+        "Скажи «мой рояль»."
+      ],
+      [
+        "c",
+        0,
+        "Почему у слов «красивый», «красивая», «красивое» разный род?",
+        "Красивый город, красивая улица, красивое озеро.",
+        [
+          "Это разные части речи.",
+          "Род каждой формы определяется родом её существительного.",
+          "Род прилагательного зависит от глагола.",
+          "У прилагательных вообще нет рода."
+        ],
+        1,
+        "Город — м. р., улица — ж. р., озеро — ср. р.",
+        "Вспомни связь главного и зависимого слова."
+      ],
+      [
+        "t",
+        0,
+        "Согласуй слово «новый» и запиши только прилагательное.",
+        "На вешалке висело (новый) пальто.",
+        "новое",
+        "Пальто — несклоняемое существительное среднего рода: новое пальто.",
+        "Род можно определить даже у существительного, которое не изменяет окончание."
+      ],
+      [
+        "a",
+        0,
+        "Определи признаки прилагательного «осеннее».",
+        "Осеннее солнце выглянуло из-за туч.",
+        [
+          "солнце",
+          "средний",
+          "единственное",
+          "именительный"
+        ],
+        "Солнце — ср. р., ед. ч., И. п. Прилагательное «осеннее» согласуется с ним.",
+        "Найди предмет, признак которого называет «осеннее»."
+      ],
+      [
+        "c",
+        1,
+        "Какое существительное относится к общему роду?",
+        "Миша — известный задира. Маша — известная задира.",
+        [
+          "Миша",
+          "Маша",
+          "задира",
+          "ни одно"
+        ],
+        2,
+        "Задира — существительное общего рода: так можно назвать и мальчика, и девочку. Прилагательное показывает, о ком речь.",
+        "Одно и то же существительное употреблено с «известный» и «известная»."
+      ],
+      [
+        "c",
+        0,
+        "Почему верно «свежая морковь»?",
+        "На грядке выросла свежая морковь.",
+        [
+          "Мягкий знак всегда означает женский род.",
+          "Морковь — женского рода, прилагательное согласуется с ней.",
+          "Все прилагательные перед существительным женского рода.",
+          "Род прилагательного определяем по глаголу."
+        ],
+        1,
+        "Моя морковь — ж. р.; поэтому свежая. Сам по себе мягкий знак не определяет род: сравни «рояль».",
+        "Сначала определи род существительного, не делай вывода только по последней букве."
+      ]
+    ]
+  },
+  {
+    "id": "b3",
+    "title": "Число прилагательного",
+    "subtitle": "Единственное и множественное",
+    "rule": "Прилагательное принимает число существительного: высокий дом — высокие дома. Во множественном числе род прилагательного НЕ определяется; однако у существительного, имеющего форму ед. ч., род сохраняется.",
+    "qs": [
+      [
+        "c",
+        0,
+        "Определи число прилагательного «тихие».",
+        "На берегу стояли тихие деревни.",
+        [
+          "единственное",
+          "множественное",
+          "число не определяется",
+          "сразу два числа"
+        ],
+        1,
+        "Деревни — мн. ч.; тихие — мн. ч.",
+        "Найди число существительного."
+      ],
+      [
+        "c",
+        0,
+        "У прилагательного «молодые» род…",
+        "Молодые спортсмены вышли на поле.",
+        [
+          "мужской",
+          "женский",
+          "средний",
+          "не определяется"
+        ],
+        3,
+        "Прилагательное во множественном числе: род не определяется.",
+        "Не переносите мужской род слова «спортсмен» на прилагательное во мн. ч."
+      ],
+      [
+        "c",
+        1,
+        "Укажи число существительного «листва».",
+        "Густая листва закрывала окно.",
+        [
+          "единственное",
+          "множественное",
+          "не определяется",
+          "оба числа"
+        ],
+        0,
+        "Листва — собирательное существительное единственного числа.",
+        "Проверь форму «густая листва закрывала»."
+      ],
+      [
+        "t",
+        0,
+        "Впиши подходящую форму прилагательного «чистый».",
+        "На столе лежали (чистый) листы.",
+        "чистые",
+        "Листы — множественное число, значит «чистые».",
+        "Слово «листы» обозначает несколько предметов."
+      ],
+      [
+        "c",
+        0,
+        "Где правильно определены признаки?",
+        "Старые деревья.",
+        [
+          "Прилагательное — ср. р., мн. ч.",
+          "Прилагательное — м. р., мн. ч.",
+          "Прилагательное — мн. ч., род не определяется.",
+          "Прилагательное — ср. р., ед. ч."
+        ],
+        2,
+        "«Старые» стоит во мн. ч., род не определяется. Существительное «деревья» происходит от «дерево» — ср. р.",
+        "Различай признаки существительного и прилагательного."
+      ],
+      [
+        "c",
+        1,
+        "Каково число слова «ножницы»?",
+        "Острые ножницы лежали на столе.",
+        [
+          "единственное",
+          "множественное",
+          "оба числа",
+          "число меняется в зависимости от размера"
+        ],
+        1,
+        "Ножницы употребляется только в форме множественного числа.",
+        "Один предмет иногда называется существительным только мн. ч."
+      ],
+      [
+        "c",
+        0,
+        "Что изменилось в словосочетании?",
+        "Синее озеро → синие озёра.",
+        [
+          "Только род прилагательного.",
+          "Число существительного и прилагательного.",
+          "Только падеж.",
+          "Постоянный род существительного."
+        ],
+        1,
+        "Озеро → озёра и синее → синие: изменилось число. Род существительного остался средним.",
+        "Подумай, сколько озёр в каждом примере."
+      ],
+      [
+        "c",
+        1,
+        "Где род существительного не определяется?",
+        "Выбери слово, которое обычно не имеет единственного числа.",
+        [
+          "деревья",
+          "друзья",
+          "каникулы",
+          "здания"
+        ],
+        2,
+        "Каникулы — существительное только мн. ч., поэтому род не определяется. У остальных есть ед. ч.",
+        "Верни слова в единственное число."
+      ],
+      [
+        "m",
+        0,
+        "Выбери все верные утверждения.",
+        "Сравни: «яркий фонарь» — «яркие фонари».",
+        [
+          "Оба прилагательных стоят во мн. ч.",
+          "Род прилагательного «яркие» не определяется.",
+          "Число прилагательного изменилось.",
+          "Род существительного «фонарь» стал женским."
+        ],
+        [
+          1,
+          2
+        ],
+        "Яркий — ед. ч., яркие — мн. ч.; у «яркие» не определяется род. Фонарь остаётся м. р.",
+        "Сравни изменяемый признак «число» и постоянный род существительного."
+      ],
+      [
+        "t",
+        0,
+        "Поставь словосочетание во множественное число. Запиши оба слова.",
+        "Широкий мост.",
+        "широкие мосты",
+        "Мост → мосты; широкий → широкие. Оба слова изменили число.",
+        "Измени форму обоих слов, сохрани именительный падеж."
+      ],
+      [
+        "a",
+        0,
+        "Разбери прилагательное «высокие».",
+        "У дороги росли высокие деревья.",
+        [
+          "деревья",
+          "не определяется",
+          "множественное",
+          "именительный"
+        ],
+        "Деревья — мн. ч., И. п.; высокие — мн. ч., И. п., род не определяется. Род существительного по слову «дерево» — средний.",
+        "Не переноси род существительного на прилагательное во множественном числе."
+      ],
+      [
+        "c",
+        1,
+        "Какое существительное употребляется только в единственном числе?",
+        "Проверь формы слов.",
+        [
+          "молоко",
+          "окно",
+          "город",
+          "тетрадь"
+        ],
+        0,
+        "В обычном значении вещества «молоко» употребляется только в единственном числе.",
+        "Подумай о названиях веществ."
+      ],
+      [
+        "c",
+        0,
+        "Как исправить объяснение ученика?",
+        "«Белые облака: белые — среднего рода, потому что облако — оно».",
+        [
+          "Оставить объяснение без изменений.",
+          "Указать мужской род прилагательного.",
+          "Указать: множественное число, род прилагательного не определяется.",
+          "Указать: единственное число, средний род."
+        ],
+        2,
+        "Белые — форма множественного числа; род здесь не определяется. Слово «облако» среднего рода.",
+        "Раздели признаки существительного и прилагательного."
+      ]
+    ]
+  },
+  {
+    "id": "b4",
+    "title": "Падеж прилагательного",
+    "subtitle": "Определяем через существительное",
+    "rule": "Падеж прилагательного совпадает с падежом существительного, с которым оно связано. Алгоритм: найди существительное → определи его падеж по роли в предложении и вопросу → перенеси падеж на прилагательное. Не определяй падеж по одному окончанию.",
+    "qs": [
+      [
+        "c",
+        1,
+        "В каком падеже существительное «книгу»?",
+        "Мы положили книгу на стол.",
+        [
+          "именительный",
+          "родительный",
+          "винительный",
+          "предложный"
+        ],
+        2,
+        "Положили что? — книгу. В. п.",
+        "Задай вопрос от глагола «положили»."
+      ],
+      [
+        "c",
+        0,
+        "В каком падеже прилагательное «древнему»?",
+        "Путники подошли к древнему храму.",
+        [
+          "родительный",
+          "дательный",
+          "творительный",
+          "предложный"
+        ],
+        1,
+        "К храму — Д. п.; «древнему» согласуется с «храму» и тоже стоит в Д. п.",
+        "Начни со слова «храму»."
+      ],
+      [
+        "c",
+        0,
+        "Определи падеж прилагательного «прохладном».",
+        "Мы отдыхали в прохладном саду.",
+        [
+          "винительный",
+          "творительный",
+          "предложный",
+          "именительный"
+        ],
+        2,
+        "Отдыхали где? в чём? — в саду, П. п.; прохладном — П. п.",
+        "Вспомни падеж существительного «саду» в данном контексте."
+      ],
+      [
+        "c",
+        1,
+        "Определи падеж существительного «мост» в предложении.",
+        "Мы увидели мост за рекой.",
+        [
+          "именительный",
+          "винительный",
+          "родительный",
+          "дательный"
+        ],
+        1,
+        "Увидели что? мост — В. п., хотя форма совпадает с И. п.",
+        "Найди подлежащее и объект действия."
+      ],
+      [
+        "c",
+        0,
+        "Выбери верную пару падежей.",
+        "Сильный ветер поднял пыль. Мы почувствовали сильный ветер.",
+        [
+          "И. п. и И. п.",
+          "В. п. и В. п.",
+          "И. п. и В. п.",
+          "Р. п. и Д. п."
+        ],
+        2,
+        "В первом предложении ветер — подлежащее, И. п.; во втором — объект, В. п. Формы совпадают.",
+        "Кто действует? Что почувствовали?"
+      ],
+      [
+        "t",
+        0,
+        "Впиши падеж прилагательного одним словом.",
+        "Мы любовались багряным закатом.",
+        "творительный",
+        "Любовались чем? — закатом, Т. п.; «багряным» тоже Т. п.",
+        "Вопрос «любовались чем?»"
+      ],
+      [
+        "c",
+        1,
+        "Где существительное стоит в предложном падеже?",
+        "Выбери предложение.",
+        [
+          "Мы подошли к станции.",
+          "Мы стояли на станции.",
+          "Мы увидели станцию.",
+          "Мы вышли со станции."
+        ],
+        1,
+        "Стояли на чём? — на станции (П. п.). «К станции» — Д. п., «станцию» — В. п., «со станции» — Р. п.",
+        "Вспомни значение конструкции «на чём?»."
+      ],
+      [
+        "c",
+        0,
+        "Падеж прилагательного «новой»?",
+        "На новой станции открыли кафе.",
+        [
+          "дательный",
+          "предложный",
+          "родительный",
+          "творительный"
+        ],
+        1,
+        "На станции — П. п., поэтому «новой» — П. п.",
+        "Не опирайся только на форму «новой»."
+      ],
+      [
+        "c",
+        0,
+        "Падеж прилагательного «новой»?",
+        "К новой станции ведёт дорога.",
+        [
+          "предложный",
+          "родительный",
+          "дательный",
+          "творительный"
+        ],
+        2,
+        "К станции — Д. п., поэтому «новой» — Д. п. Одинаковая форма — разные падежи.",
+        "Предлог «к» с этим существительным: кому? чему?"
+      ],
+      [
+        "m",
+        1,
+        "Выбери существительные в родительном падеже.",
+        "Нет времени, подойти к музею, у берёзы, над рекой, без тетради.",
+        [
+          "времени",
+          "музею",
+          "берёзы",
+          "рекой",
+          "тетради"
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        "Нет чего? времени, у чего? берёзы, без чего? тетради — Р. п.",
+        "Подумай о предлогах и вопросах каждого сочетания."
+      ],
+      [
+        "a",
+        0,
+        "Определи признаки прилагательного «старого».",
+        "У старого дуба стояла скамейка.",
+        [
+          "дуба",
+          "мужской",
+          "единственное",
+          "родительный"
+        ],
+        "У чего? — у дуба, Р. п.; дуб — м. р. Старого — м. р., ед. ч., Р. п.",
+        "Сначала задай падежный вопрос к «дуба»."
+      ],
+      [
+        "c",
+        1,
+        "Определи падеж слова «тетради».",
+        "В тетради записали имя.",
+        [
+          "родительный",
+          "дательный",
+          "предложный",
+          "винительный"
+        ],
+        2,
+        "Записали где? в чём? — в тетради, П. п. Та же форма может встретиться в других падежах, поэтому нужен контекст.",
+        "Окончания недостаточно: задай вопрос с предлогом."
+      ],
+      [
+        "t",
+        0,
+        "Назови падеж прилагательного «красивую» одним словом.",
+        "Туристы увидели красивую башню.",
+        "винительный",
+        "Увидели что? — башню, В. п.; прилагательное «красивую» тоже в В. п.",
+        "Определи падеж слова «башню»."
+      ],
+      [
+        "c",
+        0,
+        "Как различаются падежи прилагательного?",
+        "Мы вошли в светлую комнату. Мы сидели в светлой комнате.",
+        [
+          "В обоих — П. п.",
+          "В первом — В. п., во втором — П. п.",
+          "В первом — П. п., во втором — В. п.",
+          "В обоих — Д. п."
+        ],
+        1,
+        "Вошли во что? в комнату — В. п. Сидели в чём? в комнате — П. п. Один предлог «в» не определяет падеж.",
+        "Сравни направление движения и место действия."
+      ]
+    ]
+  },
+  {
+    "id": "b5",
+    "title": "Согласование",
+    "subtitle": "Род + число + падеж",
+    "rule": "Согласование: прилагательное принимает грамматические формы, соответствующие существительному. В ед. ч. совпадают род, число и падеж; во мн. ч. — число и падеж (род прилагательного не определяется).",
+    "qs": [
+      [
+        "c",
+        0,
+        "Каково полное описание прилагательного «старому»?",
+        "Мы приблизились к старому зданию.",
+        [
+          "м. р., ед. ч., Д. п.",
+          "ср. р., ед. ч., Д. п.",
+          "ср. р., ед. ч., П. п.",
+          "ср. р., мн. ч., Д. п."
+        ],
+        1,
+        "Зданию — ср. р., ед. ч., Д. п.; «старому» имеет те же грамматические формы.",
+        "Начальная форма существительного — здание."
+      ],
+      [
+        "c",
+        1,
+        "Род и склонение слова «здание»?",
+        "Возле здания посадили липу.",
+        [
+          "ср. р., 2-е склонение",
+          "м. р., 2-е склонение",
+          "ср. р., 1-е склонение",
+          "ср. р., разносклоняемое"
+        ],
+        0,
+        "Здание — ср. р., 2-е склонение (на -ие).",
+        "Сравни: моё здание."
+      ],
+      [
+        "c",
+        0,
+        "Где нарушено согласование?",
+        "Выбери ошибочное словосочетание.",
+        [
+          "с высокой сосной",
+          "около старой школы",
+          "под синими небом",
+          "по широкой дороге"
+        ],
+        2,
+        "Небом — ср. р., ед. ч., Т. п.; правильно «под синим небом».",
+        "Ориентируйся не только на окончание: сколько предметов и какой род?"
+      ],
+      [
+        "c",
+        0,
+        "Укажи грамматические признаки «тихими».",
+        "Мы шли тихими улицами.",
+        [
+          "мн. ч., Т. п.; род не определяется",
+          "ж. р., мн. ч., Т. п.",
+          "мн. ч., Д. п.; род не определяется",
+          "ед. ч., Т. п., ж. р."
+        ],
+        0,
+        "Улицами — Т. п., мн. ч.; «тихими» — Т. п., мн. ч., род не определяется.",
+        "У прилагательного во множественном числе нет категории рода."
+      ],
+      [
+        "c",
+        1,
+        "Каково склонение существительного «тетрадью»?",
+        "Учитель наклонился над новой тетрадью.",
+        [
+          "1-е",
+          "2-е",
+          "3-е",
+          "разносклоняемое"
+        ],
+        2,
+        "Тетрадью → тетрадь: ж. р., нулевое окончание, 3-е склонение.",
+        "Сначала восстанови начальную форму, затем определи род."
+      ],
+      [
+        "a",
+        0,
+        "Определи признаки прилагательного «узкой».",
+        "Мы подошли к узкой тропинке.",
+        [
+          "тропинке",
+          "женский",
+          "единственное",
+          "дательный"
+        ],
+        "К тропинке — Д. п., ед. ч.; тропинка — ж. р. Поэтому «узкой»: ж. р., ед. ч., Д. п.",
+        "Сначала разберите существительное «тропинке»."
+      ],
+      [
+        "c",
+        0,
+        "Какое объяснение согласования верно?",
+        "Под старыми деревьями было прохладно.",
+        [
+          "«Старыми» имеет ср. род, потому что «дерево» среднего рода.",
+          "«Старыми» — мн. ч., Т. п.; род не определяется.",
+          "«Старыми» — ед. ч., Т. п., ср. р.",
+          "«Старыми» — мн. ч., П. п.; род не определяется."
+        ],
+        1,
+        "Под деревьями — Т. п., мн. ч.; значит «старыми» — Т. п., мн. ч.; род не определяется.",
+        "Под чем? — под деревьями."
+      ],
+      [
+        "c",
+        1,
+        "Каковы постоянные признаки слова «имя»?",
+        "Старинное имя сохранилось в летописи.",
+        [
+          "ср. р., разносклоняемое",
+          "ср. р., 2-е склонение",
+          "м. р., разносклоняемое",
+          "ж. р., 1-е склонение"
+        ],
+        0,
+        "Имя — ср. р., одно из 10 разносклоняемых существительных на -мя.",
+        "Вспомни «имя — имени»."
+      ],
+      [
+        "m",
+        0,
+        "Выбери все правильные сочетания.",
+        "Сверь форму прилагательного с существительным.",
+        [
+          "к высокому дереву",
+          "у широкая реки",
+          "над белыми облаками",
+          "в тихий комнате",
+          "по узкой улице"
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        "Верно: к высокому дереву, над белыми облаками, по узкой улице. Остальные нарушают согласование.",
+        "Проверяй число, род и падеж существительного в каждом сочетании."
+      ],
+      [
+        "t",
+        0,
+        "Исправь ошибку. Запиши всё словосочетание.",
+        "Под синими небом.",
+        "под синим небом",
+        "Небом — ср. р., ед. ч., Т. п.; нужна форма «синим».",
+        "Проверь число: речь об одном небе."
+      ],
+      [
+        "a",
+        0,
+        "Определи признаки прилагательного «высокой».",
+        "Мы подошли к высокой сосне.",
+        [
+          "сосне",
+          "женский",
+          "единственное",
+          "дательный"
+        ],
+        "Подошли к чему? — к сосне, Д. п. Сосна — ж. р.; высокой — ж. р., ед. ч., Д. п.",
+        "Главное слово — существительное после прилагательного."
+      ],
+      [
+        "c",
+        1,
+        "Какие признаки существительного непостоянные?",
+        "Мы шли по широкой дороге.",
+        [
+          "род и склонение",
+          "число и падеж",
+          "одушевлённость и род",
+          "склонение и падеж"
+        ],
+        1,
+        "У существительного число и падеж — непостоянные признаки. Род и склонение — постоянные.",
+        "Что меняется, когда мы изменяем форму слова «дорога»?"
+      ],
+      [
+        "m",
+        0,
+        "Выбери признаки, в которых согласованы выделенные по смыслу слова.",
+        "Мы укрылись под густыми ветвями.",
+        [
+          "множественное число",
+          "женский род прилагательного",
+          "творительный падеж",
+          "единственное число"
+        ],
+        [
+          0,
+          2
+        ],
+        "Густыми ветвями — мн. ч., Т. п. Во множественном числе род прилагательного не определяется.",
+        "У прилагательного во множественном числе проверь только число и падеж."
+      ]
+    ]
+  },
+  {
+    "id": "b6",
+    "title": "Смешанная практика",
+    "subtitle": "Проверь себя и объясни",
+    "rule": "Полный алгоритм: найди прилагательное и главное существительное → определи начальную форму и постоянный род существительного → его число и падеж в предложении → перенеси нужные признаки на прилагательное → проверь согласование.",
+    "qs": [
+      [
+        "a",
+        0,
+        "Разбери прилагательное «свежим» по признакам.",
+        "Путешественники дышали свежим воздухом.",
+        [
+          "воздухом",
+          "мужской",
+          "единственное",
+          "творительный"
+        ],
+        "Воздух — м. р.; воздухом — Т. п., ед. ч. Следовательно, свежим — м. р., ед. ч., Т. п.",
+        "Дышали чем? — воздухом."
+      ],
+      [
+        "c",
+        1,
+        "Каковы род и склонение слова «путь»?",
+        "На дальнем пути туристы устали.",
+        [
+          "м. р., разносклоняемое",
+          "ж. р., 3-е склонение",
+          "м. р., 2-е склонение",
+          "ср. р., разносклоняемое"
+        ],
+        0,
+        "Путь — существительное мужского рода, разносклоняемое.",
+        "Это исключение, изученное при склонениях существительных."
+      ],
+      [
+        "c",
+        0,
+        "Найди ошибку в объяснении.",
+        "У большого озера мы увидели уток.",
+        [
+          "«Большого» — ср. р.",
+          "«Большого» — ед. ч.",
+          "«Большого» — Д. п.",
+          "«Большого» относится к существительному «озера»."
+        ],
+        2,
+        "У озера — Р. п., а не Д. п.; «большого» тоже стоит в Р. п.",
+        "Существительное: у чего? — у озера."
+      ],
+      [
+        "t",
+        1,
+        "Впиши начальную форму существительного «тетрадями».",
+        "Ученики обменялись тетрадями.",
+        "тетрадь",
+        "Тетрадями → тетрадь (И. п., ед. ч.).",
+        "Сохрани то же слово, верни в ед. ч. И. п."
+      ],
+      [
+        "c",
+        0,
+        "Определи падеж прилагательных в обоих предложениях.",
+        "Мы встретили знакомого учителя. Мы подошли к знакомому учителю.",
+        [
+          "В первом — В. п., во втором — Д. п.",
+          "В обоих — И. п.",
+          "В первом — Д. п., во втором — В. п.",
+          "В обоих — Р. п."
+        ],
+        0,
+        "Встретили кого? учителя — В. п.; подошли к кому? учителю — Д. п. Прилагательные согласуются с существительными.",
+        "Сначала определи падежи существительных."
+      ],
+      [
+        "m",
+        0,
+        "Выбери все верные объяснения.",
+        "Проверь рассуждения о прилагательных.",
+        [
+          "«К старому дому»: старому — Д. п.",
+          "«У старого дома»: старого — Д. п.",
+          "«Высокие тополя»: род прилагательного не определяется.",
+          "«Под синей крышей»: синей — Т. п.",
+          "«На новой станции»: новой — Д. п."
+        ],
+        [
+          0,
+          2,
+          3
+        ],
+        "Верны 1, 3 и 4. «У дома» — Р. п.; «на станции» — П. п.",
+        "Проверь каждый падеж через существительное, а не по окончанию."
+      ],
+      [
+        "c",
+        1,
+        "Каков падеж слова «имя» в предложении?",
+        "Учитель записал имя ученика.",
+        [
+          "именительный",
+          "винительный",
+          "дательный",
+          "предложный"
+        ],
+        1,
+        "Записал что? имя — В. п. Форма совпадает с И. п.",
+        "Ищи действие: что именно записал учитель?"
+      ],
+      [
+        "a",
+        0,
+        "Полный анализ прилагательного «яркими».",
+        "Небо сияло яркими звёздами.",
+        [
+          "звёздами",
+          "не определяется",
+          "множественное",
+          "творительный"
+        ],
+        "Звёздами — Т. п., мн. ч.; «яркими» — Т. п., мн. ч., род не определяется.",
+        "Во множественном числе род прилагательного не указывают."
+      ],
+      [
+        "c",
+        0,
+        "Какое рассуждение ошибочно?",
+        "К новой тетради подвинули старый учебник.",
+        [
+          "«Новой» зависит от «тетради».",
+          "«Новой» — ж. р., ед. ч., Д. п.",
+          "«Старый» зависит от «учебник».",
+          "«Старый» — м. р., ед. ч., Д. п."
+        ],
+        3,
+        "«Старый учебник» — В. п. (подвинули что?), а не Д. п. И. и В. п. неодушевлённых существительных совпадают по форме.",
+        "Не путай падеж слов по соседству: задай вопрос к каждому существительному."
+      ],
+      [
+        "c",
+        1,
+        "Каков разбор слова «ножницами»?",
+        "Мы пользовались острыми ножницами.",
+        [
+          "Т. п., мн. ч., род не определяется",
+          "Р. п., мн. ч., ср. р.",
+          "Т. п., ед. ч., ж. р.",
+          "Д. п., мн. ч., род не определяется"
+        ],
+        0,
+        "Пользовались чем? ножницами — Т. п., мн. ч. Ножницы — существительное только мн. ч., род не определяется.",
+        "У слова ножницы нет обычной формы ед. ч."
+      ],
+      [
+        "a",
+        0,
+        "Разбери прилагательное «старого».",
+        "У старого моста росли высокие деревья.",
+        [
+          "моста",
+          "мужской",
+          "единственное",
+          "родительный"
+        ],
+        "У чего? моста — Р. п., ед. ч.; мост — м. р. Старого — м. р., ед. ч., Р. п.",
+        "Не связывай «старого» с деревьями: какое слово оно описывает?"
+      ],
+      [
+        "a",
+        0,
+        "Разбери прилагательное «маленький».",
+        "К узкой тропинке подошёл маленький щенок.",
+        [
+          "щенок",
+          "мужской",
+          "единственное",
+          "именительный"
+        ],
+        "Щенок — подлежащее в И. п., м. р., ед. ч.; маленький согласуется со словом «щенок».",
+        "Не переноси дательный падеж слова «тропинке» на «маленький»."
+      ],
+      [
+        "t",
+        1,
+        "Впиши начальную форму существительного «временем».",
+        "Со временем старое имя забыли.",
+        "время",
+        "Временем → время. Это разносклоняемое существительное среднего рода на -мя.",
+        "Не сохраняй суффикс -ен- в начальной форме."
+      ],
+      [
+        "m",
+        0,
+        "Выбери все верные выводы урока.",
+        "Проверь алгоритм определения признаков.",
+        [
+          "Падеж прилагательного определяем через существительное.",
+          "У прилагательного во множественном числе обязательно указываем род.",
+          "Прилагательное зависит от существительного.",
+          "По одному окончанию всегда можно точно определить падеж.",
+          "Род прилагательного в единственном числе — непостоянный признак."
+        ],
+        [
+          0,
+          2,
+          4
+        ],
+        "Верны 1, 3 и 5. Во мн. ч. род не указываем; одинаковые формы могут иметь разные падежи.",
+        "Вспомни «сильный ветер» в роли подлежащего и дополнения."
+      ]
+    ]
+  }
+];
 (function(){
 'use strict';
-const CASES=['именительный','родительный','дательный','винительный','творительный','предложный'];
-const GEN=['мужской','женский','средний','не определяется'];
-const NUM=['единственное','множественное'];
-const GROUPS=[
-{id:'b1',title:'Признак и связь',subtitle:'От существительного к прилагательному',rule:'Имя прилагательное обозначает признак предмета. От существительного к прилагательному задаём вопросы какой? какая? какое? какие? (в косвенных падежах — какого? какому? и др.). Главное слово обычно существительное.',qs:[
-['c',0,'Какое слово является прилагательным?','Ранним утром проснулся город.',['ранним','утром','проснулся','город'],0,'«Ранним» обозначает признак утра, отвечает на вопрос «каким?».','Найди слово, которое описывает существительное.'],
-['c',0,'К какому существительному относится слово «узкая»?','Узкая дорожка вела к старому мосту.',['мосту','дорожка','вела','старому'],1,'Дорожка (какая?) узкая; слово «узкая» описывает дорожку.','От какого предмета можно задать вопрос «какая?»?'],
-['t',0,'Впиши главное слово в начальной форме.','Мальчик любовался далёкими горами.','гора','Главное слово — «горами»; начальная форма этого существительного — «гора».','Верни слово из творительного падежа во множественном числе в И. п. ед. ч.'],
-['c',1,'Какова начальная форма существительного «зданиями»?','Мы любовались высокими зданиями.',['зданий','зданием','здание','здания'],2,'Зданиями → здание (И. п., ед. ч.).','Не путай форму множественного числа с начальной формой.'],
-['c',1,'Укажи постоянные признаки существительного «тетрадь».','В тетради появились новые записи.',['ж. р., 3-е склонение, неодуш.','ж. р., 1-е склонение, неодуш.','м. р., 2-е склонение, неодуш.','ж. р., 3-е склонение, одуш.'],0,'Тетрадь — ж. р., 3-е склонение, неодушевлённое.','У существительного на мягкий знак определи род: моя тетрадь.'],
-['c',0,'Какая связь слов установлена верно?','В густом лесу раздался громкий крик.',['лесу → какой? громкий','крик → какой? густом','лесу → каком? густом','крик → каком? густом'],2,'В лесу (каком?) густом; крик (какой?) громкий.','Соотнеси признак с предметом, который он описывает.'],
-['m',0,'Выбери только прилагательные.','Лист, осенний, сияет, прохладная, деревья, солнечное, быстро.',['осенний','сияет','прохладная','деревья','солнечное','быстро'],[0,2,4],'«Осенний», «прохладная», «солнечное» называют признаки предметов.','Нужны слова, к которым можно задать вопрос о признаке предмета.'],
-['c',1,'Каково склонение слова «площадь»?','Мы шли по большой площади.',['1-е','2-е','3-е','разносклоняемое'],2,'Площадь — ж. р., нулевое окончание в И. п., 3-е склонение.','Моя площадь, как и моя ночь.'],
-['c',0,'Какое рассуждение верно?','На высокой берёзе сидела птица.',['«Высокой» — существительное, потому что стоит перед «берёзе».','«Высокой» — прилагательное: берёзе (какой?) высокой.','«Высокой» — глагол, потому что обозначает состояние.','«Берёзе» — прилагательное: отвечает на вопрос «где?».'],1,'Вопрос от существительного к его признаку позволяет установить связь.','Найди название предмета, а затем слово, которое его описывает.']
-]},
-{id:'b2',title:'Род прилагательного',subtitle:'Форма зависит от существительного',rule:'В единственном числе прилагательное изменяется по родам: тёмный лес — тёмная ночь — тёмное небо. Род существительного обычно постоянный, а род прилагательного — непостоянный.',qs:[
-['c',0,'Определи род прилагательного «светлая».','Светлая комната была просторной.',['мужской','женский','средний','не определяется'],1,'Комната — ж. р., поэтому прилагательное «светлая» — ж. р.','Сначала определи род слова «комната».'],
-['c',0,'Какая пара согласована правильно?','Выбери словосочетание.',['тёплая море','тёплое пальто','тёплый осень','тёплое шарф'],1,'Пальто — существительное среднего рода; тёплое пальто.','Определи род каждого существительного.'],
-['c',1,'Какого рода существительное «дядя»?','Добрый дядя улыбнулся.',['женского','среднего','мужского','род не определяется'],2,'«Мой дядя» — мужской род, несмотря на окончание -я.','Помогает местоимение «мой».'],
-['t',0,'Впиши форму прилагательного «глубокий» для существительного «река».','По долине текла (глубокий) река.','глубокая','Река — ж. р., ед. ч.; правильная форма — глубокая.','Река — моя; значит нужна форма женского рода.'],
-['c',0,'В чём главная причина разных форм прилагательного?','Высокий дуб — высокая сосна — высокое дерево.',['Изменилось значение слова «высокий».','Прилагательное согласуется с существительными разного рода.','Все слова употреблены во множественном числе.','Изменился только падеж существительных.'],1,'Существительные относятся к трём родам; формы прилагательного меняются вместе с ними.','Посмотри на род слов дуб, сосна, дерево.'],
-['c',1,'Какого рода существительное «имя»?','На листе написано старое имя.',['мужского','женского','среднего','не определяется'],2,'Имя — разносклоняемое существительное среднего рода.','Вспомни десятку существительных на -мя.'],
-['c',0,'Какое утверждение верно?','Смелый поступок — смелая девочка.',['Род у прилагательных — постоянный признак.','У существительных меняется род из-за прилагательного.','Прилагательное принимает род существительного.','Род слова «девочка» не определяется.'],2,'У прилагательного род непостоянный и зависит от существительного.','Сравни «смелый» и «смелая».'],
-['c',1,'Укажи род и склонение существительного «рояль».','В углу стоял старый рояль.',['м. р., 2-е склонение','ж. р., 3-е склонение','м. р., 3-е склонение','ср. р., 2-е склонение'],0,'Рояль — мужской род, 2-е склонение.','Скажи «мой рояль».'],
-['c',0,'Почему у слов «красивый», «красивая», «красивое» разный род?','Красивый город, красивая улица, красивое озеро.',['Это разные части речи.','Род каждой формы определяется родом её существительного.','Род прилагательного зависит от глагола.','У прилагательных вообще нет рода.'],1,'Город — м. р., улица — ж. р., озеро — ср. р.','Вспомни связь главного и зависимого слова.']
-]},
-{id:'b3',title:'Число прилагательного',subtitle:'Единственное и множественное',rule:'Прилагательное принимает число существительного: высокий дом — высокие дома. Во множественном числе род прилагательного НЕ определяется; однако у существительного, имеющего форму ед. ч., род сохраняется.',qs:[
-['c',0,'Определи число прилагательного «тихие».','На берегу стояли тихие деревни.',['единственное','множественное','число не определяется','сразу два числа'],1,'Деревни — мн. ч.; тихие — мн. ч.','Найди число существительного.'],
-['c',0,'У прилагательного «молодые» род…','Молодые спортсмены вышли на поле.',['мужской','женский','средний','не определяется'],3,'Прилагательное во множественном числе: род не определяется.','Не переносите мужской род слова «спортсмен» на прилагательное во мн. ч.'],
-['c',1,'Укажи число существительного «листва».','Густая листва закрывала окно.',['единственное','множественное','не определяется','оба числа'],0,'Листва — собирательное существительное единственного числа.','Проверь форму «густая листва закрывала».'],
-['t',0,'Впиши подходящую форму прилагательного «чистый».','На столе лежали (чистый) листы.','чистые','Листы — множественное число, значит «чистые».','Слово «листы» обозначает несколько предметов.'],
-['c',0,'Где правильно определены признаки?','Старые деревья.',['Прилагательное — ср. р., мн. ч.','Прилагательное — м. р., мн. ч.','Прилагательное — мн. ч., род не определяется.','Прилагательное — ср. р., ед. ч.'],2,'«Старые» стоит во мн. ч., род не определяется. Существительное «деревья» происходит от «дерево» — ср. р.','Различай признаки существительного и прилагательного.'],
-['c',1,'Каково число слова «ножницы»?','Острые ножницы лежали на столе.',['единственное','множественное','оба числа','число меняется в зависимости от размера'],1,'Ножницы употребляется только в форме множественного числа.','Один предмет иногда называется существительным только мн. ч.'],
-['c',0,'Что изменилось в словосочетании?','Синее озеро → синие озёра.',['Только род прилагательного.','Число существительного и прилагательного.','Только падеж.','Постоянный род существительного.'],1,'Озеро → озёра и синее → синие: изменилось число. Род существительного остался средним.','Подумай, сколько озёр в каждом примере.'],
-['c',1,'Где род существительного не определяется?','Выбери слово, которое обычно не имеет единственного числа.',['деревья','друзья','каникулы','здания'],2,'Каникулы — существительное только мн. ч., поэтому род не определяется. У остальных есть ед. ч.','Верни слова в единственное число.'],
-['m',0,'Выбери все верные утверждения.','Сравни: «яркий фонарь» — «яркие фонари».',['Оба прилагательных стоят во мн. ч.','Род прилагательного «яркие» не определяется.','Число прилагательного изменилось.','Род существительного «фонарь» стал женским.'],[1,2],'Яркий — ед. ч., яркие — мн. ч.; у «яркие» не определяется род. Фонарь остаётся м. р.','Сравни изменяемый признак «число» и постоянный род существительного.']
-]},
-{id:'b4',title:'Падеж прилагательного',subtitle:'Определяем через существительное',rule:'Падеж прилагательного совпадает с падежом существительного, с которым оно связано. Алгоритм: найди существительное → определи его падеж по роли в предложении и вопросу → перенеси падеж на прилагательное. Не определяй падеж по одному окончанию.',qs:[
-['c',1,'В каком падеже существительное «книгу»?','Мы положили книгу на стол.',['именительный','родительный','винительный','предложный'],2,'Положили что? — книгу. В. п.','Задай вопрос от глагола «положили».'],
-['c',0,'В каком падеже прилагательное «древнему»?','Путники подошли к древнему храму.',['родительный','дательный','творительный','предложный'],1,'К храму — Д. п.; «древнему» согласуется с «храму» и тоже стоит в Д. п.','Начни со слова «храму».'],
-['c',0,'Определи падеж прилагательного «прохладном».','Мы отдыхали в прохладном саду.',['винительный','творительный','предложный','именительный'],2,'Отдыхали где? в чём? — в саду, П. п.; прохладном — П. п.','Вспомни падеж существительного «саду» в данном контексте.'],
-['c',1,'Определи падеж существительного «мост» в предложении.','Мы увидели мост за рекой.',['именительный','винительный','родительный','дательный'],1,'Увидели что? мост — В. п., хотя форма совпадает с И. п.','Найди подлежащее и объект действия.'],
-['c',0,'Выбери верную пару падежей.','Сильный ветер поднял пыль. Мы почувствовали сильный ветер.',['И. п. и И. п.','В. п. и В. п.','И. п. и В. п.','Р. п. и Д. п.'],2,'В первом предложении ветер — подлежащее, И. п.; во втором — объект, В. п. Формы совпадают.','Кто действует? Что почувствовали?'],
-['t',0,'Впиши падеж прилагательного одним словом.','Мы любовались багряным закатом.','творительный','Любовались чем? — закатом, Т. п.; «багряным» тоже Т. п.','Вопрос «любовались чем?»'],
-['c',1,'Где существительное стоит в предложном падеже?','Выбери предложение.',['Мы подошли к станции.','Мы стояли на станции.','Мы увидели станцию.','Мы вышли со станции.'],1,'Стояли на чём? — на станции (П. п.). «К станции» — Д. п., «станцию» — В. п., «со станции» — Р. п.','Вспомни значение конструкции «на чём?».'],
-['c',0,'Падеж прилагательного «новой»?','На новой станции открыли кафе.',['дательный','предложный','родительный','творительный'],1,'На станции — П. п., поэтому «новой» — П. п.','Не опирайся только на форму «новой».'],
-['c',0,'Падеж прилагательного «новой»?','К новой станции ведёт дорога.',['предложный','родительный','дательный','творительный'],2,'К станции — Д. п., поэтому «новой» — Д. п. Одинаковая форма — разные падежи.','Предлог «к» с этим существительным: кому? чему?'],
-['m',1,'Выбери существительные в родительном падеже.','Нет времени, подойти к музею, у берёзы, над рекой, без тетради.',['времени','музею','берёзы','рекой','тетради'],[0,2,4],'Нет чего? времени, у чего? берёзы, без чего? тетради — Р. п.','Подумай о предлогах и вопросах каждого сочетания.']
-]},
-{id:'b5',title:'Согласование',subtitle:'Род + число + падеж',rule:'Согласование: прилагательное принимает грамматические формы, соответствующие существительному. В ед. ч. совпадают род, число и падеж; во мн. ч. — число и падеж (род прилагательного не определяется).',qs:[
-['c',0,'Каково полное описание прилагательного «старому»?','Мы приблизились к старому зданию.',['м. р., ед. ч., Д. п.','ср. р., ед. ч., Д. п.','ср. р., ед. ч., П. п.','ср. р., мн. ч., Д. п.'],1,'Зданию — ср. р., ед. ч., Д. п.; «старому» имеет те же грамматические формы.','Начальная форма существительного — здание.'],
-['c',1,'Род и склонение слова «здание»?','Возле здания посадили липу.',['ср. р., 2-е склонение','м. р., 2-е склонение','ср. р., 1-е склонение','ср. р., разносклоняемое'],0,'Здание — ср. р., 2-е склонение (на -ие).','Сравни: моё здание.'],
-['c',0,'Где нарушено согласование?','Выбери ошибочное словосочетание.',['с высокой сосной','около старой школы','под синими небом','по широкой дороге'],2,'Небом — ср. р., ед. ч., Т. п.; правильно «под синим небом».','Ориентируйся не только на окончание: сколько предметов и какой род?'],
-['c',0,'Укажи грамматические признаки «тихими».','Мы шли тихими улицами.',['мн. ч., Т. п.; род не определяется','ж. р., мн. ч., Т. п.','мн. ч., Д. п.; род не определяется','ед. ч., Т. п., ж. р.'],0,'Улицами — Т. п., мн. ч.; «тихими» — Т. п., мн. ч., род не определяется.','У прилагательного во множественном числе нет категории рода.'],
-['c',1,'К какому склонению относится «площадь»?','По просторной площади шли люди.',['1-е','2-е','3-е','разносклоняемое'],2,'Площадь — ж. р., 3-е склонение.','Начальная форма — площадь.'],
-['a',0,'Определи признаки прилагательного «узкой».','Мы подошли к узкой тропинке.',['тропинке','женский','единственное','дательный'],'К тропинке — Д. п., ед. ч.; тропинка — ж. р. Поэтому «узкой»: ж. р., ед. ч., Д. п.','Сначала разберите существительное «тропинке».'],
-['c',0,'Какое объяснение согласования верно?','Под старыми деревьями было прохладно.',['«Старыми» имеет ср. род, потому что «дерево» среднего рода.','«Старыми» — мн. ч., Т. п.; род не определяется.','«Старыми» — ед. ч., Т. п., ср. р.','«Старыми» — мн. ч., П. п.; род не определяется.'],1,'Под деревьями — Т. п., мн. ч.; значит «старыми» — Т. п., мн. ч.; род не определяется.','Под чем? — под деревьями.'],
-['c',1,'Каковы постоянные признаки слова «имя»?','Старинное имя сохранилось в летописи.',['ср. р., разносклоняемое','ср. р., 2-е склонение','м. р., разносклоняемое','ж. р., 1-е склонение'],0,'Имя — ср. р., одно из 10 разносклоняемых существительных на -мя.','Вспомни «имя — имени».'],
-['m',0,'Выбери все правильные сочетания.','Сверь форму прилагательного с существительным.',['к высокому дереву','у широкая реки','над белыми облаками','в тихий комнате','по узкой улице'],[0,2,4],'Верно: к высокому дереву, над белыми облаками, по узкой улице. Остальные нарушают согласование.','Проверяй число, род и падеж существительного в каждом сочетании.']
-]},
-{id:'b6',title:'Смешанная практика',subtitle:'Проверь себя и объясни',rule:'Полный алгоритм: найди прилагательное и главное существительное → определи начальную форму и постоянный род существительного → его число и падеж в предложении → перенеси нужные признаки на прилагательное → проверь согласование.',qs:[
-['a',0,'Разбери прилагательное «свежим» по признакам.','Путешественники дышали свежим воздухом.',['воздухом','мужской','единственное','творительный'],'Воздух — м. р.; воздухом — Т. п., ед. ч. Следовательно, свежим — м. р., ед. ч., Т. п.','Дышали чем? — воздухом.'],
-['c',1,'Каковы род и склонение слова «путь»?','На дальнем пути туристы устали.',['м. р., разносклоняемое','ж. р., 3-е склонение','м. р., 2-е склонение','ср. р., разносклоняемое'],0,'Путь — существительное мужского рода, разносклоняемое.','Это исключение, изученное при склонениях существительных.'],
-['c',0,'Найди ошибку в объяснении.','У большого озера мы увидели уток.',['«Большого» — ср. р.','«Большого» — ед. ч.','«Большого» — Д. п.','«Большого» относится к существительному «озера».'],2,'У озера — Р. п., а не Д. п.; «большого» тоже стоит в Р. п.','Существительное: у чего? — у озера.'],
-['t',1,'Впиши начальную форму существительного «тетрадями».','Ученики обменялись тетрадями.','тетрадь','Тетрадями → тетрадь (И. п., ед. ч.).','Сохрани то же слово, верни в ед. ч. И. п.'],
-['c',0,'Определи падеж прилагательных в обоих предложениях.','Мы ждали знакомого учителя. Мы подошли к знакомому учителю.',['В первом — В. п., во втором — Д. п.','В обоих — И. п.','В первом — Д. п., во втором — В. п.','В обоих — Р. п.'],0,'Ждали кого? учителя (В. п.); подошли к кому? учителю (Д. п.). Прилагательные имеют разные формы: знакомого и знакомому.','Сначала определи падежи существительных.'],
-['m',0,'Выбери все верные объяснения.','Проверь рассуждения о прилагательных.',['«К старому дому»: старому — Д. п.','«У старого дома»: старого — Д. п.','«Высокие тополя»: род прилагательного не определяется.','«Под синей крышей»: синей — Т. п.','«На новой станции»: новой — Д. п.'],[0,2,3],'Верны 1, 3 и 4. «У дома» — Р. п.; «на станции» — П. п.','Проверь каждый падеж через существительное, а не по окончанию.'],
-['c',1,'Каков падеж слова «имя» в предложении?','Учитель записал имя ученика.',['именительный','винительный','дательный','предложный'],1,'Записал что? имя — В. п. Форма совпадает с И. п.','Ищи действие: что именно записал учитель?'],
-['a',0,'Полный анализ прилагательного «яркими».','Небо сияло яркими звёздами.',['звёздами','не определяется','множественное','творительный'],'Звёздами — Т. п., мн. ч.; «яркими» — Т. п., мн. ч., род не определяется.','Во множественном числе род прилагательного не указывают.'],
-['c',0,'Какое рассуждение ошибочно?','К новой тетради подвинули старый учебник.',['«Новой» зависит от «тетради».','«Новой» — ж. р., ед. ч., Д. п.','«Старый» зависит от «учебник».','«Старый» — м. р., ед. ч., Д. п.'],3,'«Старый учебник» — В. п. (подвинули что?), а не Д. п. И. и В. п. неодушевлённых существительных совпадают по форме.','Не путай падеж слов по соседству: задай вопрос к каждому существительному.'],
-['c',1,'Каков разбор слова «ножницами»?','Мы пользовались острыми ножницами.',['Т. п., мн. ч., род не определяется','Р. п., мн. ч., ср. р.','Т. п., ед. ч., ж. р.','Д. п., мн. ч., род не определяется'],0,'Пользовались чем? ножницами — Т. п., мн. ч. Ножницы — существительное только мн. ч., род не определяется.','У слова ножницы нет обычной формы ед. ч.']
-]}
-];
-const LS='russian-adjective-lesson1-v1';const DATA_VERSION=2;const THEME='russian-adjective-theme-v1';const FLAT=GROUPS.flatMap(g=>g.qs.map((q,i)=>{const compact=q[0]==='t'||q[0]==='a';return{id:g.id+'-'+(i+1),day:g.id,ord:i+1,type:q[0],noun:q[1]===1,prompt:q[2],phrase:q[3],opts:compact?null:q[4],answer:compact?q[4]:q[5],explain:compact?q[5]:q[6],hint:compact?q[6]:q[7]};}));
-let state={results:{},drafts:{},group:null,index:0,screen:'home'};let persistent=true;let full=false;const root=document.getElementById('app'),nav=document.getElementById('nav');document.getElementById('totalTop').textContent=FLAT.length;
-function e(s){return String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
-function normal(s){return String(s||'').toLowerCase().trim().replace(/ё/g,'е').replace(/\s+/g,' ');}
-function load(){try{let d=JSON.parse(localStorage.getItem(LS)||'null');if(d&&typeof d==='object'){state={...state,...d,screen:'home'};if(d.version!==DATA_VERSION){for(const q of FLAT){if(q.type==='t'||q.type==='a'){delete state.results[q.id];delete state.drafts[q.id];delete state.drafts[q.id+'-tries'];}}save();}}}catch(err){persistent=false;}}
-function save(){try{localStorage.setItem(LS,JSON.stringify({version:DATA_VERSION,results:state.results,drafts:state.drafts,group:state.group,index:state.index}));}catch(err){persistent=false;}}
-function activeGroup(){return GROUPS.find(x=>x.id===state.group)||GROUPS[0];}
-function dayQs(g){return FLAT.filter(x=>x.day===g.id);}
-function got(id){return state.results[id]||null;}
-function status(q){let r=got(q.id);return r?r.status:'';}
-function completed(){return FLAT.filter(q=>got(q.id)).length;}
-function summary(g){let q=dayQs(g),done=q.filter(x=>got(x.id));return {done:done.length,good:done.filter(x=>status(x)==='first').length,later:done.filter(x=>status(x)==='second').length,all:q.length};}
-function top(){nav.innerHTML=GROUPS.map((g,i)=>{let a=summary(g);return '<button class="navbtn '+(state.screen==='exercise'&&state.group===g.id?'active':'')+'" data-go="'+g.id+'"><span class="nr">'+(i+1)+'</span><span><strong>'+e(g.title)+'</strong><small>'+a.done+'/'+a.all+' выполнено</small></span></button>';}).join('');}
-function render(){top();if(state.screen==='home')home();else if(state.screen==='results')results();else exercise();}
-function home(){let p=completed(),intro='<div class="panel"><div class="eyebrow">Прогресс тренажёра</div><h2>Маршрут по темам</h2><p class="lead">В каждом блоке есть <b>несколько заданий на повторение существительного</b>. Упражнения по прилагательным ограничены материалом первого урока: вопросы, род, число, падеж и согласование. Склонение прилагательных и правописание окончаний пока не изучаем.</p><div class="progress"><div style="width:'+(100*p/FLAT.length)+'%"></div></div><p class="muted">'+p+' из '+FLAT.length+' заданий выполнено • правильных с первой попытки: '+FLAT.filter(q=>status(q)==='first').length+'</p>'+(persistent?'':'<p class="tag repeat">Браузер не позволяет сохранить прогресс — сохраните отчёт до закрытия страницы.</p>')+'</div>';root.innerHTML=intro+'<div class="panel"><h2>Выбери блок</h2><div class="grid">'+GROUPS.map((g,i)=>{let a=summary(g),nc=dayQs(g).filter(x=>x.noun).length;return '<article class="blockcard"><div class="toprow"><span class="tag">Блок '+(i+1)+'</span><span class="tag repeat">Повторение: '+nc+'</span></div><h3>'+e(g.title)+'</h3><p>'+e(g.subtitle)+'</p><div class="chips"><span class="tag">'+a.all+' заданий</span><span class="tag">'+a.done+' решено</span></div><button class="btn primary" data-go="'+g.id+'">'+(a.done?'Продолжить':'Начать')+'</button></article>';}).join('')+'</div></div>';}
-function exercise(){let g=activeGroup(),qs=dayQs(g);state.index=Math.max(0,Math.min(qs.length-1,state.index));let q=qs[state.index],r=got(q.id);root.innerHTML='<div class="panel"><div class="toprow"><span class="path">'+e(g.title)+' · задание '+(state.index+1)+' из '+qs.length+'</span><span class="tag '+(q.noun?'repeat':'')+'">'+(q.noun?'↺ Повторение существительного':'Имя прилагательное')+'</span></div><h2>'+e(g.subtitle)+'</h2><details class="theory"><summary>Памятка по теме</summary><p>'+e(g.rule)+'</p></details><div class="qgrid">'+qs.map((x,i)=>'<button class="qjump '+(status(x)==='first'?'ok':status(x)==='second'?'later':status(x)==='revealed'?'reveal':'')+(i===state.index?' current':'')+'" title="Задание '+(i+1)+(x.noun?' — повторение существительного':'')+'" data-q="'+i+'">'+(i+1)+(x.noun?' ↺':'')+'</button>').join('')+'</div><div class="progress"><div style="width:'+(100*summary(g).done/qs.length)+'%"></div></div><p class="muted">В этом блоке выполнено '+summary(g).done+' из '+qs.length+'. Нажми на номер задания, чтобы вернуться к нему.</p><h3 class="qtitle">'+e(q.prompt)+'</h3><div class="quote">'+e(q.phrase)+'</div><div id="answerArea"></div><div id="feedback"></div><div class="footnav"><button class="btn" id="prevBtn">← Назад</button><button class="btn light" id="routeBtn">Все блоки</button><button class="btn primary" id="nextBtn">'+(state.index===qs.length-1?'К результату →':'Дальше →')+'</button></div></div>';paintAnswer(q,r);paintFeedback(q,r);document.getElementById('prevBtn').disabled=state.index===0;document.getElementById('nextBtn').onclick=()=>{if(state.index<qs.length-1){state.index++;save();render();}else{state.screen='results';save();render();}};document.getElementById('prevBtn').onclick=()=>{state.index--;save();render();};document.getElementById('routeBtn').onclick=()=>{state.screen='home';render();};}
-function paintAnswer(q,r){let area=document.getElementById('answerArea'),locked=!!r;let disabled=locked?' disabled':'';if(q.type==='c'||q.type==='m'){let saved=state.drafts[q.id];let draft=Array.isArray(saved)?saved:(Number.isInteger(saved)?[saved]:[]);area.innerHTML='<div class="answergrid">'+q.opts.map((x,i)=>{let selected=draft.includes(i);let cls=(r?(q.type==='c'?i===q.answer:q.answer.includes(i))?' correct':selected?' wrong':'':selected?(state.drafts[q.id+'-tries']?' wrong':' chosen'):'');return '<button class="option'+cls+'" data-opt="'+i+'"'+disabled+' aria-pressed="'+selected+'"><span class="letter">'+('АБВГДЕЖЗ'[i]||i+1)+'</span><span class="answertext">'+e(x)+'</span>'+(q.type==='m'?'<span aria-hidden="true">'+(selected?'☑':'☐')+'</span>':'')+'</button>';}).join('')+'</div>'+(q.type==='m'?'<div class="btnbar"><button class="btn primary" id="checkBtn"'+disabled+'>Проверить выбранные</button></div><p class="inputhelp">Отметь все верные варианты, затем нажми «Проверить».</p>':'');area.querySelectorAll('[data-opt]').forEach(btn=>btn.onclick=()=>{if(locked)return;let i=+btn.dataset.opt;if(q.type==='c'){attempt(q,i);return;}let d=state.drafts[q.id]||[];state.drafts[q.id]=d.includes(i)?d.filter(v=>v!==i):[...d,i];save();paintAnswer(q,null);});let cb=document.getElementById('checkBtn');if(cb)cb.onclick=()=>{let d=state.drafts[q.id]||[];if(!d.length){alert('Выбери хотя бы один вариант.');return;}attempt(q,d);};}
-if(q.type==='t'){area.innerHTML='<form id="wordForm"><input class="entry" id="wordInput" autocomplete="off" spellcheck="false" aria-label="Твой ответ" placeholder="Впиши ответ" value="'+e(state.drafts[q.id]||'')+'"'+disabled+'><div class="btnbar"><button type="submit" class="btn primary"'+disabled+'>Проверить ответ</button></div><p class="inputhelp">Вводи слово или название падежа полностью, без сокращений.</p></form>';let f=document.getElementById('wordForm');f.onsubmit=evt=>{evt.preventDefault();if(locked)return;let value=document.getElementById('wordInput').value.trim();if(!value)return;state.drafts[q.id]=value;attempt(q,value);};let inp=document.getElementById('wordInput');inp.oninput=()=>{state.drafts[q.id]=inp.value;save();};}
-if(q.type==='a'){let labels=['Главное существительное в форме из предложения','Род прилагательного','Число прилагательного','Падеж прилагательного'];let choices=[[q.answer[0],...FLAT.filter(x=>x.type==='a').map(x=>x.answer[0]).filter(x=>x!==q.answer[0])],GEN,NUM,CASES];let draft=state.drafts[q.id]||['','','',''];area.innerHTML='<form id="parseForm"><div class="analysis">'+labels.map((lab,i)=>'<div class="field"><label for="fld'+i+'">'+lab+'</label><select id="fld'+i+'"'+disabled+'><option value="">— Выбери —</option>'+Array.from(new Set(choices[i])).map(v=>'<option value="'+e(v)+'"'+(draft[i]===v?' selected':'')+'>'+e(v)+'</option>').join('')+'</select></div>').join('')+'</div><div class="btnbar"><button class="btn primary" type="submit"'+disabled+'>Проверить разбор</button></div><p class="inputhelp">Род прилагательного во множественном числе отмечай как «не определяется».</p></form>';area.querySelectorAll('select').forEach((sel,i)=>sel.onchange=()=>{let d=state.drafts[q.id]||['','','',''];d[i]=sel.value;state.drafts[q.id]=d;save();});document.getElementById('parseForm').onsubmit=evt=>{evt.preventDefault();let d=[0,1,2,3].map(i=>document.getElementById('fld'+i).value);if(d.some(v=>!v)){alert('Заполни все четыре поля.');return;}attempt(q,d);};}}
-function same(q,val){if(q.type==='c')return q.answer===val;if(q.type==='t')return normal(q.answer)===normal(val);if(q.type==='a')return val.every((v,i)=>v===q.answer[i]);return q.answer.length===val.length&&q.answer.every(x=>val.includes(x));}
-function answerString(q){if(q.type==='c')return q.opts[q.answer];if(q.type==='m')return q.answer.map(i=>q.opts[i]).join('; ');if(q.type==='a')return q.answer.join(' · ');return String(q.answer);}
-function attempt(q,val){if(got(q.id))return;let n=Number((state.drafts[q.id+'-tries']||0))+1;let ok=same(q,val);state.drafts[q.id]=val;state.drafts[q.id+'-tries']=n;if(ok||n>=2){state.results[q.id]={status:ok?(n===1?'first':'second'):'revealed',tries:n,answer:val};}save();render();}
-function paintFeedback(q,r){let n=state.drafts[q.id+'-tries']||0,box=document.getElementById('feedback');if(r){let ok=r.status!=='revealed';box.innerHTML='<div class="feedback '+(r.status==='first'||r.status==='second'?'good':'reveal')+'"><strong>'+(ok?(r.status==='first'?'✓ Верно с первой попытки!':'✓ Верно со второй попытки!'):'Правильный ответ показан после двух попыток')+'</strong><p><b>Ответ:</b> '+e(answerString(q))+'</p><p>'+e(q.explain)+'</p></div>';}else if(n===1){box.innerHTML='<div class="feedback try"><strong>Пока неверно. Есть ещё одна попытка.</strong><p>'+e(q.hint)+'</p></div>';}else{box.innerHTML='<p class="muted">У тебя две попытки. После первой ошибки появится подсказка.</p>';}}
-function results(){let done=completed(),first=FLAT.filter(q=>status(q)==='first').length,second=FLAT.filter(q=>status(q)==='second').length;let name=state.drafts.student||'';root.innerHTML='<div class="panel"><div class="eyebrow">Мой результат</div><h2>Отчёт о занятии</h2><p class="lead">Результат можно скопировать или скачать текстовым файлом и отправить преподавателю. Необязательно проходить все блоки за один раз.</p><div class="resultcards"><div class="stat"><b>'+done+'/'+FLAT.length+'</b><small>выполнено</small></div><div class="stat"><b>'+first+'</b><small>с первой попытки</small></div><div class="stat"><b>'+second+'</b><small>со второй попытки</small></div></div><label for="student">Имя ученика (необязательно)</label><input id="student" class="entry" placeholder="Например: ученик 7 класса" value="'+e(name)+'"><h3>По блокам</h3>'+GROUPS.map(g=>{let s=summary(g);return '<div class="line"><b>'+e(g.title)+'</b><div class="bar"><span style="width:'+(100*s.done/s.all)+'%"></span></div><span>'+s.done+'/'+s.all+'</span></div>';}).join('')+'<h3>Текстовый отчёт</h3><textarea class="report" id="reportText" readonly></textarea><div class="btnbar"><button class="btn primary" id="downloadBtn">Скачать отчёт .txt</button><button class="btn" id="copyBtn">Скопировать</button><button class="btn light" id="backBtn">Вернуться к блокам</button></div></div>';let student=document.getElementById('student');student.oninput=()=>{state.drafts.student=student.value;save();updateReport();};document.getElementById('downloadBtn').onclick=()=>{let blob=new Blob([reportText()],{type:'text/plain;charset=utf-8'});let url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='prilagatelnoe_urok1_otchet.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};document.getElementById('copyBtn').onclick=async()=>{try{await navigator.clipboard.writeText(reportText());alert('Отчёт скопирован.');}catch(err){document.getElementById('reportText').select();document.execCommand('copy');}};document.getElementById('backBtn').onclick=()=>{state.screen='home';render();};updateReport();}
-function reportText(){let lines=['ИМЯ ПРИЛАГАТЕЛЬНОЕ · УРОК 1','Ученик: '+(state.drafts.student||'не указано'),'Выполнено: '+completed()+' из '+FLAT.length,'С первой попытки: '+FLAT.filter(x=>status(x)==='first').length,'Со второй попытки: '+FLAT.filter(x=>status(x)==='second').length,'С объяснением после двух ошибок: '+FLAT.filter(x=>status(x)==='revealed').length,''];for(let g of GROUPS){let s=summary(g);lines.push(g.title+': '+s.done+'/'+s.all+', с первой попытки '+s.good);for(let q of dayQs(g)){let r=got(q.id);lines.push('  '+q.ord+'. '+(q.noun?'[СУЩ.] ':'')+(r?(r.status==='first'?'✓ с первой':r.status==='second'?'✓ со второй':'✕ разбор'):'— не выполнено')+' — '+q.prompt);}}return lines.join('\n');}
-function updateReport(){document.getElementById('reportText').value=reportText();}
-function help(){document.getElementById('modalBody').innerHTML='<h2>Краткая памятка</h2><p><b>1. Находим главное слово:</b> существительное, которое обозначает предмет.</p><p><b>2. Задаём вопрос:</b> дом (какой?) высокий; к реке (какой?) широкой.</p><p><b>3. Определяем грамматические признаки существительного:</b> род по начальной форме; число и падеж — по контексту.</p><p><b>4. Определяем признаки прилагательного:</b> в единственном числе род, число, падеж; во множественном числе — только число и падеж.</p><p><b>5. Проверяем согласование:</b> форма прилагательного соответствует существительному.</p><p><b>Важно:</b> «в новой школе» — П. п., «к новой школе» — Д. п. Одинаковая форма прилагательного не гарантирует одинаковый падеж.</p><p><b>Существительное:</b> род обычно постоянен; «путь» и 10 слов на -мя — разносклоняемые; «каникулы», «ножницы» — только множественного числа, род не определяется.</p><p><b>Не изучаем здесь:</b> склонение прилагательных по таблице и правописание падежных окончаний. Они будут на следующем уроке.</p>';document.getElementById('modal').showModal();}
-function go(id){state.group=id;state.index=dayQs(GROUPS.find(g=>g.id===id)).findIndex(q=>!got(q.id));if(state.index<0)state.index=0;state.screen='exercise';save();render();}
-document.addEventListener('click',ev=>{let b=ev.target.closest('[data-go]');if(b){go(b.dataset.go);return;}let q=ev.target.closest('[data-q]');if(q){state.index=+q.dataset.q;save();render();}});
-document.getElementById('homeBtn').onclick=()=>{state.screen='home';render();};document.getElementById('resultBtn').onclick=()=>{state.screen='results';render();};document.getElementById('helpBtn').onclick=help;document.getElementById('closeModal').onclick=()=>document.getElementById('modal').close();document.getElementById('offlineBtn').onclick=()=>{let content='<!doctype html>\n'+document.documentElement.outerHTML;let blob=new Blob([content],{type:'text/html;charset=utf-8'});let u=URL.createObjectURL(blob);let a=document.createElement('a');a.href=u;a.download='prilagatelnoe_urok1_trenazher.html';a.click();setTimeout(()=>URL.revokeObjectURL(u),1000);};document.getElementById('resetBtn').onclick=()=>{if(confirm('Удалить все результаты и начать заново?')){state={results:{},drafts:{},group:null,index:0,screen:'home'};save();render();}};document.getElementById('themeBtn').onclick=()=>{let dark=document.documentElement.dataset.theme!=='dark';document.documentElement.dataset.theme=dark?'dark':'light';try{localStorage.setItem(THEME,dark?'dark':'light');}catch(err){}document.getElementById('themeBtn').textContent=dark?'☀ Светлая':'☾ Тёмная';};document.getElementById('fullBtn').onclick=()=>{full=!full;document.querySelector('.header').classList.toggle('hide',full);document.querySelector('.hero').classList.toggle('hide',full);document.querySelector('.sidebar').classList.toggle('hide',full);document.getElementById('fullBtn').textContent=full?'Обычный вид':'На экран';if(full){let x=document.createElement('button');x.className='ghost';x.id='exitFull';x.textContent='Выйти из режима экрана';x.style.cssText='position:fixed;right:10px;top:10px;z-index:30';x.onclick=()=>document.getElementById('fullBtn').click();document.body.appendChild(x);}else{document.getElementById('exitFull')?.remove();}};
-try{if(localStorage.getItem(THEME)==='dark'){document.documentElement.dataset.theme='dark';document.getElementById('themeBtn').textContent='☀ Светлая';}}catch(err){}load();
-// Consistency checks: every answer is inside its option set; all IDs unique; each group has at least 2 noun review tasks.
-for(let g of GROUPS){if(g.qs.filter(q=>q[1]===1).length<2)throw Error('Missing noun review in '+g.id);}let ids=new Set();for(let q of FLAT){if(ids.has(q.id))throw Error('Duplicate ID '+q.id);ids.add(q.id);if(typeof q.explain!=='string'||typeof q.hint!=='string')throw Error('Missing explanations '+q.id);if(q.type==='c'&&(!Array.isArray(q.opts)||!Number.isInteger(q.answer)||q.answer<0||q.answer>=q.opts.length))throw Error('Invalid choice '+q.id);if(q.type==='m'&&(!Array.isArray(q.opts)||!Array.isArray(q.answer)||q.answer.some(i=>i<0||i>=q.opts.length)))throw Error('Invalid multi '+q.id);if(q.type==='t'&&(typeof q.answer!=='string'||!q.answer.trim()))throw Error('Invalid open answer '+q.id);if(q.type==='a'&&(!Array.isArray(q.answer)||q.answer.length!==4))throw Error('Invalid analysis '+q.id);}
-render();
+const KEY='adjective-lesson1-v3',OLD='russian-adjective-lesson1-v1',THEME='russian-adjective-theme-v1';
+const CASES=['именительный','родительный','дательный','винительный','творительный','предложный'],GEN=['мужской','женский','средний','не определяется'],NUM=['единственное','множественное'];
+const ALL=GROUPS.flatMap(g=>g.qs.map((a,i)=>{const compact=['t','a'].includes(a[0]);return{id:g.id+'-'+(i+1),group:g.id,ord:i+1,type:a[0],noun:a[1]===1,prompt:a[2],phrase:a[3],opts:compact?null:a[4],answer:compact?a[4]:a[5],explain:compact?a[5]:a[6],hint:compact?a[6]:a[7]}}));
+const LABELS=['Связь с существительным','Род прилагательного','Число прилагательного','Падеж прилагательного'];
+const $=id=>document.getElementById(id),esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const norm=s=>String(s??'').toLowerCase().replace(/ё/g,'е').replace(/[.!?]+$/,'').trim().replace(/\s+/g,' ');
+const fresh=()=>({answers:{},review:{},drafts:{},name:'',last:null});let state=fresh(),storageOK=true,view='home',active=ALL[0],reviewMode=false,filter='all',full=false;
+try{const saved=JSON.parse(localStorage.getItem(KEY)||'null');if(saved&&typeof saved==='object'){state={...fresh(),...saved};for(const k of ['answers','review','drafts'])if(!state[k]||typeof state[k]!=='object'||Array.isArray(state[k]))state[k]={};state.name=String(state.name||'').slice(0,90)}else{const old=JSON.parse(localStorage.getItem(OLD)||'null');if(old?.results){for(const q of ALL){const r=old.results[q.id];if(!r||q.id==='b5-5')continue;let count=q.type==='a'?4:1;state.answers[q.id]=Array.from({length:count},(_,i)=>({tries:r.status==='first'?[{value:q.type==='a'?q.answer[i]:q.answer,ok:true}]:r.status==='second'?[{value:'(ранняя версия)',ok:false},{value:q.type==='a'?q.answer[i]:q.answer,ok:true}]:[{value:'(ранняя версия)',ok:false},{value:'(ранняя версия)',ok:false}]}));}state.name=String(old.drafts?.student||'').slice(0,90)}}}catch(e){storageOK=false}
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state))}catch(e){storageOK=false;$('storageWarning').hidden=false}}
+const units=q=>q.type==='a'?4:1;
+function recs(q,review=reviewMode){const arr=(review?state.review:state.answers)[q.id];return Array.from({length:units(q)},(_,i)=>arr?.[i]&&Array.isArray(arr[i].tries)?arr[i]:{tries:[]})}
+function stat(r){let t=r.tries;return !t.length?'empty':t[t.length-1].ok?(t.length===1?'first':'second'):t.length>=2?'revealed':'pending'}
+const locked=r=>['first','second','revealed'].includes(stat(r));
+const done=(q,review=false)=>recs(q,review).every(locked);
+function qstatus(q,review=false){let s=recs(q,review).map(stat);if(s.includes('revealed'))return done(q,review)?'revealed':'pending';if(!done(q,review))return s.some(x=>x!=='empty')?'pending':'empty';return s.includes('second')?'second':'first'}
+const weak=()=>ALL.filter(q=>recs(q,false).some(r=>r.tries.some(t=>!t.ok)));
+function counts(list=ALL,review=false){let rs=list.flatMap(q=>recs(q,review));return{total:rs.length,checked:rs.filter(locked).length,first:rs.filter(r=>stat(r)==='first').length,second:rs.filter(r=>stat(r)==='second').length,revealed:rs.filter(r=>stat(r)==='revealed').length,done:list.filter(q=>done(q,review)).length}}
+function pool(){return reviewMode?weak():ALL.filter(q=>q.group===active.group)}
+function draftKey(q){return(reviewMode?'r:':'')+q.id}
+function answer(q,i=0){return q.type==='a'?q.answer[i]:q.answer}
+function showValue(q,v,i=0){if(q.type==='c')return typeof v==='number'?q.opts[v]:String(v);if(q.type==='m')return Array.isArray(v)?v.map(n=>q.opts[n]).join('; '):String(v);return String(v)}
+function expected(q,i=0){return showValue(q,answer(q,i),i)}
+function valid(q,value,i){if(q.type==='c')return Number(value)===q.answer;if(q.type==='m')return value.length===q.answer.length&&q.answer.every(x=>value.includes(x));return norm(value)===norm(answer(q,i))}
+function phrase(q){let text=esc(q.phrase),m=q.prompt.match(/[«]([^»]+)[»]/);if(m){const word=esc(m[1]);if(word&&!word.includes(' ')&&text.toLowerCase().includes(word.toLowerCase())){const re=new RegExp(word.replace(/[.*+?^${}()|[\]\\]/g,'\\$&'),'gi');text=text.replace(re,v=>'<mark>'+v+'</mark>')}}return text}
+function progress(n,total,label){return '<div class="progress" role="progressbar" aria-label="'+esc(label)+'" aria-valuemin="0" aria-valuemax="'+total+'" aria-valuenow="'+n+'"><div style="width:'+100*n/total+'%"></div></div>'}
+function nav(){const s=counts();$('nav').innerHTML=GROUPS.map((g,i)=>{const list=ALL.filter(q=>q.group===g.id),n=list.filter(q=>done(q)).length;return '<button class="navbtn '+(view==='exercise'&&active.group===g.id&&!reviewMode?'active':'')+'" data-group="'+g.id+'"><span class="nr">'+(i+1)+'</span><span><strong>'+esc(g.title)+'</strong><small>'+n+' / '+list.length+' заданий</small></span><span class="navcheck">'+(n===list.length?'✓':'')+'</span></button>'}).join('');$('sideProgress').innerHTML=progress(s.done,ALL.length,'Общий прогресс')+'<span>'+s.done+' из '+ALL.length+' заданий завершено</span>';$('storageWarning').hidden=storageOK}
+function render(focus=false){nav();$('app').innerHTML=view==='home'?home():view==='report'?report():exercise();if(view==='report')$('reportText').value=reportText();if(focus){const h=$('pageTitle');h?.focus({preventScroll:true});if(innerWidth<721)$('app').scrollIntoView({block:'start',behavior:'instant'})}}
+function home(){let s=counts(),w=weak(),last=ALL.find(q=>q.id===state.last&&!done(q))||ALL.find(q=>!done(q));return '<div class="panel welcome"><div class="eyebrow">Практика после первого урока</div><h2 id="pageTitle" tabindex="-1">От предмета — к его признаку</h2><p class="lead">Найди существительное, задай вопрос и определи форму прилагательного. Проходи по одному блоку: короткое правило → практика → разбор.</p><div class="example-flow"><span><small>Предмет</small><b>к берёзе</b></span><span class="flow-arrow">→</span><span><small>Вопрос</small><b>к какой?</b></span><span class="flow-arrow">→</span><span><small>Признак</small><b>к высокой берёзе</b></span></div><div class="overview"><span><b>'+s.done+'/'+ALL.length+'</b> заданий</span><span><b>'+s.first+'</b> ответов с первой попытки</span><span><b>'+w.length+'</b> трудных заданий</span></div>'+progress(s.done,ALL.length,'Завершённые задания')+'<div class="btnbar">'+(last?'<button class="btn primary" data-open="'+last.id+'">'+(s.checked?'Продолжить занятие':'Начать с первого блока')+' →</button>':'<button class="btn primary" data-screen="report">Посмотреть результат →</button>')+(w.length?'<button class="btn light" data-review>Работа над ошибками · '+w.length+'</button>':'')+'</div></div><div class="section-heading"><h2>Шесть шагов к согласованию</h2><span>В каждом блоке — повторение существительного</span></div><div class="grid block-grid">'+GROUPS.map((g,i)=>{let li=ALL.filter(q=>q.group===g.id),n=li.filter(q=>done(q)).length;return '<article class="blockcard"><div class="toprow"><span class="block-number">0'+(i+1)+'</span><span class="tag repeat">↺ '+li.filter(q=>q.noun).length+' на повторение</span></div><h3>'+esc(g.title)+'</h3><p>'+esc(g.subtitle)+'</p>'+progress(n,li.length,g.title)+'<div class="toprow"><span class="muted">'+n+' / '+li.length+' заданий</span><button class="btn '+(i===0?'primary':'light')+'" data-group="'+g.id+'">'+(n===li.length?'Посмотреть':n?'Продолжить':'Начать')+' →</button></div></article>'}).join('')+'</div><div class="panel method"><b>Как считается результат?</b><p>На каждый ответ — две попытки. При разборе каждое из четырёх полей проверяется отдельно: верные ответы сохраняются, исправляешь только ошибки. После двух ошибок открывается объяснение.</p><p>Работа над ошибками учитывается отдельно. Первоначальный результат сохраняется. Отчёт можно скачать и отправить учителю.</p></div>'}
+function exercise(){let q=active,g=GROUPS.find(g=>g.id===q.group),list=pool(),idx=list.indexOf(q),rs=recs(q),d=state.drafts[draftKey(q)],finished=rs.every(locked);return '<div class="panel task-head"><div class="toprow"><span class="eyebrow">'+(reviewMode?'Работа над ошибками':'Блок '+(GROUPS.indexOf(g)+1)+' из 6')+'</span><span class="tag '+(q.noun?'repeat':'')+'">'+(q.noun?'↺ Повторение существительного':'Имя прилагательное')+'</span></div><h2 id="pageTitle" tabindex="-1">'+esc(g.title)+'</h2><p class="muted">'+(reviewMode?'Первоначальные результаты не меняются.':'Задание '+(idx+1)+' из '+list.length+' · '+esc(g.subtitle))+'</p><div class="qgrid">'+list.map((x,i)=>'<button class="qjump '+qstatus(x,reviewMode)+(x.id===q.id?' current':'')+'" data-open="'+x.id+'" '+(x.id===q.id?'aria-current="step"':'')+' title="Задание '+(i+1)+(x.noun?' — повторение существительного':'')+'">'+(i+1)+(x.noun?' ↺':'')+'</button>').join('')+'</div><div class="legend"><span>● С первой попытки</span><span>◐ Со второй</span><span>◌ С разбором</span></div></div><div class="panel exercise-panel"><div class="toprow"><span class="path">'+(q.type==='a'?'Разбор по шагам':q.type==='t'?'Самостоятельный ответ':q.type==='m'?'Несколько верных ответов':'Один верный ответ')+'</span><span class="muted">'+(finished?'Задание разобрано':q.type==='a'?'По две попытки на каждое поле':'Две попытки')+'</span></div><h3 class="qtitle">'+esc(q.prompt)+'</h3><div class="quote">'+phrase(q)+'</div>'+answerUI(q,rs,d)+'<div id="feedback" role="status">'+feedback(q,rs)+'</div><details class="theory"><summary>Вспомнить правило'+(finished?'':' · можно открыть при затруднении')+'</summary><p>'+esc(g.rule)+'</p>'+(q.noun?'<p>Для существительного: восстанови начальную форму → определи постоянные признаки → число и падеж в предложении. Род обычно постоянный, число и падеж меняются.</p>':'')+'</details><div class="footnav"><button class="btn" data-prev '+(idx<=0?'disabled':'')+'>← Назад</button><button class="btn light" data-screen="home">Все блоки</button><button class="btn primary" data-next '+(!finished?'disabled':'')+'>'+(idx===list.length-1?(reviewMode?'К результату →':'Итог блока →'):'Следующее →')+'</button></div>'+(!finished?'<p class="inputhelp">Сначала проверь ответ. Для перехода к другому заданию нажми на его номер.</p>':'')+'</div>'}
+function answerUI(q,rs,d){const finished=rs.every(locked),dis=finished?' disabled':'';if(q.type==='c'||q.type==='m'){let selected=q.type==='c'?(Number.isInteger(d)?[d]:[]):(Array.isArray(d)?d:[]);return '<div class="answergrid">'+q.opts.map((v,i)=>{let cls='',priorWrong=q.type==='c'&&rs[0].tries.some(t=>t.value===i&&!t.ok);if(finished)cls=(q.type==='c'?q.answer===i:q.answer.includes(i))?' correct':selected.includes(i)?' wrong':'';else if(priorWrong)cls=' wrong';else if(selected.includes(i))cls=' chosen';return '<button class="option'+cls+'" data-opt="'+i+'" aria-pressed="'+selected.includes(i)+'" '+(finished||priorWrong?'disabled':'')+'><span class="letter">'+('АБВГДЕЖЗ'[i])+'</span><span class="answertext">'+esc(v)+'</span>'+(q.type==='m'?'<span aria-hidden="true">'+(selected.includes(i)?'☑':'☐')+'</span>':'')+'</button>'}).join('')+'</div>'+(q.type==='m'?'<button class="btn primary check-btn" data-check '+dis+'>Проверить выбранные</button><p class="inputhelp">Отметь все верные варианты. Проверка учитывает весь выбранный набор.</p>':'')}
+if(q.type==='t')return '<form id="answerForm"><label class="input-label" for="wordInput">Твой ответ</label><input class="entry" id="wordInput" autocomplete="off" spellcheck="false" maxlength="160" value="'+esc(d||'')+'"'+dis+'><button class="btn primary check-btn" type="submit"'+dis+'>Проверить ответ</button><p class="inputhelp">Слова выписывай в указанной форме; название падежа — полностью. Регистр и ё/е не влияют на результат.</p></form>';
+let draft=Array.isArray(d)?d:['','','',''];return '<form id="answerForm"><div class="analysis">'+LABELS.map((lab,i)=>{let st=stat(rs[i]),lock=locked(rs[i]),v=draft[i]||'',choices=[[],GEN,NUM,CASES][i];let input=i===0?'<input id="field'+i+'" class="entry" data-field="'+i+'" maxlength="80" autocomplete="off" spellcheck="false" placeholder="Впиши слово из предложения" value="'+esc(v)+'" '+(lock?'disabled':'')+'>':'<select id="field'+i+'" data-field="'+i+'" '+(lock?'disabled':'')+'><option value="">Выбери признак</option>'+choices.map(c=>'<option '+(v===c?'selected':'')+'>'+esc(c)+'</option>').join('')+'</select>';return '<div class="field '+st+'"><label for="field'+i+'"><span class="step-num">'+(i+1)+'</span>'+lab+'</label>'+input+'<p class="field-note">'+(i===0?'Сохрани форму существительного из предложения.':i===1?'Во множественном числе род не определяется.':i===2?'Определи число главного слова.':'Задай падежный вопрос к существительному.')+'</p>'+(st==='empty'?'':st==='pending'?'<p class="field-result warn">Есть ещё попытка. '+esc(fieldHint(q,i))+'</p>':'<p class="field-result '+(st==='revealed'?'bad':'good')+'">'+(st==='revealed'?'Разбор: '+esc(expected(q,i)):st==='first'?'✓ Верно с первой попытки':'✓ Верно со второй попытки')+'</p>')+'</div>'}).join('')+'</div><button class="btn primary check-btn" type="submit"'+dis+'>'+(rs.some(r=>r.tries.length)?'Проверить исправления':'Проверить разбор')+'</button><p class="inputhelp">Правильные поля фиксируются. Каждое поле имеет собственные две попытки.</p></form>'}
+function fieldHint(q,i){if(i===0)return'Найди предмет, признак которого называет прилагательное.';if(i===1)return q.answer[2]==='множественное'?'Прилагательное во множественном числе: подумай, нужно ли указывать род.':'Восстанови начальную форму существительного: мой, моя или моё?';if(i===2)return'Посмотри на форму существительного: один предмет или несколько?';return q.hint}
+function feedback(q,rs){if(rs.every(locked)){let st=qstatus(q,reviewMode);return '<div class="feedback '+(st==='revealed'?'reveal':'good')+'"><strong>'+(st==='first'?'✓ Всё верно с первой попытки':st==='second'?'✓ Верно после исправления':'Задание разобрано — запомни ход рассуждения')+'</strong>'+(q.type!=='a'?'<p><b>Верный ответ:</b> '+esc(expected(q))+'</p>':'')+'<p>'+esc(q.explain)+'</p><div class="reason-chain">'+(q.noun?'Начальная форма → постоянные признаки → форма в предложении':'Предмет → вопрос → признаки существительного → признаки прилагательного')+'</div></div>'}if(q.type!=='a'&&rs[0].tries.length)return '<div class="feedback try"><strong>Пока неверно. Попробуй ещё раз.</strong><p>'+esc(q.hint)+'</p></div>';return ''}
+function check(value){const q=active,rs=recs(q);if(rs.every(locked))return;let vals=q.type==='a'?value:[value];if(vals.some((v,i)=>!locked(rs[i])&&(v==null||v===''||Array.isArray(v)&&!v.length))){announce('Заполни все доступные поля перед проверкой.');return}const map=reviewMode?state.review:state.answers;map[q.id]=rs.map((r,i)=>locked(r)?r:{tries:[...r.tries,{value:vals[i],ok:valid(q,vals[i],i)}]});state.drafts[draftKey(q)]=value;save();render();announce(done(q,reviewMode)?'Проверка завершена. Прочитай объяснение.':'Есть ещё попытка. Прочитай подсказку.');const pending=map[q.id].findIndex(r=>!locked(r));if(q.type==='a'&&pending>=0)$('field'+pending)?.focus();else if(done(q,reviewMode))document.querySelector('[data-next]')?.focus();else if(q.type==='t')$('wordInput')?.focus()}
+function announce(s){$('announcement').textContent=s}
+function open(q,review=reviewMode){active=q;reviewMode=review;view='exercise';if(!review)state.last=q.id;save();render(true)}
+function startGroup(id){const list=ALL.filter(q=>q.group===id);open(list.find(q=>!done(q))||list[0],false)}
+function startReview(){const list=weak();if(!list.length)return;if(list.every(q=>done(q,true))){state.review={};Object.keys(state.drafts).filter(k=>k.startsWith('r:')).forEach(k=>delete state.drafts[k]);save()}open(list.find(q=>!done(q,true))||list[0],true)}
+function next(dir){const list=pool(),idx=list.indexOf(active);if(dir===1&&!done(active,reviewMode))return;if(idx+dir<0)return;if(idx+dir>=list.length){if(reviewMode){view='report';render(true)}else{const g=GROUPS.find(g=>g.id===active.group),li=ALL.filter(q=>q.group===g.id),s=counts(li);$('modalBody').innerHTML='<div class="eyebrow">Итог блока</div><h2>'+esc(g.title)+'</h2><p>Завершено '+s.done+' из '+li.length+' заданий. Проверено '+s.checked+' из '+s.total+' ответов.</p><p>'+esc(g.rule)+'</p><div class="btnbar">'+(s.done<li.length?'<button class="btn primary" data-group="'+g.id+'">Доделать блок</button>':GROUPS.indexOf(g)<5?'<button class="btn primary" data-group="'+GROUPS[GROUPS.indexOf(g)+1].id+'">Следующий блок →</button>':'')+'<button class="btn light" data-screen="report">Мой результат</button></div>';$('modal').showModal()}return}open(list[idx+dir])}
+function report(){let s=counts(),w=weak(),r=counts(w,true);return '<div class="panel"><div class="eyebrow">Результаты занятия</div><h2 id="pageTitle" tabindex="-1">Что уже получается?</h2><p class="lead">Завершено '+s.done+' из '+ALL.length+' заданий. В разборах признаки учитываются отдельно: всего '+s.total+' проверяемых ответов.</p>'+progress(s.checked,s.total,'Проверенные ответы')+'<div class="resultcards"><div class="stat"><b>'+s.first+'</b><small>С первой попытки</small></div><div class="stat"><b>'+s.second+'</b><small>Со второй попытки</small></div><div class="stat"><b>'+s.revealed+'</b><small>С открытым разбором</small></div></div><h3>Результаты по темам</h3>'+GROUPS.map(g=>{let li=ALL.filter(q=>q.group===g.id),c=counts(li);return '<div class="line"><button class="text-link" data-group="'+g.id+'">'+esc(g.title)+'</button>'+progress(c.done,li.length,g.title)+'<span>'+c.done+'/'+li.length+'</span></div>'}).join('')+'<h3>Прилагательное и повторение</h3><div class="split-stats">'+[false,true].map(noun=>{let c=counts(ALL.filter(q=>q.noun===noun));return '<div class="field"><b>'+(noun?'Существительное':'Прилагательное')+'</b><p>'+c.first+' из '+c.total+' ответов с первой попытки</p><span class="muted">Проверено '+c.checked+' · со второй '+c.second+' · с разбором '+c.revealed+'</span></div>'}).join('')+'</div><h3>Что повторить?</h3>'+(w.length?'<p>Трудных заданий: '+w.length+'. '+(r.done?'Повторно завершено '+r.done+' из '+w.length+'.':'При повторении первоначальные результаты сохраняются.')+'</p><button class="btn primary" data-review>'+(w.every(q=>done(q,true))?'Повторить трудные места ещё раз':'Начать работу над ошибками')+' →</button><div class="weak-list">'+w.map(q=>'<button data-open-original="'+q.id+'"><b>'+esc(GROUPS.find(g=>g.id===q.group).title)+' · № '+q.ord+'</b><span>'+esc(q.phrase)+'</span></button>').join('')+'</div>':'<p>В проверенных ответах ошибок пока нет.</p>')+'<h3>Отчёт для преподавателя</h3><label class="input-label" for="student">Имя ученика (необязательно)</label><input id="student" class="entry" maxlength="90" value="'+esc(state.name)+'" placeholder="Имя ученика"><div class="filter-row" aria-label="Состав отчёта"><button class="btn '+(filter==='all'?'primary':'')+'" data-filter="all">Все задания</button><button class="btn '+(filter==='weak'?'primary':'')+'" data-filter="weak">Только ошибки</button></div><textarea class="report" id="reportText" readonly aria-label="Отчёт о прохождении"></textarea><div class="btnbar"><button class="btn primary" data-download>Скачать TXT</button><button class="btn" data-copy>Скопировать отчёт</button><button class="btn" data-print>Печать</button></div><p class="inputhelp">Отчёт не отправляется автоматически. Прогресс хранится в этом браузере на этом устройстве.</p><pre id="printReport" class="print-only">'+esc(reportText())+'</pre></div>'}
+function reportText(){const s=counts(),lines=['ИМЯ ПРИЛАГАТЕЛЬНОЕ · УРОК 1','Ученик: '+(state.name.trim()||'не указано'),'Завершено заданий: '+s.done+'/'+ALL.length,'Проверено ответов: '+s.checked+'/'+s.total,'С первой попытки: '+s.first,'Со второй попытки: '+s.second,'Открыт разбор: '+s.revealed,''];for(const g of GROUPS){let li=ALL.filter(q=>q.group===g.id),c=counts(li);lines.push(g.title+': '+c.done+'/'+li.length+' заданий; с первой '+c.first+', со второй '+c.second+', с разбором '+c.revealed);for(const q of li){let rs=recs(q,false);if(filter==='weak'&&!rs.some(r=>r.tries.some(t=>!t.ok)))continue;lines.push('  № '+q.ord+(q.noun?' [Повторение существительного]':'')+' '+q.prompt,'  '+q.phrase);rs.forEach((r,i)=>{lines.push('    '+(q.type==='a'?LABELS[i]+': ':'')+(r.tries.length?r.tries.map(t=>showValue(q,t.value,i)+(t.ok?' ✓':' ✕')).join(' → '):'не выполнено'));if(locked(r))lines.push('    Верный ответ: '+expected(q,i))});if(rs.every(locked))lines.push('  Объяснение: '+q.explain);if(state.review[q.id]){const rr=recs(q,true);lines.push('  Повторение: '+(done(q,true)?qstatus(q,true):'не завершено'));rr.forEach((r,i)=>{if(r.tries.length)lines.push('    '+(q.type==='a'?LABELS[i]+': ':'')+r.tries.map(t=>showValue(q,t.value,i)+(t.ok?' ✓':' ✕')).join(' → '))})}}lines.push('')}lines.push('Работа над ошибками не меняет первоначальный результат.','Отчёт создан на устройстве ученика и не отправляется автоматически.');return lines.join('\n')}
+function updateReport(){if($('reportText'))$('reportText').value=reportText();if($('printReport'))$('printReport').textContent=reportText()}
+function download(text,name,type){const url=URL.createObjectURL(new Blob([text],{type})),a=document.createElement('a');a.href=url;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(url),1500)}
+function help(){ $('modalBody').innerHTML='<div class="eyebrow">Памятка урока</div><h2>Сначала существительное</h2><div class="help-step"><b>1. Найди предмет и его признак</b><p>В просторной комнате стоял деревянный стол.<br>Комната (какая?) просторная; стол (какой?) деревянный.</p></div><div class="help-step"><b>2. Определи род и число</b><p>Синее озеро — ср. р., ед. ч.<br>Синие озёра — мн. ч.; род прилагательного не определяется.</p></div><div class="help-step"><b>3. Определи падеж существительного</b><p>Подошли к чему? — к озеру, Д. п.<br>К синему озеру: синему — тоже Д. п.</p></div><div class="help-step"><b>4. Проверь согласование</b><p>В ед. ч. совпадают род, число и падеж. Во мн. ч. — число и падеж.</p></div><div class="help-step"><b>Повторение существительного</b><p>Начальная форма — И. п., ед. ч. Если слово имеет только множественное число — И. п., мн. ч.: ножницы.<br>1-е склонение: мама, дядя. 2-е: дом, окно. 3-е: ночь, тетрадь. Разносклоняемые: путь и 10 слов на -мя.<br>Род обычно постоянен, число и падеж меняются.</p></div><table><caption>Падежные вопросы</caption>'+CASES.map((c,i)=>'<tr><th>'+esc(c)+'</th><td>'+['кто? что?','кого? чего?','кому? чему?','кого? что?','кем? чем?','о ком? о чём?'][i]+'</td></tr>').join('')+'</table><p class="help-warning">Сильный ветер дует — И. п. Мы заметили сильный ветер — В. п. Падеж определяем в предложении: одного окончания недостаточно.</p>';$('modal').showModal()}
+function cleanHTML(){const doc=document.documentElement.cloneNode(true);doc.querySelector('#app').innerHTML='';doc.querySelector('#nav').innerHTML='';doc.querySelector('#sideProgress').innerHTML='';doc.querySelector('#modal').removeAttribute('open');doc.querySelector('#modalBody').innerHTML='';doc.querySelector('#announcement').textContent='';doc.querySelector('body').classList.remove('presentation');doc.querySelector('#fullBtn').textContent='На экран';doc.querySelector('#fullBtn').setAttribute('aria-pressed','false');doc.querySelector('#exitFull')?.remove();doc.querySelectorAll('.hide').forEach(x=>x.classList.remove('hide'));return '<!doctype html>\n'+doc.outerHTML}
+document.addEventListener('submit',ev=>{if(ev.target.id!=='answerForm')return;ev.preventDefault();check(active.type==='a'?[0,1,2,3].map(i=>$('field'+i).value):$('wordInput').value.trim())});
+document.addEventListener('input',ev=>{let t=ev.target;if(t.id==='student'){state.name=t.value.slice(0,90);save();updateReport()}else if(t.id==='wordInput'){state.drafts[draftKey(active)]=t.value;save()}else if(t.dataset.field!==undefined){let d=state.drafts[draftKey(active)];if(!Array.isArray(d))d=['','','',''];d[+t.dataset.field]=t.value;state.drafts[draftKey(active)]=d;save()}});
+document.addEventListener('change',ev=>{if(ev.target.dataset.field!==undefined)ev.target.dispatchEvent(new Event('input',{bubbles:true}))});
+document.addEventListener('click',async ev=>{const b=ev.target.closest('button');if(!b||b.disabled)return;
+if(b.dataset.screen){$('modal').close();reviewMode=false;view=b.dataset.screen;render(true);return}
+if(b.dataset.group){$('modal').close();startGroup(b.dataset.group);return}
+if(b.dataset.open){open(ALL.find(q=>q.id===b.dataset.open));return}
+if(b.dataset.openOriginal){open(ALL.find(q=>q.id===b.dataset.openOriginal),false);return}
+if(b.hasAttribute('data-review')){startReview();return}
+if(b.hasAttribute('data-next')){next(1);return}if(b.hasAttribute('data-prev')){next(-1);return}
+if(b.dataset.opt!==undefined){const i=+b.dataset.opt;if(active.type==='c'){check(i)}else{let d=state.drafts[draftKey(active)];if(!Array.isArray(d))d=[];state.drafts[draftKey(active)]=d.includes(i)?d.filter(x=>x!==i):[...d,i];save();const scroll=window.scrollY;render();window.scrollTo(0,scroll)}return}
+if(b.hasAttribute('data-check')){check(state.drafts[draftKey(active)]||[]);return}
+if(b.dataset.filter){filter=b.dataset.filter;render();return}
+if(b.hasAttribute('data-download')){download('\uFEFF'+reportText(),'Прилагательное_урок_1_отчёт.txt','text/plain;charset=utf-8');return}
+if(b.hasAttribute('data-copy')){try{await navigator.clipboard.writeText(reportText());b.textContent='Скопировано ✓'}catch(e){$('reportText').select();announce('Отчёт выделен. Нажми Ctrl+C или скачай TXT.')}return}
+if(b.hasAttribute('data-print')){updateReport();window.print();return}
+switch(b.id){case'homeBtn':reviewMode=false;view='home';render(true);break;case'resultBtn':view='report';render(true);break;case'helpBtn':help();break;case'closeModal':$('modal').close();break;case'offlineBtn':download(cleanHTML(),'Прилагательное_урок_1.html','text/html;charset=utf-8');break;case'themeBtn':{const dark=document.documentElement.dataset.theme!=='dark';document.documentElement.dataset.theme=dark?'dark':'light';b.textContent=dark?'☀ Светлая':'☾ Тёмная';b.setAttribute('aria-pressed',String(dark));try{localStorage.setItem(THEME,dark?'dark':'light')}catch(e){}break}case'fullBtn':full=!full;document.body.classList.toggle('presentation',full);b.textContent=full?'Обычный вид':'На экран';b.setAttribute('aria-pressed',String(full));break;case'resetBtn':$('modalBody').innerHTML='<h2>Начать заново?</h2><p>Прогресс и работа над ошибками будут удалены из этого браузера. Перед сбросом можно скачать отчёт.</p><div class="btnbar"><button class="btn" data-download>Скачать отчёт</button><button class="btn danger" id="confirmReset">Сбросить результаты</button></div>';$('modal').showModal();break;case'confirmReset':state=fresh();reviewMode=false;view='home';save();$('modal').close();render(true);break}
+});
+document.addEventListener('keydown',ev=>{if(ev.ctrlKey||ev.metaKey||ev.altKey||document.querySelector('dialog[open]')||/INPUT|SELECT|TEXTAREA/.test(ev.target.tagName)||view!=='exercise')return;if(active.type==='c'&&/^[1-8]$/.test(ev.key)){const b=document.querySelector('[data-opt="'+(Number(ev.key)-1)+'"]');if(b&&!b.disabled){ev.preventDefault();b.click()}}else if(ev.key==='ArrowRight'){ev.preventDefault();next(1)}else if(ev.key==='ArrowLeft'){ev.preventDefault();next(-1)}});
+try{const dark=localStorage.getItem(THEME)==='dark';document.documentElement.dataset.theme=dark?'dark':'light';$('themeBtn').textContent=dark?'☀ Светлая':'☾ Тёмная'}catch(e){}
+$('totalTop').textContent=ALL.length;$('totalAnswers').textContent=counts().total;save();render();
 })();
 </script></body></html>
