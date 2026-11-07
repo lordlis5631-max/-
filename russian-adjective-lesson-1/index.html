@@ -15,7 +15,7 @@ html[data-theme=dark]{color-scheme:dark;--bg:#172b3b;--paper:#1a3043;--ink:#edf7
 html[data-theme=dark] .btn{background:#2b5268;color:#f2f9ff;border-color:#557d91}
 html[data-theme=dark] .btn:hover:not(:disabled){background:#35667d}
 html[data-theme=dark] .btn.primary{background:#337f9c;color:#fff;border-color:#67b6cf}
-html[data-theme=dark] .btn.primary:hover:not(:disabled){background:#3e91ac}
+html[data-theme=dark] .btn.primary:hover:not(:disabled){background:#2e7893}
 html[data-theme=dark] .btn.light{background:#244b5e;color:#a9f1ff;border-color:#4e8497}
 html[data-theme=dark] .btn.light:hover:not(:disabled){background:#2c6176}
 html[data-theme=dark] .btn:disabled,html[data-theme=dark] .ghost:disabled{background:#2c4251;color:#aec0cb;border-color:#466071;opacity:1}
@@ -26,6 +26,9 @@ html[data-theme=dark] .qjump.current{outline-color:#92e4ec}
 html[data-theme=dark] .option.chosen{background:#2f5e70;border-color:#92deea;color:#fff}
 html[data-theme=dark] .option.correct{background:#244e3e;border-color:#7dc2a2;color:#e4fff0}
 html[data-theme=dark] .option.wrong{background:#57313a;border-color:#db8792;color:#ffe6e8}
+.option:disabled{opacity:1}
+html[data-theme=dark] .option.wrong:hover:not(:disabled){background:#57313a}
+html[data-theme=dark] .option.chosen:hover:not(:disabled){background:#2f5e70}
 html[data-theme=dark] .ghost:hover:not(:disabled){background:#254459;border-color:#89b6c7}
 @media(max-width:720px){.footnav .btn{min-height:46px;white-space:normal}.btnbar .btn{min-height:46px}}
 </style></head><body><div class="wrap"><header class="header"><div class="brand"><div class="logo">Аа</div><div><strong>РУССКИЙ ЯЗЫК · ПРАКТИКА</strong><small>Понимать, а не угадывать</small></div></div><div class="tools"><button class="ghost" id="themeBtn">☾ Тёмная</button><button class="ghost" id="homeBtn">Все блоки</button><button class="ghost" id="resultBtn">Мой результат</button><button class="ghost" id="helpBtn">Памятка</button><button class="ghost" id="fullBtn">На экран</button></div></header><section class="hero"><div><div class="eyebrow">Урок 1 · 7 класс · домашний тренажёр</div><h1>Имя прилагательное</h1><p>От признака предмета к согласованию в роде, числе и падеже. В каждом блоке — задания на повторение существительных.</p></div><div class="counter"><div><b>6</b><small>блоков</small></div><div><b id="totalTop">—</b><small>заданий</small></div></div></section><main class="layout"><aside class="sidebar"><p class="sidetitle">Маршрут по темам</p><nav id="nav" class="blocknav"></nav><div class="guide"><b>Как заниматься</b><p>Один блок — один подход. Задания с пометкой «Повторение» проверяют существительное.</p><p>На каждый ответ — две попытки. После первой ошибки появляется подсказка, после второй — объяснение.</p><p>Прогресс сохраняется в браузере. Для учителя можно скачать текстовый отчёт.</p></div></aside><section id="app" aria-live="polite"></section></main><footer class="footer"><span>Русский язык · Прилагательное · Урок 1</span><span><a href="../russian-noun-summary/">Исходный тренажёр по существительным</a></span><span><button class="ghost" id="offlineBtn">Скачать для работы без интернета</button> · <button class="ghost" id="resetBtn">Сбросить прогресс</button></span></footer></div><dialog id="modal"><div id="modalBody"></div><div class="btnbar"><button class="btn" id="closeModal">Закрыть</button></div></dialog>
