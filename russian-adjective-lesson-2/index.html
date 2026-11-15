@@ -28,6 +28,12 @@ button,a,input,select,summary{-webkit-tap-highlight-color:transparent}button,sel
 .cloze-token{vertical-align:baseline}
 .inline-select,.inline-select.invalid{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 11px) center,calc(100% - 7px) center;background-size:4px 4px;background-repeat:no-repeat}
 @media(max-width:780px){.inline-select.case-select{font-size:16px;min-width:88px}}
+
+/* Reading stays compact. Controls live in a bottom sheet. */
+.continuous-text.reading-text{font:20px/2.15 Georgia,serif;padding:19px 20px;margin-bottom:12px;overflow-wrap:normal}.word-token{display:inline-flex;align-items:center;vertical-align:baseline;gap:5px;min-height:44px;max-width:100%;padding:1px 5px;margin:0 1px;background:var(--accent-bg);color:var(--accent);border:0;border-bottom:1px dashed var(--accent);border-radius:6px;font:inherit;line-height:1.25;font-weight:700;white-space:nowrap;scroll-margin-top:100px}.word-token:hover{filter:brightness(.96)}.word-token .word-case{font:700 10px/1 system-ui,sans-serif;position:relative;top:-.35em;opacity:.85}.word-dot{font:18px/1 system-ui,sans-serif;opacity:.7}.word-token.solo{background:var(--good-bg);color:var(--good);border-color:var(--good)}.word-token.fixed,.word-token.assist{background:var(--warn-bg);color:var(--warn);border-color:var(--warn)}.word-token.reveal,.word-token.has-error{background:var(--bad-bg);color:var(--bad);border-color:var(--bad);border-bottom-style:solid}.text-key{display:flex;gap:8px 17px;flex-wrap:wrap;color:var(--muted);font-size:11px;margin-bottom:18px}.word-sheet{position:fixed;inset:auto 0 0;margin:0 auto;width:min(560px,100%);max-width:100%;max-height:86dvh;border:1px solid var(--edge);border-bottom:0;border-radius:24px 24px 0 0;padding:10px 24px calc(16px + env(safe-area-inset-bottom,0px));overflow:auto;overscroll-behavior:contain;box-shadow:0 -12px 60px #0003}.word-sheet::backdrop{background:#07182a88;backdrop-filter:blur(2px)}.sheet-handle{width:38px;height:4px;background:var(--edge);border-radius:8px;margin:0 auto 14px}.sheet-top{display:flex;justify-content:space-between;gap:12px;align-items:start}.sheet-top h2{font:normal 34px/1.2 Georgia,serif;color:var(--accent);margin:6px 0 0}.sheet-top .eyebrow{font-size:10px}.sheet-close{flex:0 0 44px;height:44px;border:1px solid var(--edge);background:var(--soft);color:var(--muted);border-radius:50%;font-size:25px;line-height:1}.sheet-context{font-size:13px;line-height:1.65;background:var(--soft);padding:12px 14px;border-radius:12px;margin:14px 0 16px;color:var(--muted)}.sheet-context mark{color:var(--accent);background:var(--accent-bg);padding:1px 3px;border-radius:3px;font-weight:750}.sheet-field{margin:15px 0}.sheet-label{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-bottom:8px}.sheet-label h3{margin:0;font-size:14px}.sheet-label>span{font-size:11px;color:var(--muted)}.sheet-choices{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.sheet-choice{min-height:48px;border:1px solid var(--edge);border-radius:11px;background:var(--soft);color:var(--ink);font-size:16px;padding:10px 8px;font-weight:700}.sheet-choice.selected{background:var(--accent-bg);border-color:var(--accent);color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}.sheet-choice:disabled{opacity:1;cursor:default}.sheet-field.solo .sheet-choice.selected{background:var(--good-bg);color:var(--good);border-color:var(--good);box-shadow:inset 0 0 0 1px var(--good)}.sheet-field.fixed .sheet-choice.selected,.sheet-field.assist .sheet-choice.selected{background:var(--warn-bg);color:var(--warn);border-color:var(--warn);box-shadow:inset 0 0 0 1px var(--warn)}.sheet-field.reveal .sheet-choice.selected{background:var(--bad-bg);color:var(--bad);border-color:var(--bad);box-shadow:inset 0 0 0 1px var(--bad)}.sheet-status{font-size:12px;color:var(--good);margin:8px 0 0}.sheet-error{font-size:12px;color:var(--bad);margin:8px 0 0;line-height:1.6}.sheet-explanation{padding:12px 14px;background:var(--accent-bg);font-size:13px;border-radius:10px;line-height:1.6;margin:16px 0}.sheet-actions{position:sticky;bottom:calc(-16px - env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;align-items:center;gap:9px;background:var(--paper);border-top:1px solid var(--edge);padding:12px 0 calc(14px + env(safe-area-inset-bottom,0px));margin-top:17px;margin-bottom:calc(-16px - env(safe-area-inset-bottom,0px))}.sheet-actions .btn{min-height:48px;font-size:14px}.sheet-actions [data-check-word]{flex:1}.sheet-done{color:var(--good);font-size:14px;font-weight:750}.focus-mode .continuous-text.reading-text{font-size:25px}
+@media(max-width:780px){.continuous-text.reading-text{font-size:20px;line-height:2;padding:16px 14px;margin-top:16px}.word-sheet{padding-left:18px;padding-right:18px}.sheet-top h2{font-size:32px}.text-key{font-size:10px;gap:5px 12px}}
+@media(max-width:380px){.continuous-text.reading-text{font-size:19px;padding:14px 11px}.word-token{padding-left:4px;padding-right:4px}.word-sheet{padding-left:15px;padding-right:15px}.sheet-context{padding:10px 12px}.sheet-actions .btn{font-size:13px}.sheet-top h2{font-size:30px}}
+@media print{.word-sheet{display:none!important}}
 </style>
 </head>
 <body>
@@ -42,6 +48,7 @@ button,a,input,select,summary{-webkit-tap-highlight-color:transparent}button,sel
  <footer><span>Склонение прилагательных · полные формы</span><button class="link" id="reset">Начать заново</button></footer>
 </div>
 <dialog id="modal" aria-labelledby="modal-title"><div class="modal-head"><h2 id="modal-title"></h2><button id="close" class="ghost" aria-label="Закрыть окно">×</button></div><div id="modal-body"></div></dialog>
+<dialog id="word-sheet" class="word-sheet" aria-labelledby="word-sheet-title"><div id="word-sheet-body"></div></dialog>
 <div id="announcement" class="sr" aria-live="polite" aria-atomic="true"></div>
 <script>const CONTENT={
   "blocks": [
@@ -106,8 +113,8 @@ button,a,input,select,summary{-webkit-tap-highlight-color:transparent}button,sel
       "title": "Прогулка к озеру",
       "short": "Итоговый текст",
       "tag": "Самостоятельно",
-      "desc": "Цельный текст: выбираем окончания и падежи прямо у слов.",
-      "rule": "Прочитай текст целиком. У каждого выделенного слова выбери окончание и ниже — падеж. Можно проверять по несколько заполненных полей: пустые поля не тратят попытку. Сначала попробуй без опоры.",
+      "desc": "Читаем цельный текст; по нажатию на слово выбираем окончание и падеж.",
+      "rule": "Прочитай текст целиком. Нажми на выделенное слово: внизу откроется панель выбора окончания и падежа. Проверяй по слову или весь текст. Пустые поля не тратят попытку.",
       "final": true
     }
   ],
@@ -1898,7 +1905,7 @@ function help(){if(!helpAllowed())return;markTable();showModal('Таблицы �
 function helpContent(){return '<div class="help-tabs"><button class="btn '+(helpTab==='algorithm'?'primary':'')+'" data-help-tab="algorithm">Алгоритм</button><button class="btn '+(helpTab==='tables'?'primary':'')+'" data-help-tab="tables">Окончания</button><button class="btn '+(helpTab==='noun'?'primary':'')+'" data-help-tab="noun">Существительное</button></div>'+(helpTab==='algorithm'?'<div class="help-step"><b>1. Найди существительное</b><p>Мы подошли к дальнему <b>озеру</b>.</p></div><div class="help-step"><b>2. Определи его форму</b><p>Подошли к чему? к озеру — Д. п., ед. ч., ср. р.</p></div><div class="help-step"><b>3. Задай вопрос к прилагательному</b><p>Озеру (какому?) дальнему.</p></div><div class="help-step"><b>4. Проверь по вопросу и образцу</b><p>Синий → синему; дальний → дальнему. Вопрос не всегда буквально повторяет окончание.</p></div><div class="help-step"><b>5. Прочитай оба слова</b><p>К дальнему озеру. Род, число и падеж согласованы. У прилагательного во мн. ч. род не определяется.</p></div>':helpTab==='tables'?tablesHTML():'<div class="help-step"><b>Начальная форма и род</b><p>Существительное: И. п., ед. ч.; у слов только мн. ч. — И. п., мн. ч. Дядя — м. р.; тетрадь — ж. р.; озеро — ср. р. У существительного род обычно постоянный; у прилагательного изменяется.</p></div><div class="help-step"><b>Тип склонения</b><p>1-е: мама, дядя. 2-е: дом, окно. 3-е: ночь, тетрадь. Это типы склонения <b>существительных</b>; на прилагательное их не переносим.</p></div><table><thead><tr><th>Падеж</th><th>Вопрос к существительному</th></tr></thead><tbody>'+['кто? что?','кого? чего?','кому? чему?','кого? что?','кем? чем?','о ком? о чём?'].map((s,i)=>'<tr><td>'+['И.','Р.','Д.','В.','Т.','П.'][i]+' п.</td><td>'+s+'</td></tr>').join('')+'</tbody></table><div class="rule"><b>Смотри на предложение</b><p>Мост стоит — И. п. Увидел мост — В. п. Нет ученика — Р. п. Встретил ученика — В. п. Одного окончания для определения падежа недостаточно.</p></div>')}
 function tablesHTML(){const rows=[['И.','новый / синий','новое / синее','новая / синяя','новые / синие'],['Р.','нового / синего','нового / синего','новой / синей','новых / синих'],['Д.','новому / синему','новому / синему','новой / синей','новым / синим'],['В.','как И. или Р.','новое / синее','новую / синюю','как И. или Р.'],['Т.','новым / синим','новым / синим','новой / синей','новыми / синими'],['П.','о новом / синем','о новом / синем','о новой / синей','о новых / синих']];return '<div class="table-wrap"><table><thead><tr><th>П.</th><th>М. р.</th><th>Ср. р.</th><th>Ж. р.</th><th>Мн. ч.</th></tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')+'</tbody></table></div><div class="help-step"><b>Предложный или творительный?</b><p>О доме <b>каком?</b> новом — П. п., -ом/-ем.<br>Домом <b>каким?</b> новым — Т. п., -ым/-им.<br>Сравни: о зимнем лесе / зимним лесом.</p></div><div class="help-step"><b>Винительный и одушевлённость</b><p>М. р., ед. ч.: вижу новый дом / нового ученика.<br>Мн. ч.: вижу новые дома / новых учеников.<br>Все эти формы в В. п. Форма у неодушевлённых — как И. п.; у одушевлённых — как Р. п.</p></div><div class="help-step"><b>Границы проверки</b><p>Какой? новый, синий, большой. В И. п. м. р. и совпадающем с ним В. п. вопрос не проверяет безударные -ый/-ий. После г, к, х пишется и вместо ы: высокий → высоким; но высокого, высокому.</p></div><p class="meta">В Т. п. ж. р. допустимы также -ою/-ею: новою, синею. Притяжательные и краткие прилагательные в этот тренажёр не входят.</p>'}
 function download(txt,name,type){const u=URL.createObjectURL(new Blob([txt],{type})),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
-function cleanHTML(){const doc=document.documentElement.cloneNode(true);['app','nav','modal-body','announcement'].forEach(id=>doc.querySelector('#'+id)?.replaceChildren());doc.querySelector('#modal').removeAttribute('open');doc.querySelector('body').classList.remove('focus-mode','working','text-working');doc.querySelector('#mobile-blocks').setAttribute('aria-expanded','false');doc.querySelector('#mobile-block-label').textContent='Выбрать блок';doc.querySelector('#nav').classList.remove('mobile-open');doc.querySelector('#help').disabled=false;doc.querySelector('#focus').textContent='На экран';doc.querySelector('#focus').setAttribute('aria-pressed','false');doc.querySelector('#save-warning').classList.add('hidden');return '<!doctype html>\n'+doc.outerHTML}
+function cleanHTML(){const doc=document.documentElement.cloneNode(true);['app','nav','modal-body','announcement'].forEach(id=>doc.querySelector('#'+id)?.replaceChildren());doc.querySelector('#modal').removeAttribute('open');doc.querySelector('#word-sheet')?.removeAttribute('open');doc.querySelector('#word-sheet-body')?.replaceChildren();doc.querySelector('body').classList.remove('focus-mode','working','text-working');doc.querySelector('#mobile-blocks').setAttribute('aria-expanded','false');doc.querySelector('#mobile-block-label').textContent='Выбрать блок';doc.querySelector('#nav').classList.remove('mobile-open');doc.querySelector('#help').disabled=false;doc.querySelector('#focus').textContent='На экран';doc.querySelector('#focus').setAttribute('aria-pressed','false');doc.querySelector('#save-warning').classList.add('hidden');return '<!doctype html>\n'+doc.outerHTML}
 document.addEventListener('submit',e=>{if(e.target.id==='answer-form'){e.preventDefault();check()}});
 document.addEventListener('input',e=>{if(e.target.matches('[data-field]')){const q=active;if(!q)return;const k=draftKey(q);if(!Array.isArray(state.drafts[k]))state.drafts[k]=[];state.drafts[k][Number(e.target.dataset.field)]=e.target.value;save()}if(e.target.id==='student-name'){state.name=e.target.value;save();updateReport()}});
 document.addEventListener('change',e=>{if(e.target.matches('select[data-field]'))e.target.dispatchEvent(new Event('input',{bubbles:true}))});
@@ -1925,53 +1932,79 @@ function updateTheme(){const dark=document.documentElement.dataset.theme==='dark
 window.addEventListener('hashchange',routeFromHash);
 migrateLegacyFields();updateTheme();routeFromHash();
 
-// The final activity uses the same IDs, answers and records as the earlier cards.
-function textField(q,i,localIndex){
- const f=q.fields[i],r=records(q,false)[i],complete=locked(r),s=status(r),value=complete?(r.tries.find(t=>t.ok)?.v??f.answers[0]):draft(q,i,false);
- const invalid=!complete&&r.tries.some(t=>!t.ok);
- const stem=q.phrase.match(/([А-Яа-яЁё]+)…/)?.[1]||'';
- const label='Слово '+(localIndex+1)+', '+stem+'… — '+(i===0?'окончание':'падеж');
- const options=i===0?f.options.slice((localIndex+1)%f.options.length).concat(f.options.slice(0,(localIndex+1)%f.options.length)):f.options;
- return '<select id="text-'+q.id+'-'+i+'" data-text-field="'+q.id+':'+i+'" class="inline-select '+(i===0?'ending-select':'case-select')+' '+(complete?s:invalid?'invalid':'')+'" aria-label="'+esc(label)+'" '+(invalid?'aria-invalid="true" ':'')+(complete?'disabled ':'')+'><option value="">'+(i===0?'…':'Падеж')+'</option>'+options.map(o=>'<option value="'+esc(o)+'" '+(normalize(value)===normalize(o)?'selected':'')+'>'+esc(o)+'</option>').join('')+'</select>';
-}
+// The text remains a reading surface; edits happen in a separate word sheet.
+var sheetQuestionId='',sheetScrollTop=0;
+const textStem=q=>q.phrase.match(/([А-Яа-яЁё]+)…/)?.[1]||'';
+function textValue(q,i){const r=records(q,false)[i];return locked(r)?r.tries.find(t=>t.ok)?.v??q.fields[i].answers[0]:draft(q,i,false)}
+function wordCanCheck(q){return records(q,false).some((r,i)=>{const value=draft(q,i,false);return !locked(r)&&String(value).trim()&&!(r.tries.length&&normalize(r.tries.at(-1).v)===normalize(value))})}
+function textCanCheck(){return byBlock('b8').some(wordCanCheck)}
 function textMarkup(){
  const list=byBlock('b8');let index=0;
  return CONTENT.finalText.replace(/([А-Яа-яЁё]+)…/g,(match,stem)=>{
-  const q=list[index],local=index++;
-  const complete=done(q,false),s=taskStatus(q,false);
-  return '<span id="cloze-'+q.id+'" class="cloze-token '+s+'" role="group" aria-label="Слово '+(local+1)+'" tabindex="-1"><span class="cloze-word"><sup class="token-index">'+(local+1)+'</sup>'+esc(stem)+textField(q,0,local)+'</span><span class="cloze-case">'+textField(q,1,local)+(complete?'<span class="token-status" aria-label="'+(s==='reveal'?'Ответ разобран':'Готово')+'">'+(s==='reveal'?'↗':'✓')+'</span>':'')+'</span></span>';
+  const q=list[index],local=index++,s=taskStatus(q,false),rs=records(q,false),ending=textValue(q,0),caseName=textValue(q,1),error=rs.some(r=>!locked(r)&&r.tries.some(t=>!t.ok));
+  const word=stem+(ending||'…'),label='Слово '+(local+1)+': '+word+(caseName?', '+caseName:'')+'. Выбрать окончание и падеж';
+  const badge=caseName?'<span class="word-case">'+esc(caseName.replace(' п.',''))+'</span>':'';
+  return '<button type="button" id="cloze-'+q.id+'" class="word-token '+s+(error?' has-error':'')+'" data-edit-word="'+q.id+'" aria-label="'+esc(label)+'" aria-haspopup="dialog"><span>'+esc(word)+'</span>'+badge+'</button>';
  });
 }
-function textCanCheck(){return byBlock('b8').some(q=>records(q,false).some((r,i)=>{
- const value=draft(q,i,false);return !locked(r)&&String(value).trim()&&!(r.tries.length&&normalize(r.tries.at(-1).v)===normalize(value));
-}))}
 function textDetails(){
  const list=byBlock('b8').filter(q=>records(q,false).some(r=>r.tries.length));
  if(!list.length)return '<p class="meta">После проверки здесь появятся объяснения и подсказки. На каждый ответ — две попытки.</p>';
- return list.map(q=>{const n=byBlock('b8').indexOf(q)+1;return '<div class="text-detail"><button type="button" class="link" data-final-jump="'+q.id+'">К слову '+n+'</button><p class="detail-phrase">'+esc(q.phrase)+'</p>'+(done(q,false)?'<p>'+esc(q.explain)+'</p>':records(q,false).map((r,i)=>!locked(r)&&r.tries.length?'<p><b>'+esc(q.fields[i].label)+':</b> '+esc(q.fields[i].hint)+'</p>':'').join(''))+'</div>'}).join('');
+ return list.map(q=>{const n=byBlock('b8').indexOf(q)+1;return '<div class="text-detail"><button type="button" class="link" data-edit-word="'+q.id+'">Слово '+n+' · открыть</button><p class="detail-phrase">'+esc(q.phrase)+'</p>'+(done(q,false)?'<p>'+esc(q.explain)+'</p>':records(q,false).map((r,i)=>!locked(r)&&r.tries.length?'<p><b>'+esc(q.fields[i].label)+':</b> '+esc(q.fields[i].hint)+'</p>':'').join(''))+'</div>'}).join('');
 }
 function textExercise(){
  const list=byBlock('b8'),s=counts(list),all=s.checked===s.total,errors=list.filter(q=>records(q,false).some(r=>!locked(r)&&r.tries.some(t=>!t.ok))).length;
- return '<section class="panel text-panel"><div class="question-top"><button class="link" data-go="home">← Все блоки</button><span>Блок 8 · Цельный текст</span></div><h2 id="page-title" tabindex="-1">Прогулка к озеру</h2><p class="text-instruction">Выбери <b>окончание в слове</b> и <b>падеж под ним</b>. Текст остаётся перед глазами. Проверять можно частями.</p>'+progress(s.checked,s.total)+'<div id="text-progress" class="meta">Готово '+s.checked+'/16 ответов · '+list.filter(q=>done(q,false)).length+'/8 слов</div><div class="continuous-text" aria-label="Текст с выбором окончаний и падежей">'+textMarkup()+'</div>'+(all?'<div class="feedback"><b>✓ Весь текст разобран</b><p>Самостоятельно: '+s.solo+' · Исправлено: '+s.fixed+' · С разбором: '+s.reveal+'. Можно открыть объяснения или посмотреть общий результат.</p></div>':errors?'<div class="notice"><b>Исправь выделенные поля: '+errors+' '+plural(errors,'слово','слова','слов')+'.</b><p>Правильные ответы сохранены. Подсказки находятся ниже, в разделе «Подсказки и разбор».</p></div>':'')+'<div class="action-dock text-dock">'+(!all?'<button class="btn primary check-btn" id="text-check" '+(!textCanCheck()?'disabled':'')+'>Проверить заполненное</button>':'')+'<button class="btn '+(all?'primary':'')+'" data-go="report">Результат →</button></div><details class="details text-help" '+(errors?'open':'')+'><summary>Подсказки и разбор'+(errors?' · есть ошибки':'')+'</summary>'+textDetails()+'</details><p class="meta text-note">Пустые поля не расходуют попытку. Повторное нажатие проверки без изменения ошибочного ответа тоже не расходует попытку. В первой попытке справочник закрыт.</p></section>';
+ return '<section class="panel text-panel"><div class="question-top"><button class="link" data-go="home">← Все блоки</button><span>Блок 8 · Цельный текст</span></div><h2 id="page-title" tabindex="-1">Прогулка к озеру</h2><p class="text-instruction"><b>Нажми на выделенное слово.</b> Внизу откроется выбор окончания и падежа.</p>'+progress(s.checked,s.total)+'<div id="text-progress" class="meta">Готово '+s.checked+'/16 ответов · '+list.filter(q=>done(q,false)).length+'/8 слов</div><div class="continuous-text reading-text" aria-label="Текст с восемью выделенными прилагательными">'+textMarkup()+'</div><div class="text-key"><span>Д., В., Т.… рядом со словом — выбранный падеж</span></div>'+(all?'<div class="feedback"><b>✓ Весь текст разобран</b><p>Самостоятельно: '+s.solo+' · Исправлено: '+s.fixed+' · С разбором: '+s.reveal+'. Можно открыть объяснения или посмотреть общий результат.</p></div>':errors?'<div class="notice"><b>Нужно исправить '+errors+' '+plural(errors,'слово','слова','слов')+'.</b><p>Нажми на подчёркнутое красным слово. Правильные ответы сохранены.</p></div>':'')+'<div class="action-dock text-dock">'+(!all?'<button class="btn primary check-btn" id="text-check" '+(!textCanCheck()?'disabled':'')+'>Проверить заполненное</button>':'')+'<button class="btn '+(all?'primary':'')+'" data-go="report">Результат →</button></div><details class="details text-help"><summary>Подсказки и разбор'+(errors?' · есть ошибки':'')+'</summary>'+textDetails()+'</details><p class="meta text-note">Можно проверять по одному слову или весь текст. Пустые поля и повторная проверка без изменений не расходуют попытку.</p></section>';
 }
-function checkText(){
- const list=byBlock('b8');let checked=0,correct=0;
- for(const q of list){
-  const key=draftKey(q,false);if(!Array.isArray(state.drafts[key]))state.drafts[key]=[];
-  q.fields.forEach((f,i)=>{const control=$('text-'+q.id+'-'+i);if(control&&!locked(records(q,false)[i]))state.drafts[key][i]=control.value});
-  records(q,false).forEach((r,i)=>{
-   if(locked(r))return;
-   const value=String(draft(q,i,false)).trim();
-   if(!value||r.tries.length&&normalize(r.tries.at(-1).v)===normalize(value))return;
-   const ok=valid(q.fields[i],value),next={...r,tries:[...r.tries,{v:value,ok}]};
-   if(!ok&&!r.tries.length)next.hint=true;
-   putRecord(q,i,next,false);checked++;if(ok)correct++;
-  });
- }
+function checkText(onlyId){
+ const list=onlyId?byBlock('b8').filter(q=>q.id===onlyId):byBlock('b8');let checked=0,correct=0;
+ for(const q of list)records(q,false).forEach((r,i)=>{
+  if(locked(r))return;
+  const value=String(draft(q,i,false)).trim();
+  if(!value||r.tries.length&&normalize(r.tries.at(-1).v)===normalize(value))return;
+  const ok=valid(q.fields[i],value),next={...r,tries:[...r.tries,{v:value,ok}]};
+  if(!ok&&!r.tries.length)next.hint=true;
+  putRecord(q,i,next,false);checked++;if(ok)correct++;
+ });
  if(!checked){announce('Выбери ответ или измени ошибочный. Пустые поля и ответы без изменений не проверяются.');return}
- state.last=list.find(q=>!done(q,false))?.id||list[0].id;
+ state.last=byBlock('b8').find(q=>!done(q,false))?.id||byBlock('b8')[0].id;
  save();const top=window.scrollY;render();window.scrollTo({top,behavior:'instant'});
  announce('Проверено '+checked+' '+plural(checked,'поле','поля','полей')+'. Верно '+correct+'. Правильные ответы сохранены.');
+}
+function wordContext(q){
+ let index=0,result='';
+ const sentences=CONTENT.finalText.match(/[^.!?]+[.!?]+|[^.!?]+$/g)||[CONTENT.finalText];
+ for(const sentence of sentences){let found=false;const html=esc(sentence).replace(/([А-Яа-яЁё]+)…/g,(match,stem)=>{
+  const item=byBlock('b8')[index++],word=esc(stem+(textValue(item,0)||'…'));
+  if(item.id===q.id){found=true;return '<mark>'+word+'</mark>'}return word;
+ });if(found)result=html.trim()}
+ return result;
+}
+function sheetField(q,i){
+ const f=q.fields[i],r=records(q,false)[i],s=status(r),complete=locked(r),value=textValue(q,i),index=byBlock('b8').indexOf(q);
+ const options=i===0?f.options.slice((index+1)%f.options.length).concat(f.options.slice(0,(index+1)%f.options.length)):f.options;
+ const title=i===0?'Окончание':'Падеж';
+ const statusText={solo:'✓ Верно самостоятельно',fixed:'✓ Верно после исправления',assist:'✓ Верно с опорой',reveal:'Ответ открыт: '+expected(f)}[s];
+ return '<section class="sheet-field '+(complete?s:'')+'"><div class="sheet-label"><h3 id="sheet-label-'+i+'">'+title+'</h3><span>'+(complete?'Готово':'Попытка '+(r.tries.length+1)+' из 2')+'</span></div><div class="sheet-choices" role="group" aria-labelledby="sheet-label-'+i+'">'+options.map(o=>'<button type="button" class="sheet-choice '+(normalize(value)===normalize(o)?'selected':'')+'" data-word-field="'+i+'" data-word-value="'+esc(o)+'" aria-pressed="'+String(normalize(value)===normalize(o))+'" '+(complete?'disabled':'')+'>'+(i===0?'−':'')+esc(o)+'</button>').join('')+'</div>'+(complete?'<p class="sheet-status">'+esc(statusText)+'</p>':r.tries.length?'<p class="sheet-error">Пока неверно. '+esc(f.hint)+'</p>':'')+'</section>';
+}
+function wordSheetHTML(q){
+ const index=byBlock('b8').indexOf(q),all=done(q,false),word=textStem(q)+(textValue(q,0)||'…');
+ return '<div class="sheet-handle" aria-hidden="true"></div><div class="sheet-top"><div><div class="eyebrow">Слово '+(index+1)+' из 8</div><h2 id="word-sheet-title">'+esc(word)+'</h2></div><button type="button" class="sheet-close" data-close-word aria-label="Вернуться к тексту">×</button></div><p class="sheet-context">'+wordContext(q)+'</p>'+sheetField(q,0)+sheetField(q,1)+(all?'<div class="sheet-explanation">'+esc(q.explain)+'</div>':'')+'<div class="sheet-actions">'+(!all?'<button type="button" class="btn primary" data-check-word '+(!wordCanCheck(q)?'disabled':'')+'>Проверить слово</button>':'<span class="sheet-done">✓ Готово</span>')+'<button type="button" class="btn '+(all?'primary':'')+'" data-next-word>'+(index===7?'К тексту':'Далее →')+'</button></div>';
+}
+function openWordSheet(id){
+ const q=byBlock('b8').find(q=>q.id===id);if(!q)return;
+ sheetQuestionId=q.id;state.last=q.id;save();$('word-sheet-body').innerHTML=wordSheetHTML(q);
+ if(!$('word-sheet').open){sheetScrollTop=window.scrollY;$('word-sheet').showModal()}else $('word-sheet').scrollTop=0;
+}
+function refreshReadingText(){
+ const text=document.querySelector('.reading-text');if(text)text.innerHTML=textMarkup();
+ if($('text-check'))$('text-check').disabled=!textCanCheck();
+}
+function chooseWordField(i,value){
+ const q=byBlock('b8').find(q=>q.id===sheetQuestionId);if(!q||locked(records(q,false)[i])||!q.fields[i].options.includes(value))return;
+ const key=draftKey(q,false);if(!Array.isArray(state.drafts[key]))state.drafts[key]=[];state.drafts[key][i]=value;save();
+ refreshReadingText();$('word-sheet-body').innerHTML=wordSheetHTML(q);
+ document.querySelector('[data-word-field="'+i+'"][aria-pressed="true"]')?.focus({preventScroll:true});
 }
 function selectChoice(button){
  const i=Number(button.dataset.choice),control=$('field-'+i),value=button.dataset.value;
@@ -1985,15 +2018,12 @@ document.addEventListener('click',event=>{
  const button=event.target.closest('button');if(!button||button.disabled)return;
  if(button.dataset.choice!==undefined){selectChoice(button);return}
  if(button.id==='text-check'){checkText();return}
- if(button.dataset.finalJump){$('cloze-'+button.dataset.finalJump)?.scrollIntoView({block:'center',behavior:'smooth'});return}
+ if(button.dataset.editWord){openWordSheet(button.dataset.editWord);return}
+ if(button.dataset.wordField!==undefined){chooseWordField(Number(button.dataset.wordField),button.dataset.wordValue);return}
+ if(button.hasAttribute('data-close-word')){$('word-sheet').close();return}
+ if(button.hasAttribute('data-check-word')){checkText(sheetQuestionId);$('word-sheet-body').innerHTML=wordSheetHTML(byBlock('b8').find(q=>q.id===sheetQuestionId));return}
+ if(button.hasAttribute('data-next-word')){const list=byBlock('b8'),index=list.findIndex(q=>q.id===sheetQuestionId);if(index===7)$('word-sheet').close();else openWordSheet(list[index+1].id);return}
 });
-document.addEventListener('input',event=>{
- if(!event.target.matches('[data-text-field]'))return;
- const [id,fi]=event.target.dataset.textField.split(':'),q=QUESTIONS.find(q=>q.id===id),i=Number(fi);
- if(!q||locked(records(q,false)[i]))return;
- const key=draftKey(q,false);if(!Array.isArray(state.drafts[key]))state.drafts[key]=[];state.drafts[key][i]=event.target.value;
- save();if($('text-check'))$('text-check').disabled=!textCanCheck();
-});
-document.addEventListener('change',event=>{if(event.target.matches('[data-text-field]'))event.target.dispatchEvent(new Event('input',{bubbles:true}))});
+$('word-sheet').addEventListener('close',()=>{window.scrollTo({top:sheetScrollTop,behavior:'instant'});$('cloze-'+sheetQuestionId)?.focus({preventScroll:true})});
 </script>
 </body></html>
