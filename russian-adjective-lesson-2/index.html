@@ -17,6 +17,17 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
 @media print{body{background:#fff;color:#000}.top,.hero,aside,footer,dialog,#save-warning,.no-print{display:none!important}.layout{display:block}.wrap{padding:0;max-width:none}.panel{border:0;box-shadow:none;padding:0;margin:0}.screen-report{display:none}.print-only{display:block;white-space:pre-wrap;font:11px/1.6 sans-serif;overflow-wrap:anywhere}.focus-mode .layout{margin:0}}
 
 .muted{color:var(--muted)}
+
+/* Touch controls and continuous-text activity. */
+button,a,input,select,summary{-webkit-tap-highlight-color:transparent}button,select,summary{touch-action:manipulation}.mobile-blocks{display:none}main{scroll-margin-top:12px}h2[tabindex="-1"]:focus{outline:none}.choice-grid{display:flex;flex-wrap:wrap;gap:9px}.choice{flex:1 1 75px;min-height:48px;border:1.5px solid var(--edge);border-radius:11px;padding:11px 13px;background:var(--paper);color:var(--ink);font-size:16px;font-weight:650;line-height:1.4}.choice.selected{background:var(--accent-bg);border-color:var(--accent);color:var(--accent);box-shadow:inset 0 0 0 1px var(--accent)}.choice:disabled{opacity:1}.choice-grid.long{display:grid;grid-template-columns:1fr}.choice-grid.long .choice{text-align:left;font-size:15px}.field.solo .choice.selected{border-color:var(--good);color:var(--good);background:var(--good-bg)}.field.reveal .choice.selected{border-color:var(--bad);background:var(--bad-bg)}.action-dock{display:flex;gap:9px;align-items:center;margin-top:22px;border-top:1px solid var(--edge);padding-top:16px;background:var(--paper)}.action-dock .prev-btn{min-width:46px;padding-left:12px;padding-right:12px}.action-dock .check-btn{flex:1}.action-dock .next-btn{min-width:110px}.task-navigation{margin-top:16px}.text-instruction{font-size:14px;margin-bottom:12px}.continuous-text{font:21px/2.2 Georgia,serif;overflow-wrap:break-word;margin:22px 0 20px;padding:20px 18px;background:var(--soft);border:1px solid var(--edge);border-radius:14px}.cloze-token{display:inline-flex;flex-direction:column;vertical-align:middle;line-height:1.2;align-items:stretch;position:relative;margin:5px 3px 7px;border-radius:9px;scroll-margin-top:100px;max-width:100%;outline-offset:3px}.cloze-word{display:flex;align-items:center;white-space:nowrap;color:var(--accent);font-weight:700}.token-index{position:absolute;left:-4px;top:-8px;font:9px system-ui,sans-serif;background:var(--paper);color:var(--muted);border:1px solid var(--edge);border-radius:50%;width:15px;height:15px;display:grid;place-items:center;z-index:1}.inline-select{font:16px/1.2 system-ui,sans-serif;min-height:44px;background:var(--paper);color:var(--ink);border:1.5px solid var(--accent);border-radius:8px;padding:9px 21px 9px 7px;cursor:pointer;max-width:100%;width:72px}.inline-select.ending-select{margin-left:1px;font-weight:750;color:var(--accent)}.cloze-case{display:flex;gap:4px;align-items:center;margin-top:4px}.inline-select.case-select{font-size:13px;border-color:var(--edge);width:100%;min-width:85px;flex:1}.inline-select.invalid{border-color:var(--bad);background:var(--bad-bg);color:var(--bad)}.inline-select.solo{border-color:var(--good);background:var(--good-bg);color:var(--good)}.inline-select.fixed,.inline-select.assist{border-color:var(--warn);background:var(--warn-bg);color:var(--warn)}.inline-select.reveal{border-color:var(--bad);background:var(--bad-bg);color:var(--bad)}.inline-select:disabled{opacity:1;cursor:default;-webkit-text-fill-color:currentColor}.token-status{font:14px system-ui,sans-serif;color:var(--good)}.cloze-token.reveal .token-status{color:var(--bad)}.text-detail{padding:15px 0;border-top:1px solid var(--edge);font-size:14px}.text-detail:first-child{border-top:0}.text-detail p{margin:7px 0 0}.text-detail .detail-phrase{font-weight:700}.text-note{margin-top:16px}.text-dock .btn{min-height:49px}.text-help>summary{min-height:30px}.focus-mode .continuous-text{font-size:27px}
+@media(max-width:780px){
+ .working .hero{display:none}.working .top{margin-bottom:11px}.top{min-height:0;padding:12px 0}.brand .logo{width:35px;height:35px;font-size:20px}.brand small{font-size:10px}.brand b{font-size:10px}.tools{gap:6px}.tools .ghost{min-height:44px}.tools #focus{display:none}.working .brand{display:none}.working .tools{width:100%;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}.working .tools .ghost{font-size:11px;padding:9px 4px}.layout{padding-bottom:10px}.mobile-blocks{display:flex;width:100%;align-items:center;justify-content:space-between;text-align:left;min-height:46px;border:1px solid var(--edge);border-radius:11px;background:var(--paper);color:var(--ink);padding:10px 14px;font-size:13px;font-weight:750;margin:0 0 10px}.mobile-blocks span:first-child{min-width:0}.mobile-blocks+nav{display:none}.mobile-blocks+nav.mobile-open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));margin-bottom:12px}.mobile-open .navbtn{flex-direction:row;text-align:left;min-height:49px;gap:7px;padding:10px}.mobile-open .navcopy b{font-size:12px}.mobile-open .navcopy small{display:block}.working .exercise-panel,.text-panel{padding:19px 16px 14px}.question-top .link{min-height:44px;display:flex;align-items:center;text-decoration:none}.question-top{gap:0}.question-top>span{font-size:11px}.exercise-panel .progress{margin-top:7px}.exercise-panel .question-title{font-size:21px;margin-top:14px}.exercise-panel .sentence{font-size:24px;margin:15px 0;padding:19px 14px}.fields{margin-top:16px}.field{padding:15px}.field label{font-size:14px}.hint-button{min-height:44px;display:inline-flex;align-items:center}.action-dock{position:sticky;bottom:0;z-index:5;margin:16px -8px 0;padding:10px 8px calc(10px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--edge);box-shadow:0 -5px 14px #18344b08;gap:7px}.action-dock .btn{min-height:48px;font-size:13px;padding:11px 10px}.action-dock .next-btn{min-width:85px}.action-dock .check-btn{font-size:13px}.keyboard{display:none}.task-navigation summary{min-height:34px;display:flex;align-items:center}.strip{flex-wrap:nowrap;overflow-x:auto;padding:4px 3px 7px;scrollbar-width:thin}.tile{min-width:44px;height:44px}.legend{font-size:10px}.working footer{margin-top:8px;padding-top:12px}.working footer .link{min-height:44px;display:flex;align-items:center}.continuous-text{font-size:20px;line-height:2.15;padding:16px 11px;margin-top:18px}.text-panel h2{font-size:26px}.text-instruction{font-size:13px}.inline-select{font-size:16px;min-height:44px;width:66px;padding-left:5px;padding-right:18px}.cloze-word{font-size:20px}.inline-select.case-select{font-size:12px;min-width:76px}.cloze-token{margin:6px 2px 8px}.token-index{font-size:9px}.text-dock{flex-wrap:wrap}.text-dock #text-check{min-width:155px;font-size:12px}.text-dock [data-go=report]{font-size:12px;padding-left:9px;padding-right:9px}.text-help>summary{min-height:44px;display:flex;align-items:center}.text-detail .link{min-height:44px;display:inline-flex;align-items:center}.text-note{font-size:11px}.skill-table th:last-child,.skill-table td:last-child{min-width:75px}.topic-numbers .num-link{min-height:44px;min-width:44px}.tools .ghost:disabled{opacity:.5}
+}
+@media(max-width:380px){.working .tools .ghost{font-size:10px}.panel.text-panel{padding-left:13px;padding-right:13px}.continuous-text{font-size:19px;padding-left:9px;padding-right:9px}.inline-select{width:62px}.cloze-word{font-size:19px}.action-dock .next-btn{min-width:75px}.action-dock .btn{font-size:12px}.choice{font-size:15px;padding:10px}}
+@media print{.mobile-blocks,.action-dock{display:none!important}}
+.cloze-token{vertical-align:baseline}
+.inline-select,.inline-select.invalid{appearance:none;-webkit-appearance:none;background-image:linear-gradient(45deg,transparent 50%,var(--muted) 50%),linear-gradient(135deg,var(--muted) 50%,transparent 50%);background-position:calc(100% - 11px) center,calc(100% - 7px) center;background-size:4px 4px;background-repeat:no-repeat}
+@media(max-width:780px){.inline-select.case-select{font-size:16px;min-width:88px}}
 </style>
 </head>
 <body>
@@ -27,7 +38,7 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
  </header>
  <section class="hero"><div><div class="eyebrow">7 класс · прилагательное · урок 2</div><h1>От существительного<br>к верному окончанию</h1><p>Повторяем знакомое. Склоняем прилагательные.<br>Проверяем себя по вопросу и образцу.</p></div><div class="hero-note"><span>СНАЧАЛА ПРЕДМЕТ</span><div>озеро <i>→</i> к озеру<br><b>какому?</b> <i>→</i> синему</div><small>Дательный падеж · единственное число</small></div></section>
  <div id="save-warning" class="notice hidden" role="status">Браузер не сохраняет прогресс. Перед закрытием страницы скачай отчёт.</div>
- <div class="layout"><aside><nav id="nav" aria-label="Блоки тренажёра"></nav><div class="aside-note"><b>Один шаг за раз</b><p>Проходи по 1–2 блока за подход. Ответы и черновики сохраняются на этом устройстве.</p><button class="link" id="offline">Скачать тренажёр HTML ↓</button></div></aside><main id="app"></main></div>
+ <div class="layout"><aside><button class="mobile-blocks" id="mobile-blocks" aria-expanded="false" aria-controls="nav"><span id="mobile-block-label">Выбрать блок</span><span aria-hidden="true">⌄</span></button><nav id="nav" aria-label="Блоки тренажёра"></nav><div class="aside-note"><b>Один шаг за раз</b><p>Проходи по 1–2 блока за подход. Ответы и черновики сохраняются на этом устройстве.</p><button class="link" id="offline">Скачать тренажёр HTML ↓</button></div></aside><main id="app"></main></div>
  <footer><span>Склонение прилагательных · полные формы</span><button class="link" id="reset">Начать заново</button></footer>
 </div>
 <dialog id="modal" aria-labelledby="modal-title"><div class="modal-head"><h2 id="modal-title"></h2><button id="close" class="ghost" aria-label="Закрыть окно">×</button></div><div id="modal-body"></div></dialog>
@@ -71,7 +82,7 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "title": "О каком? Или каким?",
       "short": "-ом или -ым",
       "tag": "Сравнение",
-      "desc": "Попарно сравниваем предложный и творительный падежи.",
+      "desc": "Выбираем слово целиком и сравниваем предложный и творительный падежи.",
       "rule": "В ед. ч. м. и ср. рода: о лесе каком? зимнем — П. п., -ом/-ем. Лесом каким? зимним — Т. п., -ым/-им. Во мн. ч. другие окончания: о зимних лесах / зимними лесами."
     },
     {
@@ -95,8 +106,8 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "title": "Прогулка к озеру",
       "short": "Итоговый текст",
       "tag": "Самостоятельно",
-      "desc": "Восемь фрагментов одного текста: окончания и падежи без опоры в первой попытке.",
-      "rule": "Прочитай весь текст. Впиши окончания прилагательных, затем укажи их падежи. Сначала попробуй самостоятельно. Подсказка откроется для поля после первой ошибки; общий справочник — после завершения блока.",
+      "desc": "Цельный текст: выбираем окончания и падежи прямо у слов.",
+      "rule": "Прочитай текст целиком. У каждого выделенного слова выбери окончание и ниже — падеж. Можно проверять по несколько заполненных полей: пустые поля не тратят попытку. Сначала попробуй без опоры.",
       "final": true
     }
   ],
@@ -949,18 +960,22 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q27",
       "num": 27,
       "block": "b5",
-      "prompt": "Впиши только пропущенное окончание.",
-      "phrase": "Мы говорили о зимн… лесе.",
+      "prompt": "Выбери прилагательное целиком.",
+      "phrase": "Мы говорили о <b>зимн…</b> лесе.",
       "fields": [
         {
-          "label": "Прилагательное",
+          "label": "Форма прилагательного",
           "answers": [
-            "ем"
+            "зимнем"
           ],
           "topic": "contrast",
-          "options": null,
+          "options": [
+            "зимнем",
+            "зимним"
+          ],
           "hint": "О чём? → каком? → -ом/-ем. Чем? → каким? → -ым/-им. Это формы ед. ч., м. и ср. рода.",
-          "placeholder": "Впиши ответ"
+          "placeholder": "Впиши ответ",
+          "legacyStem": "зимн"
         }
       ],
       "explain": "О чём? о лесе — П. п.; лесе (каком?) зимнем. Окончание -ем."
@@ -969,18 +984,22 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q28",
       "num": 28,
       "block": "b5",
-      "prompt": "Впиши только пропущенное окончание.",
-      "phrase": "Над зимн… лесом кружился снег.",
+      "prompt": "Выбери прилагательное целиком.",
+      "phrase": "Над <b>зимн…</b> лесом кружился снег.",
       "fields": [
         {
-          "label": "Прилагательное",
+          "label": "Форма прилагательного",
           "answers": [
-            "им"
+            "зимним"
           ],
           "topic": "contrast",
-          "options": null,
+          "options": [
+            "зимнем",
+            "зимним"
+          ],
           "hint": "О чём? → каком? → -ом/-ем. Чем? → каким? → -ым/-им. Это формы ед. ч., м. и ср. рода.",
-          "placeholder": "Впиши ответ"
+          "placeholder": "Впиши ответ",
+          "legacyStem": "зимн"
         }
       ],
       "explain": "Над чем? над лесом — Т. п.; лесом (каким?) зимним. Окончание -им."
@@ -989,18 +1008,22 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q29",
       "num": 29,
       "block": "b5",
-      "prompt": "Впиши только пропущенное окончание.",
-      "phrase": "Мы узнали о нов… маршруте.",
+      "prompt": "Выбери прилагательное целиком.",
+      "phrase": "Мы узнали о <b>нов…</b> маршруте.",
       "fields": [
         {
-          "label": "Прилагательное",
+          "label": "Форма прилагательного",
           "answers": [
-            "ом"
+            "новом"
           ],
           "topic": "contrast",
-          "options": null,
+          "options": [
+            "новом",
+            "новым"
+          ],
           "hint": "О чём? → каком? → -ом/-ем. Чем? → каким? → -ым/-им. Это формы ед. ч., м. и ср. рода.",
-          "placeholder": "Впиши ответ"
+          "placeholder": "Впиши ответ",
+          "legacyStem": "нов"
         }
       ],
       "explain": "О чём? о маршруте — П. п.; маршруте (каком?) новом. Окончание -ом."
@@ -1009,18 +1032,22 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q30",
       "num": 30,
       "block": "b5",
-      "prompt": "Впиши только пропущенное окончание.",
-      "phrase": "Путники шли нов… маршрутом.",
+      "prompt": "Выбери прилагательное целиком.",
+      "phrase": "Путники шли <b>нов…</b> маршрутом.",
       "fields": [
         {
-          "label": "Прилагательное",
+          "label": "Форма прилагательного",
           "answers": [
-            "ым"
+            "новым"
           ],
           "topic": "contrast",
-          "options": null,
+          "options": [
+            "новом",
+            "новым"
+          ],
           "hint": "О чём? → каком? → -ом/-ем. Чем? → каким? → -ым/-им. Это формы ед. ч., м. и ср. рода.",
-          "placeholder": "Впиши ответ"
+          "placeholder": "Впиши ответ",
+          "legacyStem": "нов"
         }
       ],
       "explain": "Шли чем? маршрутом — Т. п.; маршрутом (каким?) новым. Окончание -ым."
@@ -1029,28 +1056,36 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q31",
       "num": 31,
       "block": "b5",
-      "prompt": "Сравни формы среднего рода.",
+      "prompt": "Выбери прилагательные целиком.",
       "phrase": "Думали о дальн… путешествии. Остались довольны дальн… путешествием.",
       "fields": [
         {
-          "label": "О путешествии — окончание",
+          "label": "О путешествии — прилагательное",
           "answers": [
-            "ем"
+            "дальнем"
           ],
           "topic": "contrast",
-          "options": null,
+          "options": [
+            "дальнем",
+            "дальним"
+          ],
           "hint": "О чём? → каком? → -ом/-ем. Чем? → каким? → -ым/-им. Это формы ед. ч., м. и ср. рода.",
-          "placeholder": "Только окончание"
+          "placeholder": "Только окончание",
+          "legacyStem": "дальн"
         },
         {
-          "label": "Путешествием — окончание",
+          "label": "Путешествием — прилагательное",
           "answers": [
-            "им"
+            "дальним"
           ],
           "topic": "contrast",
-          "options": null,
+          "options": [
+            "дальнем",
+            "дальним"
+          ],
           "hint": "О чём? → каком? → -ом/-ем. Чем? → каким? → -ым/-им. Это формы ед. ч., м. и ср. рода.",
-          "placeholder": "Только окончание"
+          "placeholder": "Только окончание",
+          "legacyStem": "дальн"
         }
       ],
       "explain": "О путешествии каком? дальнем — П. п., -ем. Довольны путешествием каким? дальним — Т. п., -им."
@@ -1423,16 +1458,20 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q45",
       "num": 45,
       "block": "b8",
-      "prompt": "Восстанови окончание и определи падеж прилагательного.",
+      "prompt": "Выбери окончание и падеж прилагательного в тексте.",
       "phrase": "Утром мы пошли по узк… тропинке.",
       "fields": [
         {
-          "label": "Только пропущенное окончание",
+          "label": "Окончание прилагательного",
           "answers": [
             "ой"
           ],
           "topic": "fempl",
-          "options": null,
+          "options": [
+            "ой",
+            "ую",
+            "ей"
+          ],
           "hint": "Сравни новую / синюю, новой / синей; новым книгам / новыми книгами.",
           "placeholder": "Например: ому"
         },
@@ -1460,16 +1499,20 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q46",
       "num": 46,
       "block": "b8",
-      "prompt": "Восстанови окончание и определи падеж прилагательного.",
+      "prompt": "Выбери окончание и падеж прилагательного в тексте.",
       "phrase": "Мы подошли к стар… мосту.",
       "fields": [
         {
-          "label": "Только пропущенное окончание",
+          "label": "Окончание прилагательного",
           "answers": [
             "ому"
           ],
           "topic": "singular",
-          "options": null,
+          "options": [
+            "ому",
+            "ого",
+            "ым"
+          ],
           "hint": "Сопоставь модели новый → нового, новому и синий → синего, синему.",
           "placeholder": "Например: ому"
         },
@@ -1497,16 +1540,20 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q47",
       "num": 47,
       "block": "b8",
-      "prompt": "Восстанови окончание и определи падеж прилагательного.",
+      "prompt": "Выбери окончание и падеж прилагательного в тексте.",
       "phrase": "У мостика встретили нов… соседа.",
       "fields": [
         {
-          "label": "Только пропущенное окончание",
+          "label": "Окончание прилагательного",
           "answers": [
             "ого"
           ],
           "topic": "acc",
-          "options": null,
+          "options": [
+            "ого",
+            "ый",
+            "ому"
+          ],
           "hint": "Вижу дом / ученика — В. п. У м. р. ед. ч. и во мн. ч. форма зависит от одушевлённости.",
           "placeholder": "Например: ому"
         },
@@ -1534,16 +1581,20 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q48",
       "num": 48,
       "block": "b8",
-      "prompt": "Восстанови окончание и определи падеж прилагательного.",
+      "prompt": "Выбери окончание и падеж прилагательного в тексте.",
       "phrase": "Он рассказал о дальн… озере.",
       "fields": [
         {
-          "label": "Только пропущенное окончание",
+          "label": "Окончание прилагательного",
           "answers": [
             "ем"
           ],
           "topic": "contrast",
-          "options": null,
+          "options": [
+            "ем",
+            "им",
+            "ом"
+          ],
           "hint": "О чём? → каком? → -ом/-ем. Чем? → каким? → -ым/-им. Это формы ед. ч., м. и ср. рода.",
           "placeholder": "Например: ому"
         },
@@ -1571,16 +1622,20 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q49",
       "num": 49,
       "block": "b8",
-      "prompt": "Восстанови окончание и определи падеж прилагательного.",
+      "prompt": "Выбери окончание и падеж прилагательного в тексте.",
       "phrase": "Вскоре мы любовались син… озером.",
       "fields": [
         {
-          "label": "Только пропущенное окончание",
+          "label": "Окончание прилагательного",
           "answers": [
             "им"
           ],
           "topic": "contrast",
-          "options": null,
+          "options": [
+            "им",
+            "ем",
+            "ым"
+          ],
           "hint": "О чём? → каком? → -ом/-ем. Чем? → каким? → -ым/-им. Это формы ед. ч., м. и ср. рода.",
           "placeholder": "Например: ому"
         },
@@ -1608,16 +1663,20 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q50",
       "num": 50,
       "block": "b8",
-      "prompt": "Восстанови окончание и определи падеж прилагательного.",
+      "prompt": "Выбери окончание и падеж прилагательного в тексте.",
       "phrase": "Над высок… деревьями кружили птицы.",
       "fields": [
         {
-          "label": "Только пропущенное окончание",
+          "label": "Окончание прилагательного",
           "answers": [
             "ими"
           ],
           "topic": "fempl",
-          "options": null,
+          "options": [
+            "ими",
+            "им",
+            "их"
+          ],
           "hint": "Сравни новую / синюю, новой / синей; новым книгам / новыми книгами.",
           "placeholder": "Например: ому"
         },
@@ -1645,16 +1704,20 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q51",
       "num": 51,
       "block": "b8",
-      "prompt": "Восстанови окончание и определи падеж прилагательного.",
+      "prompt": "Выбери окончание и падеж прилагательного в тексте.",
       "phrase": "По дороге обратно мы увидели красив… дома.",
       "fields": [
         {
-          "label": "Только пропущенное окончание",
+          "label": "Окончание прилагательного",
           "answers": [
             "ые"
           ],
           "topic": "acc",
-          "options": null,
+          "options": [
+            "ые",
+            "ых",
+            "ыми"
+          ],
           "hint": "Вижу дом / ученика — В. п. У м. р. ед. ч. и во мн. ч. форма зависит от одушевлённости.",
           "placeholder": "Например: ому"
         },
@@ -1682,16 +1745,20 @@ html[data-theme=dark]{color-scheme:dark;--bg:#101e2a;--paper:#172c3c;--ink:#edf5
       "id": "q52",
       "num": 52,
       "block": "b8",
-      "prompt": "Восстанови окончание и определи падеж прилагательного.",
+      "prompt": "Выбери окончание и падеж прилагательного в тексте.",
       "phrase": "Дома мы записали рассказ о нов… впечатлениях.",
       "fields": [
         {
-          "label": "Только пропущенное окончание",
+          "label": "Окончание прилагательного",
           "answers": [
             "ых"
           ],
           "topic": "fempl",
-          "options": null,
+          "options": [
+            "ых",
+            "ым",
+            "ыми"
+          ],
           "hint": "Сравни новую / синюю, новой / синей; новым книгам / новыми книгами.",
           "placeholder": "Например: ому"
         },
@@ -1742,42 +1809,82 @@ function skillStatus(s){if(!s.checked&&!s.pendingError)return ['Не начат�
 function priorities(){return Object.keys(TOPICS).map(id=>({id,...topicStats(id)})).filter(s=>s.ids.length).sort((a,b)=>(b.reveal*4+b.pendingError*3+b.assist*2+b.fixed)-(a.reveal*4+a.pendingError*3+a.assist*2+a.fixed))}
 function normalize(v){return String(v??'').toLowerCase().replace(/ё/g,'е').replace(/[?!.,;:]/g,'').replace(/[–—]/g,'-').replace(/\s+/g,' ').trim().replace(/^-\s*/,'')}
 function valid(f,v){return f.answers.some(a=>normalize(a)===normalize(v))}
+function migrateLegacyFields(){
+ for(const q of QUESTIONS)q.fields.forEach((f,i)=>{
+  if(!f.legacyStem)return;
+  const upgrade=v=>['ем','им','ом','ым'].includes(normalize(v))?f.legacyStem+normalize(v):v;
+  for(const map of [state.answers,state.review])if(map[q.id]?.[i]?.tries)for(const t of map[q.id][i].tries)t.v=upgrade(t.v);
+  for(const key of ['a:'+q.id,'r:'+q.id])if(state.drafts[key]?.[i])state.drafts[key][i]=upgrade(state.drafts[key][i]);
+ });
+}
 const expected=f=>f.answers.join(' / ');
 const byBlock=id=>QUESTIONS.filter(q=>q.block===id);
 const qnum=id=>QUESTIONS.find(q=>q.id===id)?.num;
 function reviewPool(){return weakQuestions().filter(q=>!reviewTopic||q.fields.some((f,i)=>f.topic===reviewTopic&&weakIndexes(q).includes(i)))}
 function pool(){return reviewMode?reviewPool():byBlock(active?.block)}
 const draftKey=(q,review=reviewMode)=>(review?'r:':'a:')+q.id;
-function draft(q,i){return state.drafts[draftKey(q)]?.[i]??''}
+function draft(q,i,review=reviewMode){return state.drafts[draftKey(q,review)]?.[i]??''}
 function announce(t){$('announcement').textContent=t}
 function progress(n,total){return '<div class="progress" role="progressbar" aria-label="Завершённые ответы" aria-valuenow="'+n+'" aria-valuemin="0" aria-valuemax="'+total+'"><span style="width:'+100*n/(total||1)+'%"></span></div>'}
 function go(route){if(location.hash==='#'+route){routeFromHash();return}location.hash=route}
-function open(q,review=false){go((review?'review/'+(reviewTopic?reviewTopic+'/':''):'question/')+q.id)}
+function open(q,review=false){go((review?'review/'+(reviewTopic?reviewTopic+'/':''):q.block==='b8'?'text/':'question/')+q.id)}
 function startBlock(id){const list=byBlock(id);open(list.find(q=>!done(q,false))||list[0])}
-function routeFromHash(){const parts=location.hash.slice(1).split('/');reviewMode=parts[0]==='review';reviewTopic=reviewMode&&parts.length===3&&TOPICS[parts[1]]?parts[1]:'';active=null;if(['review','question'].includes(parts[0])){active=QUESTIONS.find(q=>q.id===parts[reviewTopic?2:1]);if(!active||reviewMode&&!weakIndexes(active).length){go('report');return}view='exercise';if(!reviewMode){state.last=active.id;save()}}else if(parts[0]==='block'&&BLOCKS.some(b=>b.id===parts[1]))view='block';else view=parts[0]==='report'?'report':'home';render(true)}
+function routeFromHash(){
+ const parts=location.hash.slice(1).split('/');
+ reviewMode=parts[0]==='review';reviewTopic=reviewMode&&parts.length===3&&TOPICS[parts[1]]?parts[1]:'';active=null;
+ if(['review','question'].includes(parts[0])){
+  active=QUESTIONS.find(q=>q.id===parts[reviewTopic?2:1]);
+  if(!active||reviewMode&&!weakIndexes(active).length){go('report');return}
+  view=!reviewMode&&active.block==='b8'?'text':'exercise';
+  if(!reviewMode){state.last=active.id;save()}
+ }else if(parts[0]==='text'){
+  active=byBlock('b8').find(q=>q.id===parts[1])||byBlock('b8')[0];view='text';state.last=active.id;save();
+ }else if(parts[0]==='block'&&BLOCKS.some(b=>b.id===parts[1])){
+  view=parts[1]==='b8'?'text':'block';
+  if(view==='text'){active=byBlock('b8')[0];state.last=active.id;save()}
+ }else view=parts[0]==='report'?'report':'home';
+ render(true);
+ if(view==='text'&&parts[0]==='text'&&parts[1]&&parts[1]!=='q45')$('cloze-'+parts[1])?.scrollIntoView({block:'center',behavior:'instant'});
+}
 function render(focus=false){
  const s=counts();
  $('nav').innerHTML=BLOCKS.map((b,i)=>{const li=byBlock(b.id),c=counts(li),selected=active?.block===b.id||view==='block'&&location.hash.endsWith(b.id);return '<button class="navbtn '+(selected?'active':'')+'" data-block="'+b.id+'" '+(selected?'aria-current="step"':'')+'><span class="navno">'+String(i+1).padStart(2,'0')+'</span><span class="navcopy"><b>'+esc(b.short)+'</b><small>'+c.checked+'/'+c.total+' ответов</small></span><span class="navdone">'+(c.checked===c.total?'✓':'')+'</span></button>'}).join('');
- $('app').innerHTML=view==='exercise'?exercise():view==='report'?report():view==='block'?blockPage(BLOCKS.find(b=>location.hash.endsWith(b.id))):home();
- $('help').disabled=view==='exercise'&&!helpAllowed();
+ $('app').innerHTML=view==='text'?textExercise():view==='exercise'?exercise():view==='report'?report():view==='block'?blockPage(BLOCKS.find(b=>location.hash.endsWith(b.id))):home();
+ $('help').disabled=['exercise','text'].includes(view)&&!helpAllowed();
+ document.body.classList.toggle('working',view!=='home');
+ document.body.classList.toggle('text-working',view==='text');
+ $('mobile-block-label').textContent=view==='text'?'Блок 8 · Итоговый текст':active?'Блок '+active.block.slice(1)+' · '+BLOCKS.find(b=>b.id===active.block).short:'Выбрать блок';
  $('help').title=$('help').disabled?'В итоговом блоке справочник откроется после завершения всех заданий':'';
  $('save-warning').classList.toggle('hidden',storageOK);
  updateReport();
- if(focus){$('page-title')?.focus({preventScroll:true});if(view==='exercise'||view==='report'||view==='block')$('app').scrollIntoView({block:'start',behavior:'instant'});else window.scrollTo({top:0,behavior:'instant'})}
+ if(focus){$('page-title')?.focus({preventScroll:true});if(['exercise','text','report','block'].includes(view))$('app').scrollIntoView({block:'start',behavior:'instant'});else window.scrollTo({top:0,behavior:'instant'})}
 }
 function home(){const s=counts();return '<section class="panel"><div class="eyebrow">Твой маршрут · 8 блоков</div><h2 id="page-title" tabindex="-1">От знакомого — к новому</h2><p class="lead">Сначала вспомни существительное и согласование. Затем потренируй окончания и примени всё в одном тексте. <b>52 задания · 83 ответа.</b> Можно проходить частями.</p>'+progress(s.checked,s.total)+'<div class="meta">Завершено '+s.checked+' из '+s.total+' ответов · Самостоятельно с первой попытки: '+s.solo+'</div><div class="actions"><button class="btn primary" data-continue>'+(s.attempted?'Продолжить с сохранённого места':'Начать первый блок')+' →</button><button class="btn" data-go="report">Посмотреть результат</button></div><div class="grid">'+BLOCKS.map((b,i)=>{const li=byBlock(b.id),c=counts(li);return '<article class="block-card"><div class="card-top"><span class="number">'+String(i+1).padStart(2,'0')+'</span><span class="pill">'+esc(b.tag)+'</span></div><h3>'+esc(b.title)+'</h3><p>'+esc(b.desc)+'</p><div class="meta">'+li.length+' заданий · '+c.checked+'/'+c.total+' ответов</div><button class="btn light" data-block="'+b.id+'">'+(c.checked===c.total?'Посмотреть разборы':c.checked?'Продолжить блок':'Памятка и задания')+' →</button></article>'}).join('')+'</div></section>'}
 function taskStatus(q,review=false){const rs=records(q,review).filter((r,i)=>included(q,i,review));if(!done(q,review))return 'pending';return rs.some(r=>status(r)==='reveal')?'reveal':rs.some(r=>status(r)==='fixed')?'fixed':rs.some(r=>status(r)==='assist')?'assist':'solo'}
 function taskStrip(list,review=false){return '<div class="strip" aria-label="Переход к заданию">'+list.map(q=>{const s=taskStatus(q,review);return '<button class="tile '+s+(active?.id===q.id?' current':'')+'" data-open="'+q.id+'" '+(review?'data-review-open':'')+' aria-label="Задание '+q.num+': '+({pending:'не завершено',solo:'самостоятельно',fixed:'исправлено',assist:'с опорой',reveal:'открыт ответ'}[s])+'" '+(active?.id===q.id?'aria-current="step"':'')+'>'+q.num+'</button>'}).join('')+'</div><p class="legend">Зелёный — самостоятельно · Жёлтый — с помощью или исправлением · Красный — открыт ответ</p>'}
 function blockPage(b){const li=byBlock(b.id),s=counts(li);return '<section class="panel"><div class="eyebrow">Блок '+b.id.slice(1)+' из 8 · '+esc(b.tag)+'</div><h2 id="page-title" tabindex="-1">'+esc(b.title)+'</h2><p>'+esc(b.desc)+'</p><div class="rule"><b>'+(b.final?'Как выполнять':'Вспомни перед практикой')+'</b><p>'+esc(b.rule)+'</p></div>'+(b.final?'<details class="details"><summary>Прочитать весь текст</summary><p class="full-text">'+esc(CONTENT.finalText)+'</p></details>':'')+progress(s.checked,s.total)+'<div class="meta">'+s.checked+'/'+s.total+' ответов завершено · '+s.solo+' самостоятельно</div>'+taskStrip(li)+'<div class="actions"><button class="btn primary" data-start-block="'+b.id+'">'+(s.checked===s.total?'Посмотреть задания':'К заданиям')+' →</button><button class="btn" data-go="home">Все блоки</button></div></section>'}
-function helpAllowed(){return !active||!BLOCKS.find(b=>b.id===active.block).final||reviewMode||byBlock('b8').every(q=>done(q,false))}
-function fieldHTML(q,f,i,r){const s=status(r),complete=locked(r),prior=reviewMode&&!included(q,i),v=complete?(r.tries.find(t=>t.ok)?.v??f.answers[0]):draft(q,i);if(prior){const old=records(q,false)[i];return '<div class="field '+status(old)+'"><label>'+esc(f.label)+'</label><p class="field-result">'+esc(old.tries.find(t=>t.ok)?.v??(locked(old)?expected(f):'Не завершено'))+'</p><p class="meta">'+(status(old)==='solo'?'✓ Самостоятельно с первой попытки. Повторять не нужно.':'Это поле вне выбранной темы повторения.')+'</p></div>'}
- let control=f.options?'<select class="entry '+(r.tries.length&&!complete?'invalid':'')+'" id="field-'+i+'" data-field="'+i+'" '+(complete?'disabled':'')+'><option value="">Выбери…</option>'+f.options.map(o=>'<option value="'+esc(o)+'" '+(v===o?'selected':'')+'>'+esc(o)+'</option>').join('')+'</select>':'<input class="entry '+(r.tries.length&&!complete?'invalid':'')+'" id="field-'+i+'" data-field="'+i+'" value="'+esc(v)+'" maxlength="100" autocomplete="off" spellcheck="false" placeholder="'+esc(f.placeholder)+'" '+(complete?'disabled':'')+'>';
+function helpAllowed(){return view==='text'?byBlock('b8').every(q=>done(q,false)):!active||!BLOCKS.find(b=>b.id===active.block).final||reviewMode||byBlock('b8').every(q=>done(q,false))}
+
+function focusField(i){const input=$('field-'+i);if(!input)return;if(input.type==='hidden'){const button=document.querySelector('[data-choice="'+i+'"][aria-pressed="true"]')||document.querySelector('[data-choice="'+i+'"]');button?.focus()}else input.focus()}
+function fieldHTML(q,f,i,r){
+ const s=status(r),complete=locked(r),prior=reviewMode&&!included(q,i),v=complete?(r.tries.find(t=>t.ok)?.v??f.answers[0]):draft(q,i);
+ if(prior){const old=records(q,false)[i];return '<div class="field '+status(old)+'"><b>'+esc(f.label)+'</b><p class="field-result">'+esc(old.tries.find(t=>t.ok)?.v??(locked(old)?expected(f):'Не завершено'))+'</p><p class="meta">'+(status(old)==='solo'?'✓ Самостоятельно с первой попытки. Повторять не нужно.':'Это поле вне выбранной темы повторения.')+'</p></div>'}
+ const heading='<label id="label-'+i+'" '+(!f.options?'for="field-'+i+'"':'')+'>'+esc(f.label)+'</label>';
+ let control;
+ if(f.options){
+  control='<input type="hidden" id="field-'+i+'" data-field="'+i+'" value="'+esc(v)+'"><div class="choice-grid '+(f.options.some(o=>o.length>23)?'long':'')+'" role="group" aria-labelledby="label-'+i+'">'+f.options.map(o=>'<button type="button" class="choice '+(normalize(v)===normalize(o)?'selected':'')+'" data-choice="'+i+'" data-value="'+esc(o)+'" aria-pressed="'+String(normalize(v)===normalize(o))+'" '+(complete?'disabled':'')+'>'+esc(o)+'</button>').join('')+'</div>';
+ }else control='<input class="entry '+(r.tries.length&&!complete?'invalid':'')+'" id="field-'+i+'" data-field="'+i+'" value="'+esc(v)+'" maxlength="100" autocomplete="off" autocapitalize="none" enterkeyhint="done" spellcheck="false" placeholder="'+esc(f.placeholder)+'" '+(complete?'disabled':'')+'>';
  const msg={solo:'✓ Самостоятельно с первой попытки',assist:'✓ С первой попытки, с опорой',fixed:'✓ Верно после исправления',reveal:'Разобрано. Верный ответ: '+expected(f)}[s];
  const canHint=!BLOCKS.find(b=>b.id===q.block).final||reviewMode||r.tries.length>0;
- return '<div class="field '+(complete?s:'')+'"><label for="field-'+i+'">'+(q.fields.length>1?i+1+'. ':'')+esc(f.label)+'</label>'+control+(complete?'<p class="field-result '+s+'">'+esc(msg)+'</p>':'<p class="meta">Попытка '+(r.tries.length+1)+' из 2</p>')+(r.tries.length===1&&!complete?'<p class="field-result">Пока неверно. Исправь ответ.</p>':'')+(!complete&&canHint?'<button class="link hint-button" data-hint="'+i+'">'+(r.hint?'Скрыть / показать подсказку':'Нужна подсказка')+'</button>':'')+(r.hint&&!complete?'<div class="hint" id="hint-'+i+'">'+esc(f.hint)+'</div>':'')+(!complete&&!canHint?'<p class="meta">В первой попытке попробуй без подсказки.</p>':'')+'</div>'}
-function exercise(){const q=active,li=pool(),idx=li.indexOf(q),b=BLOCKS.find(b=>b.id===q.block),rs=records(q),all=done(q),s=counts(li,reviewMode);return '<section class="panel"><div class="question-top"><button class="link" data-go="'+(reviewMode?'report':'block/'+b.id)+'">← '+(reviewMode?'К результатам':esc(b.short))+'</button><span>'+(reviewMode?'Работа над ошибками · ':'Блок '+b.id.slice(1)+' · ')+(idx+1)+'/'+li.length+' · № '+q.num+'</span></div>'+progress(s.checked,s.total)+'<h2 class="question-title" id="page-title" tabindex="-1">'+esc(q.prompt)+'</h2><div class="sentence">'+q.phrase+'</div>'+(b.final?'<details class="details"><summary>Весь текст для контекста</summary><p class="full-text">'+esc(CONTENT.finalText)+'</p></details>':'')+'<form id="answer-form" novalidate><div class="fields '+(q.fields.length===1?'single':'')+'">'+q.fields.map((f,i)=>fieldHTML(q,f,i,rs[i])).join('')+'</div>'+(!all?'<button class="btn primary" type="submit">'+(rs.some(r=>r.tries.length)?'Проверить исправления':'Проверить')+'</button>':'')+'</form>'+(all?'<div class="feedback"><b>'+(taskStatus(q,reviewMode)==='solo'?'✓ Верно. Сверь ход рассуждения':'Разбор задания')+'</b><p>'+esc(q.explain)+'</p></div>':'')+'<div class="footnav"><button class="btn" data-prev '+(idx===0?'disabled':'')+'>← Назад</button><button class="btn primary" data-next '+(!all?'disabled':'')+'>'+(idx===li.length-1?'Итоги':'Следующее')+' →</button></div>'+taskStrip(li,reviewMode)+'<p class="keyboard">Enter — проверить · ← и → — переход между заданиями вне поля ввода</p></section>'}
+ return '<div class="field '+(complete?s:'')+'">'+heading+control+(complete?'<p class="field-result '+s+'">'+esc(msg)+'</p>':'<p class="meta">Попытка '+(r.tries.length+1)+' из 2</p>')+(r.tries.length===1&&!complete?'<p class="field-result">Пока неверно. Исправь ответ.</p>':'')+(!complete&&canHint?'<button type="button" class="link hint-button" data-hint="'+i+'">'+(r.hint?'Скрыть / показать подсказку':'Нужна подсказка')+'</button>':'')+(r.hint&&!complete?'<div class="hint" id="hint-'+i+'">'+esc(f.hint)+'</div>':'')+(!complete&&!canHint?'<p class="meta">В первой попытке попробуй без подсказки.</p>':'')+'</div>';
+}
+function exercise(){
+ const q=active,li=pool(),idx=li.indexOf(q),b=BLOCKS.find(b=>b.id===q.block),rs=records(q),all=done(q),s=counts(li,reviewMode);
+ return '<section class="panel exercise-panel"><div class="question-top"><button class="link" data-go="'+(reviewMode?'report':'block/'+b.id)+'">← '+(reviewMode?'К результатам':esc(b.short))+'</button><span>'+(reviewMode?'Повторение · ':'Блок '+b.id.slice(1)+' · ')+(idx+1)+'/'+li.length+' · № '+q.num+'</span></div>'+progress(s.checked,s.total)+'<h2 class="question-title" id="page-title" tabindex="-1">'+esc(q.prompt)+'</h2><div class="sentence">'+q.phrase+'</div>'+(b.final?'<details class="details"><summary>Весь текст для контекста</summary><p class="full-text">'+esc(CONTENT.finalText)+'</p></details>':'')+'<form id="answer-form" novalidate><div class="fields '+(q.fields.length===1?'single':'')+'">'+q.fields.map((f,i)=>fieldHTML(q,f,i,rs[i])).join('')+'</div></form>'+(all?'<div class="feedback"><b>'+(taskStatus(q,reviewMode)==='solo'?'✓ Верно. Сверь ход рассуждения':'Разбор задания')+'</b><p>'+esc(q.explain)+'</p></div>':'')+'<div class="action-dock"><button class="btn prev-btn" data-prev '+(idx===0?'disabled':'')+' aria-label="Предыдущее задание">←</button>'+(!all?'<button class="btn primary check-btn" type="submit" form="answer-form">'+(rs.some(r=>r.tries.length)?'Проверить исправления':'Проверить')+'</button>':'')+'<button class="btn '+(all?'primary':'')+' next-btn" data-next '+(!all?'disabled':'')+'>'+(idx===li.length-1?'Итоги':'Далее')+' →</button></div><details class="details task-navigation"><summary>Все задания блока · '+li.length+'</summary>'+taskStrip(li,reviewMode)+'</details><p class="keyboard">Enter — проверить · ← и → — переход между заданиями вне поля ввода</p></section>';
+}
+
 function putRecord(q,i,r,review=reviewMode){const map=review?state.review:state.answers;if(!Array.isArray(map[q.id]))map[q.id]=[];map[q.id][i]=r}
-function check(){const q=active,rs=records(q);if(done(q))return;const values=q.fields.map((f,i)=>$('field-'+i)?.value??'');const missing=rs.findIndex((r,i)=>included(q,i)&&!locked(r)&&!values[i].trim());if(missing>=0){announce('Заполни поле «'+q.fields[missing].label+'».');$('field-'+missing)?.focus();return}state.drafts[draftKey(q)]=values;rs.forEach((r,i)=>{if(!included(q,i)||locked(r))return;const ok=valid(q.fields[i],values[i]);const next={...r,tries:[...r.tries,{v:values[i],ok}]};if(!ok&&r.tries.length===0)next.hint=true;putRecord(q,i,next)});save();render();if(done(q)){$('app').querySelector('[data-next]')?.focus();announce('Ответы проверены. Прочитай разбор.')}else{const i=records(q).findIndex((r,i)=>included(q,i)&&!locked(r));$('field-'+i)?.focus();announce('Есть ошибка. Прочитай подсказку и попробуй ещё раз.')}}
+function check(){const q=active,rs=records(q);if(done(q))return;const values=q.fields.map((f,i)=>$('field-'+i)?.value??'');const missing=rs.findIndex((r,i)=>included(q,i)&&!locked(r)&&!values[i].trim());if(missing>=0){announce('Заполни поле «'+q.fields[missing].label+'».');focusField(missing);return}state.drafts[draftKey(q)]=values;rs.forEach((r,i)=>{if(!included(q,i)||locked(r))return;const ok=valid(q.fields[i],values[i]);const next={...r,tries:[...r.tries,{v:values[i],ok}]};if(!ok&&r.tries.length===0)next.hint=true;putRecord(q,i,next)});save();render();if(done(q)){$('app').querySelector('[data-next]')?.focus();announce('Ответы проверены. Прочитай разбор.')}else{const i=records(q).findIndex((r,i)=>included(q,i)&&!locked(r));focusField(i);announce('Есть ошибка. Прочитай подсказку и попробуй ещё раз.')}}
 function next(dir){const li=pool(),idx=li.indexOf(active);if(dir>0&&!done(active))return;if(idx+dir<0)return;if(idx+dir>=li.length){if(reviewMode){go('report');return}const b=BLOCKS.find(b=>b.id===active.block),s=counts(li),bi=BLOCKS.indexOf(b),completed=s.checked===s.total;showModal('Итоги блока','<div class="eyebrow">'+esc(b.title)+'</div><div class="complete-title">'+s.checked+' из '+s.total+'</div><p>Самостоятельно: '+s.solo+' · С опорой: '+s.assist+' · Исправлено: '+s.fixed+' · С разбором: '+s.reveal+'</p><p>'+esc(b.rule)+'</p><div class="actions">'+(!completed?'<button class="btn primary" data-start-block="'+b.id+'">Доделать блок</button>':bi<7?'<button class="btn primary" data-block="'+BLOCKS[bi+1].id+'">Следующий блок →</button>':'')+'<button class="btn" data-go="report">Мой результат</button></div>');return}open(li[idx+dir],reviewMode)}
 function startReview(topic){reviewTopic=topic||'';let li=weakQuestions();if(topic)li=li.filter(q=>q.fields.some((f,i)=>f.topic===topic&&weakIndexes(q).includes(i)));if(!li.length){const pending=QUESTIONS.find(q=>records(q,false).some((r,i)=>(!topic||q.fields[i].topic===topic)&&!locked(r)&&r.tries.some(t=>!t.ok)));if(pending){open(pending,false);return}announce('Сначала заверши трудные ответы в основном маршруте.');return}if(li.every(q=>done(q,true))){for(const q of li){delete state.review[q.id];delete state.drafts[draftKey(q,true)]}save()}open(li.find(q=>!done(q,true))||li[0],true)}
 function questionLinks(ids){return '<div class="topic-numbers">'+ids.map(id=>'<button class="num-link" data-open="'+id+'">№ '+qnum(id)+'</button>').join('')+'</div>'}
@@ -1786,19 +1893,19 @@ function errorDetails(){const li=weakQuestions();if(!li.length)return '<p class=
 function reportText(){const s=counts(),r=counts(weakQuestions(),true);const lines=['СКЛОНЕНИЕ ПРИЛАГАТЕЛЬНЫХ · УРОК 2','Ученик: '+(state.name.trim()||'не указан'),'Завершено: '+s.checked+'/'+s.total+' ответов; '+QUESTIONS.filter(q=>done(q,false)).length+'/'+QUESTIONS.length+' заданий.','Самостоятельно: '+s.solo+' | С опорой: '+s.assist+' | Исправлено: '+s.fixed+' | С разбором: '+s.reveal,'','КАРТА УМЕНИЙ (самостоятельно / завершено)'];for(const [id,t] of Object.entries(TOPICS)){const ts=topicStats(id);lines.push(t.name+': '+ts.solo+'/'+ts.checked+' из '+ts.total+'; '+skillStatus(ts)[0]+(ts.ids.length?'. № '+ts.ids.slice(0,6).map(qnum).join(', ')+(ts.ids.length>6?' и ещё '+(ts.ids.length-6):''):''))}const ps=priorities();lines.push('','ПЕРВОЕ ПОВТОРЕНИЕ: '+(ps.length?ps.slice(0,3).map(t=>TOPICS[t.id].name).join('; '):s.checked===s.total?'не требуется':'продолжить маршрут'));if(r.total)lines.push('Работа над ошибками: верно '+(r.solo+r.assist+r.fixed)+'/'+r.total+'; завершено '+r.checked+'. Исходный результат сохранён.');if(reportMode!=='short'){lines.push('',reportMode==='errors'?'ТРУДНЫЕ ОТВЕТЫ':'ВСЕ ОТВЕТЫ');for(const q of QUESTIONS){const rs=records(q,false);if(reportMode==='errors'&&!rs.some((r,i)=>weakIndexes(q).includes(i)||r.tries.some(t=>!t.ok)))continue;lines.push('','№ '+q.num+'. '+q.phrase.replace(/<[^>]+>/g,''));rs.forEach((rec,i)=>{if(reportMode==='errors'&&status(rec)==='solo')return;const st=status(rec);lines.push('  '+q.fields[i].label+': '+(rec.tries.length?rec.tries.map(t=>t.v+(t.ok?' ✓':' ✕')).join(' → '):'не выполнено')+(st==='pending'?' (не завершено)':' ['+{solo:'самостоятельно',assist:'с опорой',fixed:'исправлено',reveal:'открыт ответ'}[st]+']'));if(locked(rec))lines.push('  Верно: '+expected(q.fields[i]));const rr=records(q,true)[i];if(rr.tries.length)lines.push('  Повторение: '+rr.tries.map(t=>t.v+(t.ok?' ✓':' ✕')).join(' → '))})}}return lines.join('\n')}
 function updateReport(){if($('report-text'))$('report-text').value=reportText();if($('print-report'))$('print-report').textContent=reportText()}
 function showModal(title,body){$('modal-title').textContent=title;$('modal-body').innerHTML=body;if(!$('modal').open)$('modal').showModal()}
-function markTable(){if(view!=='exercise')return;records(active).forEach((r,i)=>{if(included(active,i)&&!locked(r))putRecord(active,i,{...r,table:true})});save()}
+function markTable(){if(!['exercise','text'].includes(view))return;records(active).forEach((r,i)=>{if(included(active,i)&&!locked(r))putRecord(active,i,{...r,table:true})});save()}
 function help(){if(!helpAllowed())return;markTable();showModal('Таблицы и алгоритм',helpContent())}
 function helpContent(){return '<div class="help-tabs"><button class="btn '+(helpTab==='algorithm'?'primary':'')+'" data-help-tab="algorithm">Алгоритм</button><button class="btn '+(helpTab==='tables'?'primary':'')+'" data-help-tab="tables">Окончания</button><button class="btn '+(helpTab==='noun'?'primary':'')+'" data-help-tab="noun">Существительное</button></div>'+(helpTab==='algorithm'?'<div class="help-step"><b>1. Найди существительное</b><p>Мы подошли к дальнему <b>озеру</b>.</p></div><div class="help-step"><b>2. Определи его форму</b><p>Подошли к чему? к озеру — Д. п., ед. ч., ср. р.</p></div><div class="help-step"><b>3. Задай вопрос к прилагательному</b><p>Озеру (какому?) дальнему.</p></div><div class="help-step"><b>4. Проверь по вопросу и образцу</b><p>Синий → синему; дальний → дальнему. Вопрос не всегда буквально повторяет окончание.</p></div><div class="help-step"><b>5. Прочитай оба слова</b><p>К дальнему озеру. Род, число и падеж согласованы. У прилагательного во мн. ч. род не определяется.</p></div>':helpTab==='tables'?tablesHTML():'<div class="help-step"><b>Начальная форма и род</b><p>Существительное: И. п., ед. ч.; у слов только мн. ч. — И. п., мн. ч. Дядя — м. р.; тетрадь — ж. р.; озеро — ср. р. У существительного род обычно постоянный; у прилагательного изменяется.</p></div><div class="help-step"><b>Тип склонения</b><p>1-е: мама, дядя. 2-е: дом, окно. 3-е: ночь, тетрадь. Это типы склонения <b>существительных</b>; на прилагательное их не переносим.</p></div><table><thead><tr><th>Падеж</th><th>Вопрос к существительному</th></tr></thead><tbody>'+['кто? что?','кого? чего?','кому? чему?','кого? что?','кем? чем?','о ком? о чём?'].map((s,i)=>'<tr><td>'+['И.','Р.','Д.','В.','Т.','П.'][i]+' п.</td><td>'+s+'</td></tr>').join('')+'</tbody></table><div class="rule"><b>Смотри на предложение</b><p>Мост стоит — И. п. Увидел мост — В. п. Нет ученика — Р. п. Встретил ученика — В. п. Одного окончания для определения падежа недостаточно.</p></div>')}
 function tablesHTML(){const rows=[['И.','новый / синий','новое / синее','новая / синяя','новые / синие'],['Р.','нового / синего','нового / синего','новой / синей','новых / синих'],['Д.','новому / синему','новому / синему','новой / синей','новым / синим'],['В.','как И. или Р.','новое / синее','новую / синюю','как И. или Р.'],['Т.','новым / синим','новым / синим','новой / синей','новыми / синими'],['П.','о новом / синем','о новом / синем','о новой / синей','о новых / синих']];return '<div class="table-wrap"><table><thead><tr><th>П.</th><th>М. р.</th><th>Ср. р.</th><th>Ж. р.</th><th>Мн. ч.</th></tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map(c=>'<td>'+c+'</td>').join('')+'</tr>').join('')+'</tbody></table></div><div class="help-step"><b>Предложный или творительный?</b><p>О доме <b>каком?</b> новом — П. п., -ом/-ем.<br>Домом <b>каким?</b> новым — Т. п., -ым/-им.<br>Сравни: о зимнем лесе / зимним лесом.</p></div><div class="help-step"><b>Винительный и одушевлённость</b><p>М. р., ед. ч.: вижу новый дом / нового ученика.<br>Мн. ч.: вижу новые дома / новых учеников.<br>Все эти формы в В. п. Форма у неодушевлённых — как И. п.; у одушевлённых — как Р. п.</p></div><div class="help-step"><b>Границы проверки</b><p>Какой? новый, синий, большой. В И. п. м. р. и совпадающем с ним В. п. вопрос не проверяет безударные -ый/-ий. После г, к, х пишется и вместо ы: высокий → высоким; но высокого, высокому.</p></div><p class="meta">В Т. п. ж. р. допустимы также -ою/-ею: новою, синею. Притяжательные и краткие прилагательные в этот тренажёр не входят.</p>'}
 function download(txt,name,type){const u=URL.createObjectURL(new Blob([txt],{type})),a=document.createElement('a');a.href=u;a.download=name;a.click();setTimeout(()=>URL.revokeObjectURL(u),1000)}
-function cleanHTML(){const doc=document.documentElement.cloneNode(true);['app','nav','modal-body','announcement'].forEach(id=>doc.querySelector('#'+id)?.replaceChildren());doc.querySelector('#modal').removeAttribute('open');doc.querySelector('body').classList.remove('focus-mode');doc.querySelector('#help').disabled=false;doc.querySelector('#focus').textContent='На экран';doc.querySelector('#focus').setAttribute('aria-pressed','false');doc.querySelector('#save-warning').classList.add('hidden');return '<!doctype html>\n'+doc.outerHTML}
+function cleanHTML(){const doc=document.documentElement.cloneNode(true);['app','nav','modal-body','announcement'].forEach(id=>doc.querySelector('#'+id)?.replaceChildren());doc.querySelector('#modal').removeAttribute('open');doc.querySelector('body').classList.remove('focus-mode','working','text-working');doc.querySelector('#mobile-blocks').setAttribute('aria-expanded','false');doc.querySelector('#mobile-block-label').textContent='Выбрать блок';doc.querySelector('#nav').classList.remove('mobile-open');doc.querySelector('#help').disabled=false;doc.querySelector('#focus').textContent='На экран';doc.querySelector('#focus').setAttribute('aria-pressed','false');doc.querySelector('#save-warning').classList.add('hidden');return '<!doctype html>\n'+doc.outerHTML}
 document.addEventListener('submit',e=>{if(e.target.id==='answer-form'){e.preventDefault();check()}});
 document.addEventListener('input',e=>{if(e.target.matches('[data-field]')){const q=active;if(!q)return;const k=draftKey(q);if(!Array.isArray(state.drafts[k]))state.drafts[k]=[];state.drafts[k][Number(e.target.dataset.field)]=e.target.value;save()}if(e.target.id==='student-name'){state.name=e.target.value;save();updateReport()}});
 document.addEventListener('change',e=>{if(e.target.matches('select[data-field]'))e.target.dispatchEvent(new Event('input',{bubbles:true}))});
 document.addEventListener('click',async e=>{
  const b=e.target.closest('button');if(!b||b.disabled)return;
  if(b.dataset.go){$('modal').close();go(b.dataset.go);return}
- if(b.dataset.block){$('modal').close();go('block/'+b.dataset.block);return}
+ if(b.dataset.block){$('modal').close();$('nav').classList.remove('mobile-open');$('mobile-blocks').setAttribute('aria-expanded','false');go('block/'+b.dataset.block);return}
  if(b.dataset.startBlock){$('modal').close();startBlock(b.dataset.startBlock);return}
  if(b.dataset.open){$('modal').close();open(QUESTIONS.find(q=>q.id===b.dataset.open),b.hasAttribute('data-review-open'));return}
  if(b.hasAttribute('data-continue')){const last=QUESTIONS.find(q=>q.id===state.last),q=last&&!done(last,false)?last:QUESTIONS.find(q=>!done(q,false))||QUESTIONS[0];open(q);return}
@@ -1811,11 +1918,82 @@ document.addEventListener('click',async e=>{
  if(b.hasAttribute('data-copy')){try{await navigator.clipboard.writeText(reportText());b.textContent='Скопировано ✓';announce('Отчёт скопирован.')}catch(err){$('report-text').focus();$('report-text').select();announce('Отчёт выделен. Нажми Ctrl+C или скачай TXT.')}return}
  if(b.hasAttribute('data-download-report')){download('\uFEFF'+reportText(),'Прилагательное_урок_2_отчёт.txt','text/plain;charset=utf-8');return}
  if(b.hasAttribute('data-print')){window.print();return}
- switch(b.id){case 'theme':{const dark=document.documentElement.dataset.theme!=='dark';document.documentElement.dataset.theme=dark?'dark':'light';try{localStorage.setItem(THEME,dark?'dark':'light')}catch(e){}updateTheme();break}case 'help':help();break;case 'close':$('modal').close();break;case 'focus':document.body.classList.toggle('focus-mode');b.setAttribute('aria-pressed',String(document.body.classList.contains('focus-mode')));b.textContent=document.body.classList.contains('focus-mode')?'Обычный вид':'На экран';break;case 'offline':download(cleanHTML(),'Склонение_прилагательных.html','text/html;charset=utf-8');break;case 'reset':showModal('Начать заново?','<p>Ответы, черновики и повторение этого тренажёра будут удалены на этом устройстве. Можно сначала сохранить отчёт.</p><div class="actions"><button class="btn" data-download-report>Скачать отчёт</button><button class="btn danger" id="confirm-reset">Сбросить результаты</button><button class="btn" id="cancel-reset">Отмена</button></div>');break;case 'confirm-reset':state=fresh();save();$('modal').close();go('home');break;case 'cancel-reset':$('modal').close();break}
+ switch(b.id){case 'theme':{const dark=document.documentElement.dataset.theme!=='dark';document.documentElement.dataset.theme=dark?'dark':'light';try{localStorage.setItem(THEME,dark?'dark':'light')}catch(e){}updateTheme();break}case 'help':help();break;case 'close':$('modal').close();break;case 'mobile-blocks':{const expanded=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!expanded));$('nav').classList.toggle('mobile-open',!expanded);break}case 'focus':document.body.classList.toggle('focus-mode');b.setAttribute('aria-pressed',String(document.body.classList.contains('focus-mode')));b.textContent=document.body.classList.contains('focus-mode')?'Обычный вид':'На экран';break;case 'offline':download(cleanHTML(),'Склонение_прилагательных.html','text/html;charset=utf-8');break;case 'reset':showModal('Начать заново?','<p>Ответы, черновики и повторение этого тренажёра будут удалены на этом устройстве. Можно сначала сохранить отчёт.</p><div class="actions"><button class="btn" data-download-report>Скачать отчёт</button><button class="btn danger" id="confirm-reset">Сбросить результаты</button><button class="btn" id="cancel-reset">Отмена</button></div>');break;case 'confirm-reset':state=fresh();save();$('modal').close();go('home');break;case 'cancel-reset':$('modal').close();break}
 });
 document.addEventListener('keydown',e=>{if(e.ctrlKey||e.metaKey||e.altKey||$('modal').open||/INPUT|SELECT|TEXTAREA/.test(e.target.tagName)||view!=='exercise')return;if(e.key==='ArrowRight'){e.preventDefault();next(1)}if(e.key==='ArrowLeft'){e.preventDefault();next(-1)}});
 function updateTheme(){const dark=document.documentElement.dataset.theme==='dark';$('theme').textContent=dark?'☀ Светлая':'☾ Тёмная';$('theme').setAttribute('aria-pressed',String(dark))}
 window.addEventListener('hashchange',routeFromHash);
-updateTheme();routeFromHash();
+migrateLegacyFields();updateTheme();routeFromHash();
+
+// The final activity uses the same IDs, answers and records as the earlier cards.
+function textField(q,i,localIndex){
+ const f=q.fields[i],r=records(q,false)[i],complete=locked(r),s=status(r),value=complete?(r.tries.find(t=>t.ok)?.v??f.answers[0]):draft(q,i,false);
+ const invalid=!complete&&r.tries.some(t=>!t.ok);
+ const stem=q.phrase.match(/([А-Яа-яЁё]+)…/)?.[1]||'';
+ const label='Слово '+(localIndex+1)+', '+stem+'… — '+(i===0?'окончание':'падеж');
+ const options=i===0?f.options.slice((localIndex+1)%f.options.length).concat(f.options.slice(0,(localIndex+1)%f.options.length)):f.options;
+ return '<select id="text-'+q.id+'-'+i+'" data-text-field="'+q.id+':'+i+'" class="inline-select '+(i===0?'ending-select':'case-select')+' '+(complete?s:invalid?'invalid':'')+'" aria-label="'+esc(label)+'" '+(invalid?'aria-invalid="true" ':'')+(complete?'disabled ':'')+'><option value="">'+(i===0?'…':'Падеж')+'</option>'+options.map(o=>'<option value="'+esc(o)+'" '+(normalize(value)===normalize(o)?'selected':'')+'>'+esc(o)+'</option>').join('')+'</select>';
+}
+function textMarkup(){
+ const list=byBlock('b8');let index=0;
+ return CONTENT.finalText.replace(/([А-Яа-яЁё]+)…/g,(match,stem)=>{
+  const q=list[index],local=index++;
+  const complete=done(q,false),s=taskStatus(q,false);
+  return '<span id="cloze-'+q.id+'" class="cloze-token '+s+'" role="group" aria-label="Слово '+(local+1)+'" tabindex="-1"><span class="cloze-word"><sup class="token-index">'+(local+1)+'</sup>'+esc(stem)+textField(q,0,local)+'</span><span class="cloze-case">'+textField(q,1,local)+(complete?'<span class="token-status" aria-label="'+(s==='reveal'?'Ответ разобран':'Готово')+'">'+(s==='reveal'?'↗':'✓')+'</span>':'')+'</span></span>';
+ });
+}
+function textCanCheck(){return byBlock('b8').some(q=>records(q,false).some((r,i)=>{
+ const value=draft(q,i,false);return !locked(r)&&String(value).trim()&&!(r.tries.length&&normalize(r.tries.at(-1).v)===normalize(value));
+}))}
+function textDetails(){
+ const list=byBlock('b8').filter(q=>records(q,false).some(r=>r.tries.length));
+ if(!list.length)return '<p class="meta">После проверки здесь появятся объяснения и подсказки. На каждый ответ — две попытки.</p>';
+ return list.map(q=>{const n=byBlock('b8').indexOf(q)+1;return '<div class="text-detail"><button type="button" class="link" data-final-jump="'+q.id+'">К слову '+n+'</button><p class="detail-phrase">'+esc(q.phrase)+'</p>'+(done(q,false)?'<p>'+esc(q.explain)+'</p>':records(q,false).map((r,i)=>!locked(r)&&r.tries.length?'<p><b>'+esc(q.fields[i].label)+':</b> '+esc(q.fields[i].hint)+'</p>':'').join(''))+'</div>'}).join('');
+}
+function textExercise(){
+ const list=byBlock('b8'),s=counts(list),all=s.checked===s.total,errors=list.filter(q=>records(q,false).some(r=>!locked(r)&&r.tries.some(t=>!t.ok))).length;
+ return '<section class="panel text-panel"><div class="question-top"><button class="link" data-go="home">← Все блоки</button><span>Блок 8 · Цельный текст</span></div><h2 id="page-title" tabindex="-1">Прогулка к озеру</h2><p class="text-instruction">Выбери <b>окончание в слове</b> и <b>падеж под ним</b>. Текст остаётся перед глазами. Проверять можно частями.</p>'+progress(s.checked,s.total)+'<div id="text-progress" class="meta">Готово '+s.checked+'/16 ответов · '+list.filter(q=>done(q,false)).length+'/8 слов</div><div class="continuous-text" aria-label="Текст с выбором окончаний и падежей">'+textMarkup()+'</div>'+(all?'<div class="feedback"><b>✓ Весь текст разобран</b><p>Самостоятельно: '+s.solo+' · Исправлено: '+s.fixed+' · С разбором: '+s.reveal+'. Можно открыть объяснения или посмотреть общий результат.</p></div>':errors?'<div class="notice"><b>Исправь выделенные поля: '+errors+' '+plural(errors,'слово','слова','слов')+'.</b><p>Правильные ответы сохранены. Подсказки находятся ниже, в разделе «Подсказки и разбор».</p></div>':'')+'<div class="action-dock text-dock">'+(!all?'<button class="btn primary check-btn" id="text-check" '+(!textCanCheck()?'disabled':'')+'>Проверить заполненное</button>':'')+'<button class="btn '+(all?'primary':'')+'" data-go="report">Результат →</button></div><details class="details text-help" '+(errors?'open':'')+'><summary>Подсказки и разбор'+(errors?' · есть ошибки':'')+'</summary>'+textDetails()+'</details><p class="meta text-note">Пустые поля не расходуют попытку. Повторное нажатие проверки без изменения ошибочного ответа тоже не расходует попытку. В первой попытке справочник закрыт.</p></section>';
+}
+function checkText(){
+ const list=byBlock('b8');let checked=0,correct=0;
+ for(const q of list){
+  const key=draftKey(q,false);if(!Array.isArray(state.drafts[key]))state.drafts[key]=[];
+  q.fields.forEach((f,i)=>{const control=$('text-'+q.id+'-'+i);if(control&&!locked(records(q,false)[i]))state.drafts[key][i]=control.value});
+  records(q,false).forEach((r,i)=>{
+   if(locked(r))return;
+   const value=String(draft(q,i,false)).trim();
+   if(!value||r.tries.length&&normalize(r.tries.at(-1).v)===normalize(value))return;
+   const ok=valid(q.fields[i],value),next={...r,tries:[...r.tries,{v:value,ok}]};
+   if(!ok&&!r.tries.length)next.hint=true;
+   putRecord(q,i,next,false);checked++;if(ok)correct++;
+  });
+ }
+ if(!checked){announce('Выбери ответ или измени ошибочный. Пустые поля и ответы без изменений не проверяются.');return}
+ state.last=list.find(q=>!done(q,false))?.id||list[0].id;
+ save();const top=window.scrollY;render();window.scrollTo({top,behavior:'instant'});
+ announce('Проверено '+checked+' '+plural(checked,'поле','поля','полей')+'. Верно '+correct+'. Правильные ответы сохранены.');
+}
+function selectChoice(button){
+ const i=Number(button.dataset.choice),control=$('field-'+i),value=button.dataset.value;
+ if(!active||locked(records(active)[i]))return;
+ control.value=value;
+ const key=draftKey(active);if(!Array.isArray(state.drafts[key]))state.drafts[key]=[];state.drafts[key][i]=value;
+ document.querySelectorAll('[data-choice="'+i+'"]').forEach(b=>{const selected=b.dataset.value===value;b.classList.toggle('selected',selected);b.setAttribute('aria-pressed',String(selected))});
+ save();
+}
+document.addEventListener('click',event=>{
+ const button=event.target.closest('button');if(!button||button.disabled)return;
+ if(button.dataset.choice!==undefined){selectChoice(button);return}
+ if(button.id==='text-check'){checkText();return}
+ if(button.dataset.finalJump){$('cloze-'+button.dataset.finalJump)?.scrollIntoView({block:'center',behavior:'smooth'});return}
+});
+document.addEventListener('input',event=>{
+ if(!event.target.matches('[data-text-field]'))return;
+ const [id,fi]=event.target.dataset.textField.split(':'),q=QUESTIONS.find(q=>q.id===id),i=Number(fi);
+ if(!q||locked(records(q,false)[i]))return;
+ const key=draftKey(q,false);if(!Array.isArray(state.drafts[key]))state.drafts[key]=[];state.drafts[key][i]=event.target.value;
+ save();if($('text-check'))$('text-check').disabled=!textCanCheck();
+});
+document.addEventListener('change',event=>{if(event.target.matches('[data-text-field]'))event.target.dispatchEvent(new Event('input',{bubbles:true}))});
 </script>
 </body></html>
